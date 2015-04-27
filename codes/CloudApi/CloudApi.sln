@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudApi", "CloudApi\CloudApi.csproj", "{3A43C4EC-A50E-4486-964B-A34085BC708E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudApi.DAL", "CloudApi.DAL\CloudApi.DAL.csproj", "{357FEA55-F337-4CED-992F-4E37B0DDA4CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudApi.Entity", "CloudApi.Entity\CloudApi.Entity.csproj", "{A0A35D93-4BDD-4258-82BB-7DBACD600258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{E2AFE66A-2B10-4AC7-BE5B-1512C5613003}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A43C4EC-A50E-4486-964B-A34085BC708E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A43C4EC-A50E-4486-964B-A34085BC708E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A43C4EC-A50E-4486-964B-A34085BC708E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A43C4EC-A50E-4486-964B-A34085BC708E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{357FEA55-F337-4CED-992F-4E37B0DDA4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357FEA55-F337-4CED-992F-4E37B0DDA4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357FEA55-F337-4CED-992F-4E37B0DDA4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357FEA55-F337-4CED-992F-4E37B0DDA4CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0A35D93-4BDD-4258-82BB-7DBACD600258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A35D93-4BDD-4258-82BB-7DBACD600258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A35D93-4BDD-4258-82BB-7DBACD600258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A35D93-4BDD-4258-82BB-7DBACD600258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2AFE66A-2B10-4AC7-BE5B-1512C5613003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2AFE66A-2B10-4AC7-BE5B-1512C5613003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2AFE66A-2B10-4AC7-BE5B-1512C5613003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2AFE66A-2B10-4AC7-BE5B-1512C5613003}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

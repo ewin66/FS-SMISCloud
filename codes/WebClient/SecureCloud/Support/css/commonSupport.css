@@ -1,0 +1,57 @@
+﻿
+.page-content .row-fluid .breadcrumb {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 32px;
+}
+
+.breadcrumb>li {
+    display: table-cell;
+    vertical-align: middle;
+}
+        
+.fixed-marker-loading {
+    position: fixed;
+    top: 30%;
+    left: 53%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    outline: none;
+    background: url(/resource/img/ajax-loader.gif) no-repeat;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.fixed-prompt {
+    position: fixed;
+    top: 100px;
+    left: 53%;
+    display: block;
+    z-index: 2;
+}
+
+.label-red {
+    color: #ffffff;
+    background-color: #ff0000;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+
+.label-orange {
+    background-color: #ff8000;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+
+.label-purple {
+    background-color: #A757A8;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+
+.label-blue {
+    background-color: #0000ff;
+    background-image: none !important;
+    text-shadow: none !important;
+}

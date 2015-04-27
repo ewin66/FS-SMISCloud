@@ -1,0 +1,24 @@
+﻿{
+	"Header":{
+		"A":"Put",
+		"S":"WarningSenderTest",
+		"D":"WarningManagementProcess",
+		"R":"/warnning/sensor",
+		"U":"53294638-a1bf-495c-91d9-26acc2041d2a",
+		"L":20,
+		"T":"8d516ed8-568a-4228-bc53-2132c37cd7ce",
+		"E":0,
+		"M":"Hello"
+	},
+	"Body":{
+		"WarningTypeId": "105",
+		"StructId": 20,
+		"DeviceTypeId": 2,
+		"DeviceId": 150,
+		"WarningContent": "传感器设备产生告警",
+		"WarningTime": "2014-10-28T15:56:32.4355359+08:00",
+		"Id": "565ab7ac-df99-4a20-92e6-0cd8464f7889",
+		"DateTime": "2014-10-28T15:56:32.4355359+08:00"
+	}
+}
+

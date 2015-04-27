@@ -1,0 +1,5 @@
+E:\FS-SMISCloud\codes\Server\Service\output\Service.dll
+E:\FS-SMISCloud\codes\Server\Service\output\Service.pdb
+E:\FS-SMISCloud\codes\Server\Service\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\Service\Service\obj\Debug\Service.dll
+E:\FS-SMISCloud\codes\Server\Service\Service\obj\Debug\Service.pdb

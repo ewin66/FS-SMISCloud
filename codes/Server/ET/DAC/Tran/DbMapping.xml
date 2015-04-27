@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+	<databases>
+    <!--name:数据库名;types是数据库类型：MSSQL:0|Access:2|SQLite:1;connectionString: 数据库连接字符串-->
+		<database name="" dbType="" connectionString="" >
+      <!--name:"表名"; protocolType:"协议号"; filter:where子句"-->
+      <table name="" protocolType="" filter="">
+        <!--name:需要提取的字段,有就写没有不写;standardfield:对应的字段（ID,SID,ModuleNo,ChannelNo,AcqTime,Value1,...）-->
+        <colum name="" standardfield="ID" />
+        <colum name="" standardfield="SID" />
+        <colum name="" standardfield="ModuleNo" />
+        <colum name="" standardfield="ChannelNo" />
+        <colum name="" standardfield="AcqTime" />
+        <colum name="" standardfield="Value1" />
+        <colum name="" standardfield="Value2" />
+      </table>
+		</database>
+
+	</databases>
+</config>

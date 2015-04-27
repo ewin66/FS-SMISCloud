@@ -1,0 +1,5 @@
+E:\FS-SMISCloud\codes\CloudApi\CloudApi.Entity\bin\Debug\FreeSun.FS_SMISCloud.Server.CloudApi.Entity.dll
+E:\FS-SMISCloud\codes\CloudApi\CloudApi.Entity\bin\Debug\FreeSun.FS_SMISCloud.Server.CloudApi.Entity.pdb
+E:\FS-SMISCloud\codes\CloudApi\CloudApi.Entity\obj\Debug\CloudApi.Entity.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\CloudApi\CloudApi.Entity\obj\Debug\FreeSun.FS_SMISCloud.Server.CloudApi.Entity.dll
+E:\FS-SMISCloud\codes\CloudApi\CloudApi.Entity\obj\Debug\FreeSun.FS_SMISCloud.Server.CloudApi.Entity.pdb

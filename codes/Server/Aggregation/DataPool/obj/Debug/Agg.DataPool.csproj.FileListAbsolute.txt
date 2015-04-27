@@ -1,0 +1,13 @@
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\bin\Debug\DataPool.xml
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\bin\Debug\Agg.DataPool.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\bin\Debug\Agg.DataPool.pdb
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\bin\Debug\Agg.Comm.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\bin\Debug\Agg.Storage.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\bin\Debug\log4net.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\bin\Debug\FS.DbHelper.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\bin\Debug\Agg.Comm.pdb
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\bin\Debug\Agg.Storage.pdb
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\bin\Debug\log4net.xml
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\obj\Debug\Agg.DataPool.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\obj\Debug\Agg.DataPool.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\DataPool\obj\Debug\Agg.DataPool.pdb

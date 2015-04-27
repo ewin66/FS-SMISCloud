@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B49F5E7B-9236-420E-8F88-BA1EEC834D9B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FSDE.DAL</RootNamespace>
+    <AssemblyName>FSDE.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FreeSun.Common.Utils.FileCache">
+      <HintPath>..\FS-DataExtraction\lib\FreeSun.Common.Utils.FileCache.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\FS-DataExtraction\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.92.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.cs" />
+    <Compile Include="Config\ConfigTableDal.cs" />
+    <Compile Include="ConnectTestDal.cs" />
+    <Compile Include="Config\DataBaseNameDal.cs" />
+    <Compile Include="Config\GroupSensorsDal.cs" />
+    <Compile Include="Config\DataFilterTypeDal.cs" />
+    <Compile Include="Config\DataFilterDal.cs" />
+    <Compile Include="Config\ProductCategoryDal.cs" />
+    <Compile Include="Config\ExtractValueNameDal.cs" />
+    <Compile Include="Config\ProjectInfoDal.cs" />
+    <Compile Include="Config\FormulaParaNameDal.cs" />
+    <Compile Include="Config\FormulaInfoDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Config\SensorInfoDal.cs" />
+    <Compile Include="Config\GroupInfoDal.cs" />
+    <Compile Include="Select\Connectionstring.cs" />
+    <Compile Include="Select\CacheDataPacketDal.cs" />
+    <Compile Include="Select\ExtractionConfigDal.cs" />
+    <Compile Include="Select\MoiFiberGratingDataSelectDal.cs" />
+    <Compile Include="Select\OurVibration.cs" />
+    <Compile Include="Select\SelectConfigTableInfoDal.cs" />
+    <Compile Include="Select\SelectFSUSDBDal.cs" />
+    <Compile Include="Select\SelectOtherDBDal.cs" />
+    <Compile Include="Config\TableFieldInfoDal.cs" />
+    <Compile Include="Config\SFormulaidSetDal.cs" />
+    <Compile Include="Config\SensorTypeDal.cs" />
+    <Compile Include="Select\ArtVibrationDataSelectDal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FreeSun.Common.DB\Utils.DB.csproj">
+      <Project>{a101229f-6db0-4379-997c-28933ebda581}</Project>
+      <Name>Utils.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.Commn\FSDE.Commn.csproj">
+      <Project>{B52B2AC1-AAA5-40C7-A8D6-1CD75D1ADA18}</Project>
+      <Name>FSDE.Commn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.Dictionaries\FSDE.Dictionaries.csproj">
+      <Project>{A2936EA6-4DCA-413A-83BF-F0C1286F61B5}</Project>
+      <Name>FSDE.Dictionaries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.IDAL\FSDE.IDAL.csproj">
+      <Project>{857296F5-BA15-46D6-982D-54E1C2F7DBEE}</Project>
+      <Name>FSDE.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.Model\FSDE.Model.csproj">
+      <Project>{A129935B-96D5-4E57-9D7B-18801DCE95A8}</Project>
+      <Name>FSDE.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sqliteorm\SqliteORM.csproj">
+      <Project>{6b177771-4444-48a9-8ecb-db27ed900969}</Project>
+      <Name>SqliteORM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

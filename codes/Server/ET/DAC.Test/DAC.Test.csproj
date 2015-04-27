@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B51EFB07-88BC-4584-A919-B9817AC5D574}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAC.Test</RootNamespace>
+    <AssemblyName>DAC.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\Test\DAC.Test\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\Test\DAC.Test\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Quartz.2.3.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Quartz.2.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FS.DbHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\FS.DbHelper.1.0.0\lib\FS.DbHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\MySql.Data.6.9.5\lib\net40\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit">
+      <HintPath>..\..\packages\NUnit.2.6.3\lib\nunit.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\odp.net.managed.121.1.2\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=2.3.1.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Quartz.2.3.1\lib\net40\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.94.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\System.Data.SQLite.1.0.94.0\lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise />
+  </Choose>
+  <ItemGroup>
+    <Compile Include="..\DAC\DAC\CxxAdapter\FTM50SSmallLaserSensorAdapter.cs">
+      <Link>DAC\Adapters\FTM50SSmallLaserSensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\GLSB40I70Laser_SensorAdapter.cs">
+      <Link>DAC\Adapters\GLSB40I70Laser_SensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\Inclination_BOX_SensorAdapter.cs">
+      <Link>DAC\Adapters\Inclination_BOX_SensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\Inclination_OLD_SensorAdapter.cs">
+      <Link>DAC\Adapters\Inclination_OLD_SensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\Inclination_ROD_SensorAdapter.cs">
+      <Link>DAC\Adapters\Inclination_ROD_SensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\LVDT_BL_SensorAdapter.cs">
+      <Link>DAC\Adapters\LVDT_BL_SensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\LVDT_XW_SensorAdapter.cs">
+      <Link>DAC\Adapters\LVDT_XW_SensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\MagneticFluxSensorAdapter.cs">
+      <Link>DAC\Adapters\MagneticFluxSensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\Pressure_HS_SensorAdaper.cs">
+      <Link>DAC\Adapters\Pressure_HS_SensorAdaper.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\Pressure_MPM_SensorAdapter.cs">
+      <Link>DAC\Adapters\Pressure_MPM_SensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\RainFallSensorAdapter.cs">
+      <Link>DAC\Adapters\RainFallSensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\TempHumidityModbusSensorAdapter.cs">
+      <Link>DAC\Adapters\TempHumidityModbusSensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\TempHumiditySensorAdapter.cs">
+      <Link>DAC\Adapters\TempHumiditySensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\VibratingWireSensorAdapter.cs">
+      <Link>DAC\Adapters\VibratingWireSensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\VibratingWire_OLD_SensorAdapter.cs">
+      <Link>DAC\Adapters\VibratingWire_OLD_SensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\VoltageSensorAdapter.cs">
+      <Link>DAC\Adapters\VoltageSensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\VoltageSensorRange.cs">
+      <Link>DAC\Adapters\VoltageSensorRange.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\Wind_CFF_SensorAdapter.cs">
+      <Link>DAC\Adapters\Wind_CFF_SensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\DAC\DAC\CxxAdapter\Wind_OSL_SensorAdapter.cs">
+      <Link>DAC\Adapters\Wind_OSL_SensorAdapter.cs</Link>
+    </Compile>
+    <Compile Include="Comm\AtCommandExecutorTester.cs" />
+    <Compile Include="Comm\AtCommandsTester.cs" />
+    <Compile Include="Comm\ConfigCommandExecutorTester.cs" />
+    <Compile Include="Comm\ConnectionEventListenerTester.cs" />
+    <Compile Include="Comm\GetAtCommadTester.cs" />
+    <Compile Include="Consumer\ConsumerTester.cs" />
+    <Compile Include="DAC\ErrorsTest.cs" />
+    <Compile Include="DAC\FTM50SSmallLaserTester.cs" />
+    <Compile Include="DAC\GpsSnTester.cs" />
+    <Compile Include="DAC\HcGpsTester.cs" />
+    <Compile Include="DAC\LaserSensorTester.cs" />
+    <Compile Include="DAC\PerfTest.cs" />
+    <Compile Include="DAC\SensorAdapterManagerTester.cs" />
+    <Compile Include="DAC\InclinometrTester.cs" />
+    <Compile Include="DAC\LVDT_BL_Tester.cs" />
+    <Compile Include="DAC\LVDT_XW_Tester.cs" />
+    <Compile Include="DAC\MagneticFluxTester.cs" />
+    <Compile Include="DAC\Pressure_HSTester.cs" />
+    <Compile Include="DAC\Pressure_MPMTester.cs" />
+    <Compile Include="DAC\RainFallTester.cs" />
+    <Compile Include="DAC\TempHumidityModbusTester.cs" />
+    <Compile Include="DAC\TempHumidityTester.cs" />
+    <Compile Include="DAC\ValueHelperTester.cs" />
+    <Compile Include="DAC\VibratingWireOldTester.cs" />
+    <Compile Include="DAC\VibratingWireTester.cs" />
+    <Compile Include="DAC\VoltageTester.cs" />
+    <Compile Include="DAC\Wind_CFFTester.cs" />
+    <Compile Include="DAC\Wind_OSLTester.cs" />
+    <Compile Include="dymaicsriptTest\AdapterManagerTest.cs" />
+    <Compile Include="Model\DtuNodeTest.cs" />
+    <Compile Include="Model\MsSQLTester.cs" />
+    <Compile Include="Model\MsDbAccessTester.cs" />
+    <Compile Include="Model\SQLiteTester.cs" />
+    <Compile Include="Model\SQLiteDbAccessTester.cs" />
+    <Compile Include="Model\SQLiteDataSerializerTester.cs" />
+    <Compile Include="Task\QuartzTester.cs" />
+    <Compile Include="Util\ObjectHelperTester.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Receiver\DacReceiverTester.cs" />
+    <Compile Include="Task\ATCommandTask.cs" />
+    <Compile Include="Task\DACTaskManagerTester.cs" />
+    <Compile Include="Task\TaskResultTester.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tran\DbDacDataProviderTester.cs" />
+    <Compile Include="Tran\LoadDbConfigXmlTester.cs" />
+    <Compile Include="Tran\MEFTester.cs" />
+    <Compile Include="Tran\SQLiteDacDataProviderTester.cs" />
+    <Compile Include="Tran\TranDataSenderTester.cs" />
+    <Compile Include="Tran\TranMsgTester.cs" />
+    <Compile Include="Tran\VibDataProviderTester.cs" />
+    <Compile Include="Util\EnumHelperTester.cs" />
+    <Compile Include="Util\ValueHelperTester.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAC.DataAnalyze\DAC.DataAnalyze.csproj">
+      <Project>{c61ba02d-d05a-40be-b2ca-66fe51039c76}</Project>
+      <Name>DAC.DataAnalyze</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAC.Storage.iSecureCloud\DAC.Storage.iSecureCloud.csproj">
+      <Project>{49e587c6-eb00-4b8a-8df6-fc2deb5f77d7}</Project>
+      <Name>DAC.Storage.iSecureCloud</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAC\DAC.csproj">
+      <Project>{fd6160c2-d9fc-4247-add3-06f474a16a54}</Project>
+      <Name>DAC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FileData\CDMonitorSession.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FileData\Net01.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FSUSDB\fsuscfg.db3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="FSUSDB\FSUSDataValueDB.db3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="job_scheduling_data_2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="log4net.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="VibData\3333_8_20141009104823611.odb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="VibData\3333_8_20141009104823611.sdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="VibData\3333_8_20141009104823612.odb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="VibData\3333_8_20141009104823612.sdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FileData\2015.1.28\H22_S0_01.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FileData\2015.1.28\H23_S0_01.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tran\DbMapping.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tran\DbMapping_SQLite.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。启用“NuGet 程序包还原”可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

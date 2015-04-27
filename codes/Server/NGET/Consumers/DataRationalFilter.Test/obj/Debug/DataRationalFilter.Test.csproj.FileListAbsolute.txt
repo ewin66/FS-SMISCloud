@@ -1,0 +1,7 @@
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataRationalFilter.Test\consumers.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataRationalFilter.Test\DataRationalFilter.Test.exe.config
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataRationalFilter.Test\DataRationalFilter.Test.exe
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataRationalFilter.Test\DataRationalFilter.Test.pdb
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataRationalFilter.Test\obj\Debug\DataRationalFilter.Test.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataRationalFilter.Test\obj\Debug\DataRationalFilter.Test.exe
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataRationalFilter.Test\obj\Debug\DataRationalFilter.Test.pdb

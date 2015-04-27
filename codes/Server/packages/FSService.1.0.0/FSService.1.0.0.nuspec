@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>FSService</id>
+        <version>1.0.0</version>
+        <authors>liujiangang</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>FS Message Service.
+
+Support：
+Req/Respone
+Pull/Push</description>
+    </metadata>
+    <files>
+        <file src="..\Server\Service\Service.NetMQ\bin\Release\NetMQ.dll" target="lib\NetMQ.dll" />
+        <file src="..\Server\Service\Service\bin\Release\Service.dll" target="lib\Service.dll" />
+        <file src="..\Server\Service\Service.NetMQ\bin\Release\Service.NetMQ.dll" target="lib\Service.NetMQ.dll" />
+    </files>
+</package>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+url是上报地址
+timeout 		超时时间
+enableexception 是否上报异常
+exceptionurl 	异常数据地址
+以下属性必须全部包含
+enable  表示是否启用
+BDBH	标段号		Varchar(20)	
+SDMC	隧道名称	varchar(50)	
+SDZH	里程桩号	varchar(20)	
+ZYF		左右幅		Varchar(10)		左|右
+SBWZ	设备位置	varchar(20)		如果使用安心云系统位置,则填""
+SBSM	设备说明	varchar(50)	
+SJLX	数据类别	varchar(2)		SL|CJ表示收敛|沉降
+FHDZ	返回地址	Varchar(200)	不合格数据点击时的链接地址
+-->
+<config debug="1"
+        url="http://117.34.104.24:10003/phxt/UploadActionWYSL"
+        timeout="2500"
+        enableexception="1"
+        exceptionurl="http://218.3.150.106/ExternalSensorData.ashx?userName=pinghan&amp;passWord=111111&amp;themeId={0}&amp;factorId={1}&amp;sensorId={2}">
+  <sensor id="2115" enable="1"
+          BDBH="PH-10"
+          SDMC="鲜家坝隧道"
+          SDZH="YK170＋766"
+          ZYF="右"
+          SBWZ="右洞第七截面_YK170＋766"
+          SBSM=""
+          SJLX="CJ" />
+  <sensor id="2116" enable="1"
+          BDBH="PH-10"
+          SDMC="鲜家坝隧道"
+          SDZH="YK170＋756"
+          ZYF="右"
+          SBWZ="右洞第八截面_YK170＋756"
+          SBSM=""
+          SJLX="CJ" />
+  <sensor id="2109" enable="1"
+          BDBH="PH-10"
+          SDMC="鲜家坝隧道"
+          SDZH="YK170＋766"
+          ZYF="右"
+          SBWZ="右洞第七截面_YK170＋766"
+          SBSM=""
+          SJLX="SL" />
+</config>

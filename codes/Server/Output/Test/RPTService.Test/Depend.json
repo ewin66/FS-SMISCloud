@@ -1,0 +1,17 @@
+﻿{
+  "DependList": [
+    "DynamicScript.dll",
+	"EntityFramework.dll",
+	"log4net.dll",
+	"System.dll",
+	"System.Core.dll",
+	"System.Xml.dll",
+	"System.Xml.Linq.dll",
+	"Aspose.Cells.dll",
+	"NPOI.dll",
+	"NPOI.OOXML.dll",
+	"NPOI.OpenXml4Net.dll",
+	"NPOI.OpenXmlFormats.dll",
+	"ReportGeneratorService.exe"
+  ]
+}

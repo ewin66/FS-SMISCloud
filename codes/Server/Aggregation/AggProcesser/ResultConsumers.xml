@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <Consumers>
+    <add name="DataChangeCaculate" assembly="Agg.Process.dll" module="Agg.Process.AggDataChangeCaculate" />
+    <add name="DataStorage" assembly="Agg.Process.dll" module="Agg.Process.AggDataStorage" />
+  </Consumers>
+</configuration>

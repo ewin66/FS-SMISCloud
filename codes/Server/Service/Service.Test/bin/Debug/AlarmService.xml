@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<service>
+  <ps>
+    <publisher address="tcp://*:9001"/>
+    <subscribe>
+      <service name="et" address="tcp://127.0.0.1:9101"/>
+    </subscribe>
+  </ps>
+  <pp>
+    <pull address="tcp://*:9002"/>
+    <push>
+      <service name="et" address="tcp://127.0.0.1:9102"/>
+    </push>
+  </pp>
+  <rr>
+    <response address="tcp://*:9003"/>
+    <request>
+      <service name ="et" address="tcp://127.0.0.1:9103"/>
+    </request>
+  </rr>
+  <settings>    
+    <setting key="key1" value="value1" />
+  </settings>
+</service>

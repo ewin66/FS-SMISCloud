@@ -1,0 +1,14 @@
+E:\FS-SMISCloud\codes\Server\Output\NGETService\consumers.xml
+E:\FS-SMISCloud\codes\Server\Output\NGETService\DONT README.txt
+E:\FS-SMISCloud\codes\Server\Output\NGETService\EtService.xml
+E:\FS-SMISCloud\codes\Server\Output\NGETService\App.config
+E:\FS-SMISCloud\codes\Server\Output\NGETService\log4net.config
+E:\FS-SMISCloud\codes\Server\Output\NGETService\NGEtService.exe.config
+E:\FS-SMISCloud\codes\Server\Output\NGETService\NGEtService.exe
+E:\FS-SMISCloud\codes\Server\Output\NGETService\NGEtService.pdb
+E:\FS-SMISCloud\codes\Server\NGET\NGET.Service\obj\Debug\NGET.Service.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\NGET\NGET.Service\obj\Debug\NGEtService.exe
+E:\FS-SMISCloud\codes\Server\NGET\NGET.Service\obj\Debug\NGEtService.pdb
+E:\FS-SMISCloud\codes\Server\Output\NGETService\DataAnalyzerService.xml
+E:\FS-SMISCloud\codes\Server\Output\NGETService\upload.xml
+E:\FS-SMISCloud\codes\Server\Output\NGETService\ThemeTables_iSecureCloud.xml

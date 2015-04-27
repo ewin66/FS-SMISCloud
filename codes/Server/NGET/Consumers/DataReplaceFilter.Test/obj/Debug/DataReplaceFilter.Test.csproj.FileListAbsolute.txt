@@ -1,0 +1,7 @@
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataReplaceFilter.Test\consumers.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataReplaceFilter.Test\DataReplaceFilter.Test.exe.config
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataReplaceFilter.Test\DataReplaceFilter.Test.exe
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataReplaceFilter.Test\DataReplaceFilter.Test.pdb
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataReplaceFilter.Test\obj\Debug\DataReplaceFilter.Test.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataReplaceFilter.Test\obj\Debug\DataReplaceFilter.Test.exe
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataReplaceFilter.Test\obj\Debug\DataReplaceFilter.Test.pdb

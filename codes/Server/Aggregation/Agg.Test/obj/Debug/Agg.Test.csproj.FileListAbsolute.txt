@@ -1,0 +1,9 @@
+E:\FS-SMISCloud\codes\Server\Output\Test\Agg.Test\Agg.Test.exe.config
+E:\FS-SMISCloud\codes\Server\Output\Test\Agg.Test\DataPool.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\Agg.Test\AggProcess.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\Agg.Test\ResultConsumers.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\Agg.Test\Agg.Test.exe
+E:\FS-SMISCloud\codes\Server\Output\Test\Agg.Test\Agg.Test.pdb
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Test\obj\Debug\Agg.Test.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Test\obj\Debug\Agg.Test.exe
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Test\obj\Debug\Agg.Test.pdb

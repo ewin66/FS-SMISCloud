@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<database>
+  <iSecureCloud>
+    <connectionString connstr="FSUSDB\FSUSDataValueDB.db3" />
+    <tables>
+      <common colums="SENSOR_Set_ID,ModuleNo,ChannelID,LOCATION_DESCRIPTION,ACQUISITION_DATETIME,Sender,SAFETY_FACTOR_TYPE_ID," />
+      <table name="D_OriginalInclinationData" colums="AngleOriginalX,AngleOriginalY,AngleOffsetX,AngleOffsetY"/>
+      <table name="D_OriginalLVDTData" colums="OriginalDisplayment,OffsetDisplayment"/>
+      <table name="D_OriginalMagneticFluxData" colums="OrgVoltage,HUMILITY_VALUE,Mechan_Value"/>
+      <table name="D_OriginalPressureData" colums="ColPressureValue,CulcPressureValue"/>
+      <table name="D_OriginalRainFallData" colums="RainFall"/>
+      <table name="D_OriginalTempHumiData" colums="TEMPERATURE_VALUE,HUMILITY_VALUE"/>
+      <table name="D_OriginalVibratingWireData" colums="Frequency_VALUE,TEMPERATURE_VALUE,PhysicalValue"/>
+      <table name="D_OriginalVoltageData" colums="OrgVoltage,displayment"/>
+      <table name="D_OriginalWindData" colums="WIND_SPEED_VALUE,WIND_DIRECTION_VALUE,WIND_ELEVATION_VALUE"/>
+    </tables>
+    <tablemap>
+      <map protocol="1100" table="D_OriginalTempHumiData"/>
+      <map protocol="1101" table="D_OriginalTempHumiData"/>
+      <map protocol="1200" table="D_OriginalVoltageData"/>
+      <map protocol="1400" table="D_OriginalVibratingWireData"/>
+      <map protocol="1500" table="D_OriginalInclinationData"/>
+      <map protocol="1600" table="D_OriginalRainFallData"/>
+      <map protocol="1503" table="D_OriginalInclinationData"/>
+      <map protocol="1502" table="D_OriginalInclinationData"/>
+      <map protocol="1501" table="D_OriginalInclinationData"/>
+      <map protocol="1700" table="D_OriginalMagneticFluxData"/>
+      <map protocol="9001" table="D_OriginalPressureData"/>
+      <map protocol="9002" table="D_OriginalPressureData"/>
+      <map protocol="9101" table="D_OriginalLVDTData"/>
+      <map protocol="9102" table="D_OriginalLVDTData"/>
+      <map protocol="9201" table="D_OriginalWindData"/>
+      <map protocol="1401" table="D_OriginalVibratingWireData"/>
+    </tablemap>
+  </iSecureCloud>
+</database>
+

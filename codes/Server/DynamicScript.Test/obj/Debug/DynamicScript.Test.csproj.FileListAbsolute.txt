@@ -1,0 +1,13 @@
+E:\FS-SMISCloud\codes\Server\Output\Test\DynamicScript.Test\test\error\CompileError.cs
+E:\FS-SMISCloud\codes\Server\Output\Test\DynamicScript.Test\test\error\NoImplementsError.cs
+E:\FS-SMISCloud\codes\Server\Output\Test\DynamicScript.Test\test\MethodWithArgumentChangedImpl.cs
+E:\FS-SMISCloud\codes\Server\Output\Test\DynamicScript.Test\test\MethodWithArgumentImpl.cs
+E:\FS-SMISCloud\codes\Server\Output\Test\DynamicScript.Test\test\ImplWithConstructor.cs
+E:\FS-SMISCloud\codes\Server\Output\Test\DynamicScript.Test\test\SimpleInterfaceImpl.cs
+E:\FS-SMISCloud\codes\Server\Output\Test\DynamicScript.Test\test\SimpleInterface.json
+E:\FS-SMISCloud\codes\Server\Output\Test\DynamicScript.Test\test\out\README.md
+E:\FS-SMISCloud\codes\Server\Output\Test\DynamicScript.Test\DynamicScript.Test.exe
+E:\FS-SMISCloud\codes\Server\Output\Test\DynamicScript.Test\DynamicScript.Test.pdb
+E:\FS-SMISCloud\codes\Server\DynamicScript.Test\obj\Debug\DynamicScript.Test.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\DynamicScript.Test\obj\Debug\DynamicScript.Test.exe
+E:\FS-SMISCloud\codes\Server\DynamicScript.Test\obj\Debug\DynamicScript.Test.pdb

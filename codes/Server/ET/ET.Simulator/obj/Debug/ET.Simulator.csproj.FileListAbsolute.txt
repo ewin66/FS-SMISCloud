@@ -1,0 +1,16 @@
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\ET.Sim.xml
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\msg.txt
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\Newtonsoft.Json.dll
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\Newtonsoft.Json.xml
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\log4net.config
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\ET.Simulator.exe.config
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\ET.Simulator.exe
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\ET.Simulator.pdb
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\log4net.dll
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\NetMQ.dll
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\Service.dll
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\Service.NetMQ.dll
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\bin\Debug\log4net.xml
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\obj\Debug\ET.Simulator.exe
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\obj\Debug\ET.Simulator.pdb
+E:\FS-SMISCloud\codes\Server\ET\ET.Simulator\obj\Debug\ET.Simulator.csprojResolveAssemblyReference.cache

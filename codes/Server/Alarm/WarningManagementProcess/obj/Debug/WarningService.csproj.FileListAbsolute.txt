@@ -1,0 +1,8 @@
+E:\FS-SMISCloud\codes\Server\Output\WarningService\WarningService.xml
+E:\FS-SMISCloud\codes\Server\Output\WarningService\App.config
+E:\FS-SMISCloud\codes\Server\Output\WarningService\WarningManagementProcess.exe.config
+E:\FS-SMISCloud\codes\Server\Output\WarningService\WarningManagementProcess.exe
+E:\FS-SMISCloud\codes\Server\Output\WarningService\WarningManagementProcess.pdb
+E:\FS-SMISCloud\codes\Server\Alarm\WarningManagementProcess\obj\Debug\WarningService.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\Alarm\WarningManagementProcess\obj\Debug\WarningManagementProcess.exe
+E:\FS-SMISCloud\codes\Server\Alarm\WarningManagementProcess\obj\Debug\WarningManagementProcess.pdb

@@ -1,0 +1,18 @@
+[2015-04-09 17:06:41,584] [10] [INFO ] [Service] :- Starting service [et]:
+	dir: 'E:\FS-SMISCloud\codes\Server\Output\ETService\'
+	svc: 'EtService.xml'
+[2015-04-09 17:06:41,653] [10] [INFO ] [SvrIocHelper] :- Loading ServiceBus using default: NetMQ, path=E:\FS-SMISCloud\codes\Server\Output\ETService\
+[2015-04-09 17:06:41,656] [10] [INFO ] [SvrIocHelper] :- Loading lib: E:\FS-SMISCloud\codes\Server\Output\ETService\Service.NetMQ.dll, class: FS.Service.NetMQMessageBus 
+[2015-04-09 17:06:57,787] [10] [INFO ] [ET] :- DBConnecting: server=192.168.1.31;database=DW_iSecureCloud_Empty;uid=sa;pwd=123;pooling=false
+[2015-04-09 17:15:28,944] [10] [INFO ] [Service] :- Starting service [DataAnalyzer]:
+	dir: 'E:\FS-SMISCloud\codes\Server\Output\ETService\'
+	svc: 'DataAnalyzerService.xml'
+[2015-04-09 17:15:28,945] [10] [INFO ] [SvrIocHelper] :- Loading ServiceBus using default: NetMQ, path=E:\FS-SMISCloud\codes\Server\Output\ETService\
+[2015-04-09 17:15:28,946] [10] [INFO ] [SvrIocHelper] :- Loading lib: E:\FS-SMISCloud\codes\Server\Output\ETService\Service.NetMQ.dll, class: FS.Service.NetMQMessageBus 
+[2015-04-09 17:15:28,986] [10] [INFO ] [ServiceConfig] :- Parsing 'DataAnalyzerService.xml' ...
+[2015-04-09 17:15:28,990] [10] [DEBUG] [NetMqMsgBus] :- Start from DataAnalyzerService.xml
+[2015-04-09 17:15:28,990] [10] [INFO ] [NetMqMsgBus] :- Starting listening for Pull: tcp://*:9102
+[2015-04-09 17:15:29,081] [10] [INFO ] [NetMqMsgBus] :- Connecting to WarningManagementProcess(tcp://127.0.0.1:9701)
+[2015-04-09 17:15:32,038] [10] [DEBUG] [ConsumerService] :- queue_1:Storage,DataRationalFilter,DataValidator,DataReplaceFilter,DataCalc,DataRationalFilter,DataValidator,DataAnalyzer,Storage,DataUploader
+[2015-04-09 17:16:44,518] [10] [DEBUG] [TaskManager] :- 149 dtus ready to work.
+[2015-04-09 17:16:47,498] [10] [DEBUG] [FS.DynamicScript.CrossDomainCompiler] :- Ceating AppDomain: CrossDomainCompilerDomain-6fa18ba4-e835-4003-b55b-8cc9d4e14f1e

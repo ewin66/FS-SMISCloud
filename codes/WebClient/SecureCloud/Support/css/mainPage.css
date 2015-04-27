@@ -1,0 +1,185 @@
+﻿/**
+ * ---------------------------------------------------------------------------------
+ * <copyright file="mainPage.css" company="江苏飞尚安全监测咨询有限公司">
+ * Copyright (C) 2015 飞尚科技
+ * 版权所有。
+ * </copyright>
+ * ---------------------------------------------------------------------------------
+ * <summary>
+ * 文件功能描述：技术支持项目状态仪表盘css文件
+ *
+ * 创建标识：PengLing20150309
+ *
+ * 修改标识：
+ * 修改描述：
+ * </summary>
+ * ---------------------------------------------------------------------------------
+ */
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.label-red {
+    color: #ffffff;
+    background-color: #ff0000;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+.label-orange {
+    color: #ffffff;
+    background-color: #ff8000;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+.label-purple {
+    color: #ffffff;
+    background-color: #A757A8;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+.label-blue {
+    color: #ffffff;
+    background-color: #0000ff;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+.label-green {
+    color: #ffffff;
+    background-color: #00ff00;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+
+/*  dark-gray */
+.btn.dark-gray {
+  color: white;  
+  text-shadow: none;	
+  background-color: #A3A3A3;
+}
+
+.fontWeightBold {
+    font-weight: bold;
+}
+
+.fontSize13 {
+    font-size: 13px;
+}
+.fontSize14 {
+    font-size: 14px;
+}
+.fontSize16 {
+    font-size: 16px;
+}
+
+.position-left-center {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.position-absolute-right {
+    position: absolute;
+    right: 2%;
+}
+
+.form-horizontal .controls {
+    position: relative;
+}
+
+.position-absolute-right-0 {
+    position: absolute;
+    right: 0;
+}
+
+.marginBottom5 {
+    margin-bottom: 5px;
+}
+.marginBottom10 {
+    margin-bottom: 10px;
+}
+
+.like-a {
+    cursor: pointer; 
+    color: rgb(0, 85, 128);
+}
+
+.accordion .accordion-heading a {
+    color: #000000;
+    font-size: 15px;
+}
+
+.accordion .accordion-heading .accordion-toggle i {
+    font-size: 13px;
+    margin-right: 5px; 
+    color: #666666;
+}
+
+.row-fluid .box {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.marginLeft60 {
+    margin-left: 60px;
+}
+
+.marginRight10 {
+    margin-right: 10px;
+}
+
+.accordion .accordion-heading .accordion-toggle .marginRight10 {
+    margin-right: 10px;
+}
+
+.fixed-marker-loading {
+    position: fixed;
+    top: 30%;
+    left: 53%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    outline: none;
+    background: url(/resource/img/ajax-loader.gif) no-repeat;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.fixed-prompt {
+    position: fixed;
+    top: 100px;
+    left: 53%;
+    display: block;
+    z-index: 2;
+}
+
+#table-projectStructsStatus th {
+    font-size: 10px;
+}
+
+.fa-gray {
+    color: gray;
+}
+
+.fa-orange {
+    color: orange;
+}
+
+.prompt-orange {
+    color: orange;
+    margin: 5px 0 5px;
+}
+
+#modifyDtuRemoteConfig p {
+    margin-bottom: -5px;
+}
+
+.modal-backdrop.fade.in+.modal-backdrop.fade.in {
+    -ms-opacity: 0.1;
+    opacity: 0.1;
+}
+
+

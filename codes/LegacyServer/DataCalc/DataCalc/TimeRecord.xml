@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <Structs>
+    
+    <Struct>
+      <Id>20140623</Id>
+      <Desc>YJP</Desc>
+      <Time>2015-12-12 12:12:12</Time>
+      <Path>C:\Users\yinweiwen\Desktop\data</Path>
+    </Struct>
+    
+    <Struct>
+      <Id>20150336</Id>
+      <Desc>青岛海信桥</Desc>
+      <Time>2014-01-12 12:12:12</Time>
+      <AccFilter R="0.4" P="0.004"></AccFilter>
+    </Struct>
+    
+  </Structs>
+</Config>

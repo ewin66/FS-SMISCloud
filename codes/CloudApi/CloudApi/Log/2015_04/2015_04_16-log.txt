@@ -1,0 +1,11 @@
+2015-04-16 13:54:18,643 - Starting service [WebClient]:
+	dir: 'E:\FS-SMISCloud\codes\CloudApi\CloudApi\bin\'
+	svc: 'E:\FS-SMISCloud\codes\CloudApi\CloudApi\bin\WebClientService.xml'
+2015-04-16 13:54:18,662 - Loading ServiceBus using default: NetMQ, path=E:\FS-SMISCloud\codes\CloudApi\CloudApi\bin\
+2015-04-16 13:54:18,663 - Loading lib: E:\FS-SMISCloud\codes\CloudApi\CloudApi\bin\Service.NetMQ.dll, class: FS.Service.NetMQMessageBus 
+2015-04-16 13:54:18,698 - Parsing 'E:\FS-SMISCloud\codes\CloudApi\CloudApi\bin\WebClientService.xml' ...
+2015-04-16 13:54:18,745 - Start from E:\FS-SMISCloud\codes\CloudApi\CloudApi\bin\WebClientService.xml
+2015-04-16 13:54:18,746 - Starting listening for Pull: tcp://*:9501
+2015-04-16 13:54:18,794 - Connecting to et(tcp://127.0.0.1:9101)
+2015-04-16 13:54:18,927 - Connecting to agg(tcp://127.0.0.1:9201)
+2015-04-16 13:54:18,952 - Starting listening for Request: tcp://*:9503

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <DataPools>
+    <add name="Day" assembly="Agg.DataPool.dll" module="Agg.DataPool.DayDataDBDataPool" />
+    <add name="Week" assembly="Agg.DataPool.dll" module="Agg.DataPool.WeekDataDBDataPool"/>
+    <add name="Month" assembly="Agg.DataPool.dll" module="Agg.DataPool.MonthDataDBDataPool" />
+  </DataPools>
+</configuration>
+

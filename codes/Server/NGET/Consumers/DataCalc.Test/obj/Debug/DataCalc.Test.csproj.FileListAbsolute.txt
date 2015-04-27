@@ -1,0 +1,7 @@
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataCalc.Test\consumers.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataCalc.Test\DataCalc.Test.exe.config
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataCalc.Test\DataCalc.Test.exe
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataCalc.Test\DataCalc.Test.pdb
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataCalc.Test\obj\Debug\DataCalc.Test.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataCalc.Test\obj\Debug\DataCalc.Test.exe
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataCalc.Test\obj\Debug\DataCalc.Test.pdb

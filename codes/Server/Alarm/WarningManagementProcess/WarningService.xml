@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<service>
+  <pp>
+    <pull address="tcp://*:9701"/>
+    <push>
+      <service name="WarningSenderTest" address="tcp://127.0.0.1:9801"/>
+    </push>
+  </pp>
+
+</service>

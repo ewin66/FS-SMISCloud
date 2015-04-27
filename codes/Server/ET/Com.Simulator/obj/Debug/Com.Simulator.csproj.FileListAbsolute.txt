@@ -1,0 +1,6 @@
+E:\FS-SMISCloud\codes\Server\ET\Com.Simulator\bin\Debug\Com.Simulator.exe
+E:\FS-SMISCloud\codes\Server\ET\Com.Simulator\bin\Debug\Com.Simulator.pdb
+E:\FS-SMISCloud\codes\Server\ET\Com.Simulator\bin\Debug\log4net.dll
+E:\FS-SMISCloud\codes\Server\ET\Com.Simulator\bin\Debug\log4net.xml
+E:\FS-SMISCloud\codes\Server\ET\Com.Simulator\obj\Debug\Com.Simulator.exe
+E:\FS-SMISCloud\codes\Server\ET\Com.Simulator\obj\Debug\Com.Simulator.pdb

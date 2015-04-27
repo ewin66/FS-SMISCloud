@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <Processes>
+    <add name="Avg" assembly="Agg.Process.dll" module="Agg.Process.AvgProcess" />
+    <add name="Min" assembly="Agg.Process.dll" module="Agg.Process.MinProcess"/>
+    <add name="Max" assembly="Agg.Process.dll" module="Agg.Process.MaxProcess" />
+  </Processes>
+</configuration>
+

@@ -1,0 +1,17 @@
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\DataPool.xml
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\AggProcess.xml
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\ResultConsumers.xml
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\Agg.Process.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\Agg.Process.pdb
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\Agg.Comm.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\Agg.DataPool.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\Agg.Storage.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\log4net.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\FS.DbHelper.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\Agg.Comm.pdb
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\Agg.Storage.pdb
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\Agg.DataPool.pdb
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\bin\Debug\log4net.xml
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\obj\Debug\Agg.Process.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\obj\Debug\Agg.Process.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\AggProcesser\obj\Debug\Agg.Process.pdb

@@ -1,0 +1,8 @@
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataUpload.Test\consumers.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataUpload.Test\upload.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataUpload.Test\DataUpload.Test.exe.config
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataUpload.Test\DataUpload.Test.exe
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataUpload.Test\DataUpload.Test.pdb
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\PinghanDataUpload.Test\obj\Debug\PinghanDataUpload.Test.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\PinghanDataUpload.Test\obj\Debug\DataUpload.Test.exe
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\PinghanDataUpload.Test\obj\Debug\DataUpload.Test.pdb

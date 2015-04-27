@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{357FEA55-F337-4CED-992F-4E37B0DDA4CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FreeSun.FS_SMISCloud.Server.CloudApi.DAL</RootNamespace>
+    <AssemblyName>FreeSun.FS_SMISCloud.Server.CloudApi.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Elasticsearch.Net">
+      <HintPath>..\packages\Elasticsearch.Net.1.3.0\lib\Elasticsearch.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Nest">
+      <HintPath>..\packages\NEST.1.3.0\lib\Nest.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.8.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alarm\AlarmModel.cs" />
+    <Compile Include="BATCH_JOB_EXECUTION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BATCH_JOB_EXECUTION_CONTEXT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BATCH_JOB_EXECUTION_PARAMS.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BATCH_JOB_EXECUTION_SEQ.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BATCH_JOB_INSTANCE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BATCH_JOB_SEQ.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BATCH_STEP_EXECUTION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BATCH_STEP_EXECUTION_CONTEXT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BATCH_STEP_EXECUTION_SEQ.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="DataService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecureCloudEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecureCloudEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SecureCloudEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SecureCloudEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecureCloudEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_AGG_WEEK_SAFETY_FACTOR_SCORE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_AGG__DAY_SAFETY_FACTOR_SCORE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_AGG__DAY_STRUCTURE_SCORE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_AGG__HOUR_SAFETY_FACTOR_SCORE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_AGG__HOUR_STRUCTURE_SCORE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_AGG__MONTH_SAFETY_FACTOR_SCORE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_AGG__MONTH_STRUCTURE_SCORE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_AGG__WEEK_STRUCTURE_SCORE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_API_LOG.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_API_RESOURCE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_COL_ORIGINAL_DATAVALUE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DATA_AGGREGATION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DATA_LATEST.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DATA_ORIGINAL.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DATA_ORIGINAL_ARCHIVE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DATA_RATIONAL_FILTER_CONFIG.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DATA_STABLE_FILTER_CONFIG.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_ABNORMALSENSOR_CONFIG.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_ACTION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_AGG_CONFIG.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_AGG_TYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_AGG_WAY.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_COMPANY.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_CORRELATION_FACTOR.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_DAI.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_DAI_PRODUCT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_DATETIME.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_DEVICETOKEN.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_dim_Dictionary.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_DTU_PRODUCT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_DTU_STATUS.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_FACTOR_PRODUCT_TYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_FACTOR_UNIT_INT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_FORMULAID.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_FORMULAID_SET.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_FORMULA_PARA.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_FORMULA_PARA_NAME.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_GROUP.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_GROUP_TYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_HALF_HOUR.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_HOTSPOT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_HOTSPOTTest.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_HOTSPOT_SECTION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_HOUR.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_MENU.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_MENU_ACTION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_OPERATION_LOG.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_OPERATION_RESOURCE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_OPERATION_TYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_ORGANIZATION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_ORG_STUCTURE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_PERMISSION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_POWER_SUPPLY_TYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_PRODUCTCATAGORY_ORIGINALDATA.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_PRODUCT_CATEGORY.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_PRODUCT_TYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_PROTOCOLCOMMAND.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_PROTOCOL_TYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_REGION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_REGION_TYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_REMOTE_DTU.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_RESOURCE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_RESOURCE_API.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_ROLE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_ROLE_RESOURCE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_SAFETY_FACTOR_TYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_SECTION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_SENSOR.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_SENSORPRODUCT_SAFETYFACTORTYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_SENSOR_CORRENT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_SENSOR_GPS.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_SENSOR_GROUP_CEXIE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_SENSOR_GROUP_CHENJIANG.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_SENSOR_GROUP_JINRUNXIAN.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_Sensor_Init.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_SENSOR_PRODUCT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_STRUCTUER_LINE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_STRUCTUER_PROGRESS.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_STRUCTURE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_STRUCTURE_FACTOR.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_STRUCTURE_TYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_STRUCTURE_TYPE_FACTOR.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_STRUCT_DTU.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_STRUCT_FACTOR_UNIT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_USER.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_USER_ORG.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_USER_ROLE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_USER_STRUCTURE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_WARNING_DEVICETYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DIM_WARNING_TYPE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_DEFAULTGPS.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_DEFAULTINCLINOMETER.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_DEFAULTSENSOR_THRESHOLD.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_GPS.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_INCLINOMETER.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_NORMALIZED.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_SAFETY_FACTOR_SCORE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_SAFETY_FACTOR_WEIGHTS.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_SENSOR_THRESHOLD.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_SENSOR_WEIGHTS.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_STRUCTURE_SCORE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_SUB_SAFETY_FACTOR_WEIGHTS.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FACT_WEIGHT_SCORE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_IOS_VERSION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_REPORT_COLLECTION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_REPORT_CONFIG.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_REPORT_CONFIG_TEMPLATE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_REPORT_TEMPLATE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_SYSTEM_LOG.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_TASK_INSTANT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_CABLE_FORCE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_DEFORMATION_BRIDGE_DEFLECTION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_DEFORMATION_CRACK.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_DEFORMATION_DEEP_DISPLACEMENT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_DEFORMATION_DEEP_DISPLACEMENT_DAILY.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_DEFORMATION_SETTLEMENT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT_DAILY.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_ENVI_BEACH.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_ENVI_RAINFALL.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_ENVI_SATURATION_LINE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_ENVI_SEEPAGE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_ENVI_TEMP_HUMI.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_ENVI_WATER_LEVEL.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_ENVI_WIND.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_FBG_STRESS_STRAIN.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_FORCE_ANCHOR.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_FORCE_AXIAL.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_FORCE_BEAM.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_FORCE_EARTH_PRESSURE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_FORCE_STEELBAR.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_STRESS_STRAIN_PORE_WATER_PRESSURE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_STRESS_STRAIN_RETAININGWALL.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_VIBRATION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_VIBRATION_ARCHIVE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_VIBRATION_BATCH.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_VIBRATION_BATCH_ARCHIVE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_VIBRATION_DECK_VIBRATION.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_VIBRATION_MICROSEISMIC.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_VIBRATION_MICROSEISMIC_PTSELECT.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_VIBRATION_ORIGINAL.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_THEMES_VIBRATION_ORIGINAL_ARCHIVE.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_WARNING_DEALDETAILS.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_WARNING_LEVEL.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_WARNING_SENSOR.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_WARNING_SMS_RECIEVER.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserDeviceToken.cs">
+      <DependentUpon>SecureCloudEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Warning.cs" />
+    <Compile Include="WindData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CloudApi.Entity\CloudApi.Entity.csproj">
+      <Project>{a0a35d93-4bdd-4258-82bb-7dbacd600258}</Project>
+      <Name>CloudApi.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <EntityDeploy Include="SecureCloudEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SecureCloudEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="SecureCloudEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SecureCloudEntities.edmx</DependentUpon>
+      <LastGenOutput>SecureCloudEntities.Context.cs</LastGenOutput>
+    </None>
+    <None Include="SecureCloudEntities.edmx.diagram">
+      <DependentUpon>SecureCloudEntities.edmx</DependentUpon>
+    </None>
+    <None Include="SecureCloudEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SecureCloudEntities.edmx</DependentUpon>
+      <LastGenOutput>SecureCloudEntities.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

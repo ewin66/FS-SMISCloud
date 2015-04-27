@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <consumers>
+    <add name="DataRationalFilter" assembly="DAC.DataRationalFilter.dll" type="FS.SMIS_Cloud.DAC.DataRationalFilter.DataRationalFilter" />
+    <add name="DataValidator" assembly="DAC.DataValidator.dll" type="FS.SMIS_Cloud.DAC.DataValidator.DataValidator"/>
+    <add name="DataCalc" assembly="DAC.DataCalc.dll" type="FS.SMIS_Cloud.DAC.DataCalc.DataCalc"/>
+    <add name="DataAnalyzer" assembly="DAC.DataAnalyzer.dll" type="FS.SMIS_Cloud.DAC.DataAnalyzer.DataAnalyzer" />
+    <add name="Storage" assembly="DAC.Storage.iSecureCloud.dll" type="FS.SMIS_Cloud.DAC.Storage.iSecureCloud.SeclureCloudStorge" />
+  </consumers>
+  <queues>
+    <queue sync="true">
+      <add name="DataRationalFilter" sensorType="Entity,Data" />
+      <add name="DataValidator" sensorType="Entity,Data" />
+      <add name="DataCalc" />
+      <add name="DataRationalFilter" sensorType="Virtual" />
+      <add name="DataValidator" sensorType="Virtual" />
+      <add name="DataAnalyzer" />
+      <add name="Storage" />
+    </queue>
+  </queues>
+</configuration>

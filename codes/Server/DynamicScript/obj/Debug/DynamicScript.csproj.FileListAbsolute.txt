@@ -1,0 +1,8 @@
+E:\FS-SMISCloud\codes\Server\DynamicScript\bin\Debug\DynamicScript.dll
+E:\FS-SMISCloud\codes\Server\DynamicScript\bin\Debug\DynamicScript.pdb
+E:\FS-SMISCloud\codes\Server\DynamicScript\bin\Debug\log4net.dll
+E:\FS-SMISCloud\codes\Server\DynamicScript\bin\Debug\Newtonsoft.Json.dll
+E:\FS-SMISCloud\codes\Server\DynamicScript\bin\Debug\log4net.xml
+E:\FS-SMISCloud\codes\Server\DynamicScript\bin\Debug\Newtonsoft.Json.xml
+E:\FS-SMISCloud\codes\Server\DynamicScript\obj\Debug\DynamicScript.dll
+E:\FS-SMISCloud\codes\Server\DynamicScript\obj\Debug\DynamicScript.pdb

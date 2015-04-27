@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<config>
+	<databases>
+    <!--name:数据库名;types是数据库类型：MSSQL:0|Access:2|SQLite:1;connectionString: 数据库连接字符串-->
+		<database name="FSUSDataValueDB.db3" dbType="1" connectionString="FSUSDB\\FSUSDataValueDB.db3" >
+      <!--name:"表名"; protocolType:"协议号"; filter:where子句"-->
+      <!--测斜数据表"-->
+      <table name="D_OriginalInclinationData" protocolType="1503" filter="">
+        <!--name:需要提取的字段,有就写没有不写;standardfield:对应的字段（ID,SID,ModuleNo,ChannelNo,AcqTime,Value1,...）-->
+        <colum name="SENSOR_SET_ID" standardfield="SID" />
+        <colum name="ModuleNo" standardfield="ModuleNo" />
+        <colum name="ChannelID" standardfield="ChannelNo" />
+        <colum name="ACQUISITION_DATETIME" standardfield="AcqTime" />
+        <colum name="AngleOriginalX" standardfield="Value1" />
+        <colum name="AngleOriginalY" standardfield="Value2" />
+        <colum name="AngleOffsetX" standardfield="Value3" />
+        <colum name="AngleOffsetY" standardfield="Value4" />
+        <colum name="DISPLACEMENT_X_VALUE" standardfield="Value5" />
+        <colum name="DISPLACEMENT_Y_VALUE" standardfield="Value6" />
+      </table>
+      <!--LVDT数据表"-->
+      <table name="D_OriginalLVDTData" protocolType="9102" filter="">
+        <colum name="SENSOR_SET_ID" standardfield="SID" />
+        <colum name="ModuleNo" standardfield="ModuleNo" />
+        <colum name="ChannelID" standardfield="ChannelNo" />
+        <colum name="ACQUISITION_DATETIME" standardfield="AcqTime" />
+        <colum name="OriginalDisplayment" standardfield="Value1" />
+        <colum name="OffsetDisplayment" standardfield="Value2" />
+      </table>
+      <!--磁通量数据表"-->
+      <table name="D_OriginalMagneticFluxData" protocolType="1700" filter="">
+        <colum name="SENSOR_SET_ID" standardfield="SID" />
+        <colum name="ModuleNo" standardfield="ModuleNo" />
+        <colum name="ChannelID" standardfield="ChannelNo" />
+        <colum name="ACQUISITION_DATETIME" standardfield="AcqTime" />
+        <colum name="OrgVoltage" standardfield="Value1" />
+        <colum name="HUMILITY_VALUE" standardfield="Value2" />
+        <colum name="Mechan_Value" standardfield="Value3" />
+      </table>
+      <!--压强数据表"-->
+      <table name="D_OriginalPressureData" protocolType="9002" filter="">
+        <colum name="SENSOR_SET_ID" standardfield="SID" />
+        <colum name="ModuleNo" standardfield="ModuleNo" />
+        <colum name="ChannelID" standardfield="ChannelNo" />
+        <colum name="ACQUISITION_DATETIME" standardfield="AcqTime" />
+        <colum name="ColPressureValue" standardfield="Value1" />
+        <colum name="CulcPressureValue" standardfield="Value2" />
+      </table>
+      <!--雨量数据表"-->
+      <table name="D_OriginalRainFallData" protocolType="1600" filter="">
+        <colum name="SENSOR_SET_ID" standardfield="SID" />
+        <colum name="ModuleNo" standardfield="ModuleNo" />
+        <colum name="ChannelID" standardfield="ChannelNo" />
+        <colum name="ACQUISITION_DATETIME" standardfield="AcqTime" />
+        <colum name="RainFall" standardfield="Value1" />
+      </table>
+      <!--温湿度数据表"-->
+      <table name="D_OriginalTempHumiData" protocolType="1101" filter="">
+        <colum name="SENSOR_SET_ID" standardfield="SID" />
+        <colum name="ModuleNo" standardfield="ModuleNo" />
+        <colum name="ChannelID" standardfield="ChannelNo" />
+        <colum name="ACQUISITION_DATETIME" standardfield="AcqTime" />
+        <colum name="TEMPERATURE_VALUE" standardfield="Value1" />
+        <colum name="HUMILITY_VALUE" standardfield="Value2" />
+      </table>
+      <!--振弦数据表"-->
+      <table name="D_OriginalVibratingWireData" protocolType="1401" filter="">
+        <colum name="SENSOR_SET_ID" standardfield="SID" />
+        <colum name="ModuleNo" standardfield="ModuleNo" />
+        <colum name="ChannelID" standardfield="ChannelNo" />
+        <colum name="ACQUISITION_DATETIME" standardfield="AcqTime" />
+        <colum name="Frequency_VALUE" standardfield="Value1" />
+        <colum name="TEMPERATURE_VALUE" standardfield="Value2" />
+        <colum name="PhysicalValue" standardfield="Value3" />
+        <colum name="CalculatedValue" standardfield="Value4" />
+      </table>
+      <!--电压数据表"-->
+      <table name="D_OriginalVoltageData" protocolType="1200" filter="">
+        <colum name="SENSOR_SET_ID" standardfield="SID" />
+        <colum name="ModuleNo" standardfield="ModuleNo" />
+        <colum name="ChannelID" standardfield="ChannelNo" />
+        <colum name="ACQUISITION_DATETIME" standardfield="AcqTime" />
+        <colum name="OrgVoltage" standardfield="Value1" />
+        <colum name="displayment" standardfield="Value2" />
+      </table>
+      <!--风向风速数据表"-->
+      <table name="D_OriginalWindData" protocolType="9201" filter="">
+        <colum name="SENSOR_SET_ID" standardfield="SID" />
+        <colum name="ModuleNo" standardfield="ModuleNo" />
+        <colum name="ChannelID" standardfield="ChannelNo" />
+        <colum name="ACQUISITION_DATETIME" standardfield="AcqTime" />
+        <colum name="WIND_SPEED_VALUE" standardfield="Value1" />
+        <colum name="WIND_DIRECTION_VALUE" standardfield="Value2" />
+        <colum name="WIND_ELEVATION_VALUE" standardfield="Value2" />
+      </table>
+		</database>
+	</databases>
+</config>

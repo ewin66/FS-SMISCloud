@@ -1,0 +1,9 @@
+E:\FS-SMISCloud\codes\Server\Service\output\ServiceBus.xml
+E:\FS-SMISCloud\codes\Server\Service\output\Service.NetMQ.dll
+E:\FS-SMISCloud\codes\Server\Service\output\Service.NetMQ.pdb
+E:\FS-SMISCloud\codes\Server\Service\Service.NetMQ\obj\Debug\Service.NetMQ.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\Service\Service.NetMQ\obj\Debug\Service.NetMQ.dll
+E:\FS-SMISCloud\codes\Server\Service\Service.NetMQ\obj\Debug\Service.NetMQ.pdb
+E:\FS-SMISCloud\codes\Server\output\FS Service\ServiceBus.xml
+E:\FS-SMISCloud\codes\Server\output\FS Service\Service.NetMQ.dll
+E:\FS-SMISCloud\codes\Server\output\FS Service\Service.NetMQ.pdb

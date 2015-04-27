@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<database>
+  <iSecureCloud>
+    <connectionString connstr="Initial Catalog=DW_iSecureCloud_Empty;Data Source=192.168.1.128;User Id=sa;Password=861004" />
+    <tables>
+      <rawdatatable name="T_DATA_ORIGINAL" colums="SensorId,CollectTime,Value1,Value2,Value3,Value4"/>
+      <common colums="SENSOR_ID,SAFETY_FACTOR_TYPE_ID,ACQUISITION_DATETIME," />
+      <table name="T_THEMES_CABLE_FORCE" colums="CABLE_FORCE_VALUE"/>
+      <table name="T_THEMES_DEFORMATION_BRIDGE_DEFLECTION" colums="DEFLECTION_VALUE"/>
+      <table name="T_THEMES_DEFORMATION_CRACK" colums="CRACK_VALUE"/>
+      <table name="T_THEMES_DEFORMATION_DEEP_DISPLACEMENT" colums="DEEP_DISPLACEMENT_X_VALUE,DEEP_DISPLACEMENT_Y_VALUE,DEEP_CUMULATIVEDISPLACEMENT_X_VALUE,DEEP_CUMULATIVEDISPLACEMENT_Y_VALUE"/>
+      <table name="T_THEMES_DEFORMATION_SETTLEMENT" colums="SETTLEMENT_VALUE"/>
+      <table name="T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT" colums="SURFACE_DISPLACEMENT_X_VALUE,SURFACE_DISPLACEMENT_Y_VALUE,SURFACE_DISPLACEMENT_Z_VALUE"/>
+      <table name="T_THEMES_ENVI_RAINFALL" colums="RAINFALL_VALUE"/>
+      <table name="T_THEMES_ENVI_TEMP_HUMI" colums="TEMPERATURE_VALUE,HUMILITY_VALUE"/>
+      <table name="T_THEMES_ENVI_WATER_LEVEL" colums="WATER_LEVEL_VALUE,WATER_LEVEL_CUMULATIVEVALUE"/>
+      <table name="T_THEMES_ENVI_WIND" colums="WIND_SPEED_VALUE,WIND_DIRECTION_VALUE,WIND_ELEVATION_VALUE"/>
+      <table name="T_THEMES_FORCE_ANCHOR" colums="ANCHOR_FORCE_VALUE"/>
+      <table name="T_THEMES_FORCE_EARTH_PRESSURE" colums="EARTH_PRESSURE_VALUE"/>
+      <table name="T_THEMES_FORCE_STEELBAR" colums="STEELBAR_FORCE_VALUE"/>
+      <table name="T_THEMES_STRESS_STRAIN_PORE_WATER_PRESSURE" colums="PORE_WATER_PRESSURE_VALUE,PORE_WATER_PRESSURE_VALUE_CUMULATIVEVALUE"/>
+      <table name="T_THEMES_STRESS_STRAIN_RETAININGWALL" colums="STRESS_STRAIN_VALUE"/>
+      <table name="T_THEMES_FORCE_AXIAL" colums="AXIAL_FORCE_VALUE"/>
+      <table name="T_THEMES_ENVI_SEEPAGE" colums="SEEPAGE"/>
+    </tables>
+  </iSecureCloud>
+</database>
+

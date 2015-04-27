@@ -1,0 +1,8 @@
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataAnalyze.Test\consumers.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataAnalyze.Test\DataAnalyzerService.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataAnalyze.Test\DataAnalyze.Test.exe.config
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataAnalyze.Test\DataAnalyze.Test.exe
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataAnalyze.Test\DataAnalyze.Test.pdb
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataAnalyze.Test\obj\Debug\DataAnalyze.Test.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataAnalyze.Test\obj\Debug\DataAnalyze.Test.exe
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataAnalyze.Test\obj\Debug\DataAnalyze.Test.pdb

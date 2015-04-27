@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0D9F8F8-E888-45DE-B431-7070A6BE29F7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FreeSun.FS_SMISCloud.Server.DataCalc</RootNamespace>
+    <AssemblyName>DataCalc</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\DataCalc\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\DataCalc\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FreeSun.FS_SMISCloud.Server.Common.Messages, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\FreeSun.FS_SMISCloud.Server.Common.Messages.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeSun.FS_SMISCloud.Server.HeartBeat.Client">
+      <HintPath>..\..\packages\FreeSun.FS_SMISCloud.Server.HeartBeat.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\packages\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MDSCommonLib">
+      <HintPath>..\..\packages\MDSCommonLib.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit">
+      <HintPath>..\..\packages\NUnit.2.6.3\lib\nunit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arithmetic\ArithmeticFactory.cs" />
+    <Compile Include="Arithmetic\CxGroupArithmetic.cs" />
+    <Compile Include="Arithmetic\DryBeachArithmetic.cs" />
+    <Compile Include="Arithmetic\IArithmetic.cs" />
+    <Compile Include="Calculation\Calculator.cs" />
+    <Compile Include="Calculation\DataProcessor.cs" />
+    <Compile Include="Calculation\VibrationFileParser.cs" />
+    <Compile Include="Communication\CalcServer.cs" />
+    <Compile Include="Communication\FileProcessor.cs" />
+    <Compile Include="Communication\MessageProcessor.cs" />
+    <Compile Include="DataAccess\DataAccessHelper.cs" />
+    <Compile Include="IniFileOperation.cs" />
+    <Compile Include="Model\Data.cs" />
+    <Compile Include="Model\DataBeachLen.cs" />
+    <Compile Include="Model\DataBeamForce.cs" />
+    <Compile Include="Model\DataBridgeIncline.cs" />
+    <Compile Include="Model\DataDeepDisplacement.cs" />
+    <Compile Include="Model\DataFbgStrain.cs" />
+    <Compile Include="Model\DataRainfall.cs" />
+    <Compile Include="Model\DataSaturationLine.cs" />
+    <Compile Include="Model\DataSeepage.cs" />
+    <Compile Include="Model\DataSurfaceDisplacement.cs" />
+    <Compile Include="Model\DataTempAndHumi.cs" />
+    <Compile Include="Model\DataWind.cs" />
+    <Compile Include="nunit\FileProcessorTester.cs" />
+    <Compile Include="nunit\TimeRecorderTester.cs" />
+    <Compile Include="nunit\VibrationFileParserTester.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SensorEntiry\ACCSensor.cs" />
+    <Compile Include="SensorEntiry\CXSensor.cs" />
+    <Compile Include="SensorEntiry\FBGSensor.cs" />
+    <Compile Include="SensorEntiry\FBGVStressSensor.cs" />
+    <Compile Include="SensorEntiry\GPSSensor.cs" />
+    <Compile Include="SensorEntiry\LvdtSensor.cs" />
+    <Compile Include="SensorEntiry\PressureTransSensor.cs" />
+    <Compile Include="ProtocolFactory.cs" />
+    <Compile Include="SensorEntiry\RadarLevelSensor.cs" />
+    <Compile Include="SensorEntiry\RainfallSensor.cs" />
+    <Compile Include="SensorEntiry\Sensor.cs" />
+    <Compile Include="SensorEntiry\WindSensor.cs" />
+    <Compile Include="SensorEntiry\WSDSensor.cs" />
+    <Compile Include="SensorEntiry\ZXSensor.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="Utility\StructConvert.cs" />
+    <Compile Include="Utility\TWFFT.cs" />
+    <Compile Include="XmlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DB\Utils.DB.csproj">
+      <Project>{0988c62e-247f-471f-a183-db509c7a3839}</Project>
+      <Name>Utils.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FakeData\FakeData.csproj">
+      <Project>{4D358CBD-3929-4925-8A4D-52C36405AFF1}</Project>
+      <Name>FakeData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nunit\Resource\6145_4_20000321031626.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nunit\Resource\9101_1_20000321113544.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nunit\Resource\9101_2_20000321113736.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nunit\Resource\9101_3_20000321113756.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProtocolConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TimeRecord.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

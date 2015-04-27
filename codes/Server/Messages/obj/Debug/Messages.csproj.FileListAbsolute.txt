@@ -1,0 +1,4 @@
+E:\FS-SMISCloud\codes\Server\Messages\bin\Debug\Services.Messages.dll
+E:\FS-SMISCloud\codes\Server\Messages\bin\Debug\Services.Messages.pdb
+E:\FS-SMISCloud\codes\Server\Messages\obj\Debug\Services.Messages.dll
+E:\FS-SMISCloud\codes\Server\Messages\obj\Debug\Services.Messages.pdb

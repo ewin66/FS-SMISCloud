@@ -1,0 +1,40 @@
+{
+	 chart: {
+           
+        },
+        title: {
+            text: '$title',
+            x: -20
+        },       
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: {                
+                minute: '%H:%M:%S',                
+                day: '%Y-%m-%d',
+                month: '%b %y'               
+            },
+            labels: { rotation: -25, align: 'right', style: { font: 'normal 13px Verdana, sans-serif' } }
+        },
+        yAxis: $yAxis,
+        credits: {
+            enabled: false
+        },
+        spline: {
+                lineWidth: 1.5,
+                states: {
+                    hover: {
+                        lineWidth: 2.5
+                    }
+                },
+                marker: {
+                    enabled: false
+                }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: $series
+}

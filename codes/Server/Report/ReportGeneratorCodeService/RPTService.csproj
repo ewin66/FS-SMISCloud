@@ -1,0 +1,877 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49DA8B3C-DE3A-4CD4-9A97-8F84CF260CA4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReportGeneratorService</RootNamespace>
+    <AssemblyName>ReportGeneratorService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\RPTService\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\RPTService\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ReportGeneratorService.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=5.3.1.0, Culture=neutral, PublicKeyToken=9ec0ff091d04b091, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Quartz.2.3.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\..\packages\Quartz.2.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=2.3.1.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Quartz.2.3.1\lib\net40\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\DirectoryHelper.cs" />
+    <Compile Include="Dal\CxDataDal.cs" />
+    <Compile Include="Dal\DataAccess.cs" />
+    <Compile Include="Dal\OriginalDataDal.cs" />
+    <Compile Include="Dal\ReportConfigDal.cs" />
+    <Compile Include="Dal\SqlHelper.cs" />
+    <Compile Include="DataModule\BATCH_JOB_EXECUTION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\BATCH_JOB_EXECUTION_CONTEXT.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\BATCH_JOB_EXECUTION_PARAMS.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\BATCH_JOB_EXECUTION_SEQ.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\BATCH_JOB_INSTANCE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\BATCH_JOB_SEQ.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\BATCH_STEP_EXECUTION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\BATCH_STEP_EXECUTION_CONTEXT.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\BATCH_STEP_EXECUTION_SEQ.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\ChartByFactor.cs" />
+    <Compile Include="DataModule\CxData.cs" />
+    <Compile Include="DataModule\CxDataByDepth.cs" />
+    <Compile Include="DataModule\CxDataByTime.cs" />
+    <Compile Include="DataModule\CxDataWithDepth.cs" />
+    <Compile Include="DataModule\CxDataWithTime.cs" />
+    <Compile Include="DataModule\CxGroup.cs" />
+    <Compile Include="DataModule\Data.cs" />
+    <Compile Include="DataModule\Factor.cs" />
+    <Compile Include="DataModule\FactorConfig.cs" />
+    <Compile Include="DataModule\FactorList.cs" />
+    <Compile Include="DataModule\FactorMapping.cs" />
+    <Compile Include="DataModule\InitValues.cs" />
+    <Compile Include="DataModule\ReportInfo.cs" />
+    <Compile Include="DataModule\Group.cs" />
+    <Compile Include="DataModule\MonitorData.cs" />
+    <Compile Include="DataModule\Organization.cs" />
+    <Compile Include="DataModule\ReportGroup.cs" />
+    <Compile Include="DataModule\Section.cs" />
+    <Compile Include="DataModule\SectionSensors.cs" />
+    <Compile Include="DataModule\SecureCloud.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecureCloud.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\SecureCloud.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\SecureCloud.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecureCloud.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\Sensor.cs" />
+    <Compile Include="DataModule\SensorData.cs" />
+    <Compile Include="DataModule\SensorList.cs" />
+    <Compile Include="DataModule\SensorProductInfo.cs" />
+    <Compile Include="DataModule\StreamChart.cs" />
+    <Compile Include="DataModule\Structure.cs" />
+    <Compile Include="DataModule\ReportTaskResult.cs" />
+    <Compile Include="DataModule\Theme.cs" />
+    <Compile Include="DataModule\T_AGG_WEEK_SAFETY_FACTOR_SCORE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_AGG__DAY_SAFETY_FACTOR_SCORE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_AGG__DAY_STRUCTURE_SCORE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_AGG__HOUR_SAFETY_FACTOR_SCORE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_AGG__HOUR_STRUCTURE_SCORE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_AGG__MONTH_SAFETY_FACTOR_SCORE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_AGG__MONTH_STRUCTURE_SCORE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_AGG__WEEK_STRUCTURE_SCORE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_API_LOG.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_API_RESOURCE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_COL_ORIGINAL_DATAVALUE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DATA_AGGREGATION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DATA_LATEST.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DATA_ORIGINAL.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DATA_ORIGINAL_ARCHIVE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DATA_RATIONAL_FILTER_CONFIG.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DATA_STABLE_FILTER_CONFIG.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_COMPANY.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_CORRELATION_FACTOR.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_DAI.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_DAI_PRODUCT.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_DATETIME.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_DEVICETOKEN.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_dim_Dictionary.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_DTU_PRODUCT.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_DTU_STATUS.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_FORMULAID.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_FORMULAID_SET.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_FORMULA_PARA.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_FORMULA_PARA_NAME.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_GROUP.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_GROUP_TYPE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_HALF_HOUR.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_HOTSPOT.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_HOTSPOTTest.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_HOTSPOT_SECTION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_HOUR.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_OPERATION_LOG.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_OPERATION_RESOURCE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_OPERATION_TYPE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_ORGANIZATION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_ORG_STUCTURE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_PERMISSION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_POWER_SUPPLY_TYPE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_PRODUCTCATAGORY_ORIGINALDATA.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_PRODUCT_CATEGORY.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_PRODUCT_TYPE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_PROTOCOLCOMMAND.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_PROTOCOL_TYPE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_REGION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_REGION_TYPE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_REMOTE_DTU.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_ROLE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_ROLE_API_RESOURCE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_ROLE_RESOURCE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_SAFETY_FACTOR_TYPE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_SECTION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_SENSOR.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_SENSORPRODUCT_SAFETYFACTORTYPE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_SENSOR_CORRENT.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_SENSOR_DATASTATUS.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_SENSOR_GPS.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_SENSOR_GROUP_CEXIE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_SENSOR_GROUP_CHENJIANG.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_SENSOR_GROUP_JINRUNXIAN.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_Sensor_Init.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_SENSOR_PRODUCT.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_STRUCTUER_LINE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_STRUCTUER_PROGRESS.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_STRUCTURE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_STRUCTURE_FACTOR.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_STRUCTURE_TYPE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_STRUCTURE_TYPE_FACTOR.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_STRUCT_DTU.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_USER.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_USER_ORG.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_USER_ROLE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_USER_STRUCTURE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_WARNING_DEVICETYPE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_DIM_WARNING_TYPE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_DEFAULTGPS.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_DEFAULTINCLINOMETER.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_DEFAULTSENSOR_THRESHOLD.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_GPS.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_INCLINOMETER.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_NORMALIZED.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_SAFETY_FACTOR_SCORE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_SAFETY_FACTOR_WEIGHTS.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_SENSOR_THRESHOLD.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_SENSOR_WEIGHTS.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_STRUCTURE_SCORE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_SUB_SAFETY_FACTOR_WEIGHTS.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_FACT_WEIGHT_SCORE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_IOS_VERSION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_REPORT_COLLECTION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_REPORT_CONFIG.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_REPORT_CONFIG_TEMPLATE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_REPORT_TEMPLATE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_SYSTEM_LOG.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_TASK_INSTANT.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_CABLE_FORCE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_DEFORMATION_BRIDGE_DEFLECTION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_DEFORMATION_CRACK.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_DEFORMATION_DEEP_DISPLACEMENT.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_DEFORMATION_DEEP_DISPLACEMENT_DAILY.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_DEFORMATION_SETTLEMENT.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT_DAILY.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_ENVI_BEACH.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_ENVI_RAINFALL.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_ENVI_SATURATION_LINE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_ENVI_SEEPAGE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_ENVI_TEMP_HUMI.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_ENVI_WATER_LEVEL.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_ENVI_WIND.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_FBG_STRESS_STRAIN.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_FORCE_ANCHOR.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_FORCE_AXIAL.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_FORCE_BEAM.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_FORCE_EARTH_PRESSURE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_FORCE_STEELBAR.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_STRESS_STRAIN_PORE_WATER_PRESSURE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_STRESS_STRAIN_RETAININGWALL.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_VIBRATION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_VIBRATION_ARCHIVE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_VIBRATION_BATCH.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_VIBRATION_BATCH_ARCHIVE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_VIBRATION_DECK_VIBRATION.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_VIBRATION_ORIGINAL.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_THEMES_VIBRATION_ORIGINAL_ARCHIVE.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_WARNING_DEALDETAILS.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_WARNING_LEVEL.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_WARNING_SENSOR.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\T_WARNING_SMS_RECIEVER.cs">
+      <DependentUpon>SecureCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ReportFileBase.cs" />
+    <Compile Include="Interface\TemplateHandleBase.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MonitorReportFile.cs" />
+    <Compile Include="ReportModule\DateType.cs" />
+    <Compile Include="ReportModule\Report.cs" />
+    <Compile Include="ReportModule\ReportConfig.cs" />
+    <Compile Include="ReportModule\TemplateHandleFactory.cs" />
+    <Compile Include="ReportModule\ReportTemplate.cs" />
+    <Compile Include="ReportModule\TemplateHandlerPramsConfig.cs" />
+    <Compile Include="ReportTask.cs" />
+    <Content Include="TemplateHandle\DailyHandle\CjDailyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\DailyHandle\CxDailyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\DailyHandle\CxDailyUnifyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\DailyHandle\DxsDailyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\DailyHandle\GfcjDailyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\DailyHandle\GfmsDailyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\DailyHandle\GzlDailyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\DailyHandle\HsDailyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\DailyHandle\SwDailyUnifyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\DailyHandle\TzlDailyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\DailyHandle\VsDailyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="TemplateHandle\DailyHandle\ReportCounter.cs" />
+    <Compile Include="TemplateHandle\DailyReport.cs" />
+    <Compile Include="TemplateHandle\DrawHighcharts.cs" />
+    <Compile Include="TemplateHandle\MarkerHandler.cs" />
+    <Compile Include="ReportTaskManage.cs" />
+    <Compile Include="TaskContext.cs" />
+    <Content Include="TemplateHandle\MonthHandle\CjMonthReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\MonthHandle\CxMonthReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\MonthHandle\DxsMonthReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\MonthHandle\GzlMonthReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\MonthHandle\HsMonthReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\MonthHandle\TzlMonthReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\MonthHandle\VsMonthReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="TemplateHandle\MonthReport.cs" />
+    <Content Include="TemplateHandle\OriginalDataReport\OriginalDataReportHandle.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="TemplateHandle\OriginalDataReport\ThemeDataSql.cs" />
+    <Content Include="TemplateHandle\PingHanReportHandle\PhSettlementWeeklyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\PingHanReportHandle\PhShouLianWeeklyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="TemplateHandle\PingHanReportHandle\PingHanReport.cs" />
+    <Content Include="TemplateHandle\PingHanReportHandle\PhCjWeeklyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\PingHanReportHandle\PhCrackWeeklyReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="TemplateHandle\StructureMonthlyReportTemplateHandler.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Content Include="TemplateHandle\WeekHandle\CjWeekReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\WeekHandle\CxWeekReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\WeekHandle\DxsWeekReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\WeekHandle\GzlWeekReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\WeekHandle\HsWeekReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\WeekHandle\TzlWeekReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateHandle\WeekHandle\VsWeekReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="TemplateHandle\StructureWeekReportTemplateHandler.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="TemplateHandle\WeekReport.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="DataModule\SecureCloud.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SecureCloud.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataModule\SecureCloud.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SecureCloud.edmx</DependentUpon>
+      <LastGenOutput>SecureCloud.Context.cs</LastGenOutput>
+    </None>
+    <None Include="DataModule\SecureCloud.edmx.diagram">
+      <DependentUpon>SecureCloud.edmx</DependentUpon>
+    </None>
+    <None Include="DataModule\SecureCloud.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SecureCloud.edmx</DependentUpon>
+      <LastGenOutput>SecureCloud.cs</LastGenOutput>
+    </None>
+    <Content Include="Depend.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="job_scheduling_data_2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="ReportTemplate\ThemeDataSql.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\地下水位监测周模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\地下水位监测日模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\地下水位监测月模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\水平位移监测周模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\水平位移监测日模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\水平位移监测月模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\沉降监测周模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\沉降监测日模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\沉降监测月模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\测斜监测周模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\测斜监测日模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\测斜监测月模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\竖向位移监测周模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\竖向位移监测日模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\竖向位移监测月模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\CxDailyReportAhlq.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\CxDailyReportNcdwy.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\CxDailyReportThy.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\StructureMonthlyReport.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\SwDailyReportNcdwy.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\SwDailyReportThy.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="ReportTemplate\GfcjDailyReport.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ReportTemplate\GfMonthlyReport.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ReportTemplate\GfmsDailyReport.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="ReportTemplate\PhCjWeeklyReport.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\PhCrackWeeklyReport.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\坪汉净空收敛监测周模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportTemplate\坪汉拱顶沉降监测周模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\Aspose.Cells.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Lib\log4net.dll" />
+    <Content Include="Lib\log4net.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lib\NPOI.dll" />
+    <Content Include="Lib\NPOI.OOXML.dll" />
+    <Content Include="Lib\NPOI.OOXML.XML" />
+    <Content Include="Lib\NPOI.OpenXml4Net.dll" />
+    <Content Include="Lib\NPOI.OpenXml4Net.XML" />
+    <Content Include="Lib\NPOI.OpenXmlFormats.dll" />
+    <Content Include="Lib\NPOI.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DynamicScript\DynamicScript.csproj">
+      <Project>{5943e0e3-252d-4e7f-b8ab-a71dff0e372b}</Project>
+      <Name>DynamicScript</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FreeSunCharts.NET\FSChartsLib.csproj">
+      <Project>{f1af3fb1-feb1-4c3c-9c21-05d66bc2440e}</Project>
+      <Name>FSChartsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HightChartsGenerator.NET\HightChartsLib.csproj">
+      <Project>{404ceda6-7dc7-410c-a234-7848e9e24590}</Project>
+      <Name>HightChartsLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。启用“NuGet 程序包还原”可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

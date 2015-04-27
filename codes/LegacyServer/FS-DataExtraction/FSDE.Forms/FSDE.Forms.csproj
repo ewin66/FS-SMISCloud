@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50C2AB6E-F7C4-4F78-A4E5-5C3EF42C7868}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FSDE.Forms</RootNamespace>
+    <AssemblyName>FSDE.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\DataExtraction\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\DataExtraction\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FS-DataExtraction\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbOperation\AccessOperation.cs" />
+    <Compile Include="DbOperation\SQLiteOperatiopn.cs" />
+    <Compile Include="Views\FrmUnionModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmUnionModify.Designer.cs">
+      <DependentUpon>FrmUnionModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmTextConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmTextConfig.Designer.cs">
+      <DependentUpon>FrmTextConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmShowConfigInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmShowConfigInfo.Designer.cs">
+      <DependentUpon>FrmShowConfigInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmUnion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmUnion.Designer.cs">
+      <DependentUpon>FrmUnion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmConfig.Designer.cs">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmOther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmOther.designer.cs">
+      <DependentUpon>FrmOther.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmMain.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Views\FrmProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmProject.Designer.cs">
+      <DependentUpon>FrmProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\FrmUnionModify.resx">
+      <DependentUpon>FrmUnionModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmTextConfig.resx">
+      <DependentUpon>FrmTextConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmShowConfigInfo.resx">
+      <DependentUpon>FrmShowConfigInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmUnion.resx">
+      <DependentUpon>FrmUnion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmOther.resx">
+      <DependentUpon>FrmOther.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmConfig.resx">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmProject.resx">
+      <DependentUpon>FrmProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FreeSun.Common.DB\Utils.DB.csproj">
+      <Project>{0988c62e-247f-471f-a183-db509c7a3839}</Project>
+      <Name>Utils.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.BLL\FSDE.BLL.csproj">
+      <Project>{18464db5-c09b-4b50-84d0-e287c751e5cf}</Project>
+      <Name>FSDE.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.Commn\FSDE.Commn.csproj">
+      <Project>{b52b2ac1-aaa5-40c7-a8d6-1cd75d1ada18}</Project>
+      <Name>FSDE.Commn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.Core\FSDE.Core.csproj">
+      <Project>{7673c17d-f51e-46a8-af56-d0f1d159db3e}</Project>
+      <Name>FSDE.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.DAL\FSDE.DAL.csproj">
+      <Project>{b49f5e7b-9236-420e-8f88-ba1eec834d9b}</Project>
+      <Name>FSDE.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.Dictionaries\FSDE.Dictionaries.csproj">
+      <Project>{A2936EA6-4DCA-413A-83BF-F0C1286F61B5}</Project>
+      <Name>FSDE.Dictionaries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.IDAL\FSDE.IDAL.csproj">
+      <Project>{857296F5-BA15-46D6-982D-54E1C2F7DBEE}</Project>
+      <Name>FSDE.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.Model\FSDE.Model.csproj">
+      <Project>{A129935B-96D5-4E57-9D7B-18801DCE95A8}</Project>
+      <Name>FSDE.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Source\Source.csproj">
+      <Project>{43dd8879-e9f0-4577-a410-6fa118914300}</Project>
+      <Name>Source</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sqliteorm\SqliteORM.csproj">
+      <Project>{6b177771-4444-48a9-8ecb-db27ed900969}</Project>
+      <Name>SqliteORM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

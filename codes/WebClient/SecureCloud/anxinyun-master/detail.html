@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://echarts.baidu.com/doc/slide/whyEcharts.html#/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+
+        <title>安心云——飞尚科技</title>
+
+        <meta name="description" content="安心云的那些事儿">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="css/zenburn.css">
+
+        <link rel="stylesheet" href="css/echarts-slide.css">
+        
+        <!-- Fav and touch icons -->
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+        <script src="./js/esl.js"></script>
+        <style type="text/css">
+            * {
+                font-family:'微软雅黑' !important;
+            }
+            .main, .main2 {
+                background-color: #fff;
+                background: url('./img/big_load.gif') #fff no-repeat 50% 50%;
+                height: 400px;
+                overflow: hidden;
+                padding : 10px !important;
+                border: 1px solid #e3e3e3;
+                -webkit-border-radius: 4px;
+                   -moz-border-radius: 4px;
+                        border-radius: 4px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+                   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+                        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+            }
+            .noLoading {
+                background: #fff;
+            }
+            .main canvas {
+               left:0;
+               top:0;
+            }
+            .main div {
+                text-align: left !important;
+            }
+            .echarts-dataview p {
+                font-size: 16px !important;
+                color:#333;
+                text-align: left;
+            }
+            p, h4 {
+                text-align: left !important;
+                text-transform: none !important;
+            }
+            small strong{
+                color: #9acd32;
+                font-weight: normal !important;
+            }
+            td,th {
+                text-align: center !important;
+                font-size: 0.7em !important;
+            }
+            .reveal small,.reveal a.roll {
+                line-height: 1.5em;
+            }
+            .reveal blockquote {
+                width:100%;
+            }
+            .reveal blockquote small{
+                line-height: 1.5em;
+            }
+            .reveal img.echarts-icon {
+                margin:0;
+                padding:7px;
+                border:0;
+                background:none
+            }
+            .reveal img {
+                max-width:100%;
+                max-height:100%;
+            }
+            .reveal .slides>section, .reveal .slides>section>section {
+                padding:0;
+            }
+        </style>
+    <!--
+    <script data-require-id="echarts" src="js/echarts-map.js" async=""></script>
+    <script data-require-id="webkitDep" src="js/webkit-dep.js" async=""></script>
+    <script data-require-id="echarts/chart/line" src="js/echarts-map.js" async=""></script>
+    <script data-require-id="echarts/chart/bar" src="js/echarts-map.js" async=""></script>
+    <script data-require-id="echarts/chart/scatter" src="js/echarts-map.js" async=""></script>
+    <script data-require-id="echarts/chart/k" src="js/echarts-map.js" async=""></script>
+    <script data-require-id="echarts/chart/pie" src="js/echarts-map.js" async=""></script>
+    <script data-require-id="echarts/chart/radar" src="js/echarts-map.js" async=""></script>
+    <script data-require-id="echarts/chart/force" src="js/echarts-map.js" async=""></script>
+    <script data-require-id="echarts/chart/chord" src="js/echarts-map.js" async=""></script>
+    <script data-require-id="echarts/chart/map" src="js/echarts-map.js" async=""></script>
+    -->
+    <style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+    </style>
+    </head>
+
+    <body>
+        <!--
+        <a href="http://www.free-sun.com.cn" target="_blank">
+            <img style="position:absolute;top:0;right:0;border:0;z-index:1000" src="./img/fork.png" alt="Fork me on GitHub">
+        </a>
+        -->
+        <div class="reveal default center" data-transition-speed="default" data-background-transition="default">
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <!--<small>安心云的那些事儿</small>-->
+                    <h5>大数据和云计算技术为基础设施安全保驾护航</h5><br>
+                    <h1 style="margin:-10px 0 0 0">
+                        <img src="./img/frontcover.jpg" style="margin:0;background:rgba(0,0,0,0);border-width: 0;box-shadow: 0 0 0px rgba(0, 0, 0, 0);">
+                    </h1>
+                    <div>
+                        <small>Created by <a href="http://weibo.com/thincamel" target="_blank" class="roll"><span data-title="@谢镇的动物园">江苏飞尚安全监测咨询有限公司</a></small>
+                    </div>
+                </section>
+
+                <section data-background="./img/bigData.jpg">
+                    <h3>《大数据时代》</h3>
+                    <small>维克托 · 迈尔 - 舍恩伯格</small>
+                    <div style="padding-left:260px;background:url(img/bigData.jpg) no-repeat">
+                    <div class="fragment">
+                        <blockquote><p>
+                            <small>如今，<strong>数据已经成为了一种商业资本</strong>，一项重要的经济投入，可以创造新的经济利益。事实上，一旦思维转变过来，数据就能被巧妙地用来激发新的产品和新型服务。数据的奥秘只为谦逊、愿意聆听且掌握了聆听手段的人所知。</small>
+                        </p></blockquote>
+                        <div style="text-align:right;"><small>—— 我们所处行业的<strong>聆听手段</strong>是？</small></div>
+                    </div>
+                    
+                    <div class="fragment">
+                        <blockquote><p>
+                            <small>这仅仅只是一个开始，大数据时代对我们的生活，以及与世界交流的方式提出挑战。最惊人的是，社会需要放弃它对因果关系的渴求，而仅需关注相关关系。也就是说<strong>只需要知道是什么，而不需要知道为什么</strong>。这就推翻了自古以来的惯例，而我们做决定和理解显示的最基本方式也将受到挑战。</small>
+                        </p></blockquote>
+                        <div style="text-align:right;"><small>—— 现有的解决方案<strong>真正解决用户所面临的问题</strong>了吗？</small></div>
+                    </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h4>行业问题&飞尚方案</h4>
+                    <p>
+                        <small class="fragment">
+                            <span style="color:#ff4500">问题：</span>
+                            <br/>
+                            传统监测或者人工检测技术存在缺陷；常规监测系统偏重采集，在结构安全模型、智能诊断上能力弱。
+                        </small>
+                        <small class="fragment">
+                            <strong>应对：</strong>
+                            <br/>
+                            物连网 ——> 物联网的演进；物联网+互联网+云计算 ——> 云物联的演进；
+                            <br/>
+                            面向健康监测模型建立：数据（信息）——> 知识 ——> 决策，智能结构安全监测云。
+                        </small>
+                    </p>
+                    <p>
+                        <small class="fragment">
+                            <span style="color:#ff4500">问题：</span>
+                            <br/>
+                            结构体规模越来越大、监测系统对应传感网络和传输技术越来越复杂，业主单位缺乏完整技术能力面对复杂的监测系统；存储的数据趋近海量，针对海量数据分析、计算能力缺失，无法进行有效，及时的分析。
+                        </small>
+                        <small class="fragment">
+                            <strong>应对：</strong>
+                            <br/>
+                            利用云计算技术，在云物联的基础上构建面向服务的结构安全监测云。
+                        </small>
+                    </p>
+
+                </section>
+
+                <section>
+                    <h4>我们的聚焦</h4>
+                    <p>
+                        <small>
+                            物联网传感<a href='http://www.free-sun.com.cn/chanpinzhongxin/' target='_blank'>设备</a>
+                        </small>
+                    </p>
+
+                    <p>
+                        <small>
+                            交通、市政、矿山、特种设备等行业及领域内专业的安全监测<a href='http://www.free-sun.com.cn/jiejuefangan/' target='_blank'>解决方案</a>
+                        </small>
+                    </p>
+
+                    <p>
+                        <small>
+                            安全监测行业大数据及云<a href='http://www.anxinyun.cn' target='_blank'>服务</a>
+                        </small>
+                    </p>
+                    <div class="fragment roll-in">
+                        <img src="./img/physicalview.png" style="width:100%;max-width:100%;">
+                        <div class="fragment grow highlight-green">面向行业提供全产业链的解决方案及服务</div>
+                    </div>
+                </section>
+
+                <section>
+                    <h4>安心云</h4>
+                    <p>
+                        <small class="fragment">
+                        <strong>理念</strong>
+                        <br/>物联网为基础，结构安全监测为行业依托，利用云计算技术创立<a href='http://baike.baidu.com/view/7385502.htm' target='_blank'>结构安全监测云</a>的理念，
+                            并注册了商标<a href='http://www.anxinyun.cn' target='_blank'>安心云</a>。
+                        </small>
+                    </p>
+                    <p>
+                        <small class="fragment">
+                        <strong>概述</strong>
+                        <br/>通过本地传感网接入互联网并将数据实时接入安心云；结构体各传感器产生的数据，长期、完整存储在安心云中；
+                        <br/>安心云提供各种访问方式，对外提供实时监测、数据计算、分析以及数据获取、结构体安全结论、建议报告等服务。
+                        </small>
+                    </p>
+                    <p>
+                        <small class="fragment">
+                        <strong>安心云的附加价值</strong>
+                        <br/>降低业主对监测系统软硬件成本及专业技术人员的投入；
+                        <br/>集中各种结构物及结构物相关监测数据，推动更专业、系统的进行安全监测评价体系、行业标准的研究。
+                        </small>
+                    </p>
+
+                </section>
+
+                <section>
+                    <h4>安心云的那些事儿</h4>
+                    <p>
+                        <small class="fragment">
+                        <strong>接入服务</strong>
+                        <br/>提供传感设备，或其他物联网终端设备接入，<span style="color:#ff4500">支持自定义规则解析</span>感知数据。
+                        </small>
+                    </p>
+                    <p>
+                        <small class="fragment">
+                        <strong>数据安全</strong>
+                        <br/><span style="color:#ff4500">全程SSL加密</span>，无须担心密码和数据被恶意窃取；核心数据散列加密保存；
+                        <br/>镇江、南昌<span style="color:#ff4500">双地容灾</span>备份，保证数据安全；完善系统安全日志，时刻监控系统使用。
+                        </small>
+                    </p>
+                    <p>
+                        <small class="fragment">
+                        <strong>7 * 24</strong>
+                        <br/><span style="color:#ff4500">7 * 24 小时</span>不间断服务。
+                        </small>
+                    </p>
+
+                    <p>
+                        <small class="fragment">
+                        <strong>服务客户</strong>
+                        <br/>结构健康数据<span style="color:#ff4500">实时</span>查询、结构状态分析报告、异常气象气候条件下数据实时分析<span style="color:#ff4500">推送</span>；
+                        <br/>结构状态趋势、异常预警短信、邮件通知；手机/PAD等移动终端接入实时查阅。
+                        </small>
+                    </p>
+
+                    <p>
+                        <small class="fragment">
+                        <strong>服务行业</strong>
+                        <br/>汇聚专业的高层次技术人才，对每个结构物数据深入分析并评估状态，实现<span style="color:#ff4500">一对一客户专业服务</span>；
+                        <br/>挖掘安全监测，物联网新兴技术。
+                        </small>
+                    </p>
+
+                    <p>
+                        <small class="fragment">
+                        <strong>易维护、低成本</strong>
+                        <br/>全系列的产品、完整的解决方案，专业的实施和服务团队，<span style="color:#ff4500">降低建设期和运营期</span>中对监测系统的软硬件及人力投入。
+                        </small>
+                    </p>
+                </section>
+
+                <section>
+                    <h4>安心云硬件框架</h4>
+                    <p><small class="fragment">
+                        <strong>镇江、南昌双地容灾</strong>
+                    </small></p>
+                    <div class="fragment roll-in">
+                        <img src="./img/hardware.png" style="width:100%;max-width:100%;">
+                    </div>
+                    <div class="fragment" style="text-align:right;"><hr>完整的系统性容灾方案，保障服务基础</div>
+                </section>
+
+                <section>
+                    <h4>安心云软件框架及功能</h4>
+                    <p><small class="fragment">
+                        <strong>面向服务 软件多级架构</strong>
+                    </small></p>
+                    <div class="fragment roll-in">
+                        <img src="./img/software.png" style="width:100%;max-width:100%;">
+                    </div>
+                    <div class="fragment" style="text-align:right;"><hr>数据实时上报，计算处理后持久保存在安心云</div>
+                </section>
+                
+                <section>
+                    <h4>安心云应用介绍</h4>
+                    <p><small class="fragment">
+                        <strong>PC端功能模块</strong>
+                    </small></p>
+                    <div class="fragment roll-in">
+                        <img src="./img/userview-pc.png" style="width:100%;max-width:100%;">
+                    </div>
+
+                    <p><small class="fragment">
+                        <strong>移动端功能模块</strong>
+                    </small></p>
+                    <div class="fragment roll-in">
+                        <img src="./img/userview-mobile.png" style="width:100%;max-width:100%;">
+                    </div>
+                    <div class="fragment" style="text-align:right;"><hr>Protect Your Structure. <span style="color:#ff4500">Anywhere, Anytime</span></div>
+                </section>
+
+                <section>
+                    <h4>还需要什么？</h4>
+                    <blockquote class="fragment">
+                        <small>
+                            “互联网还没搞清楚的时候，移动互联来了，移动互联还没搞清楚的时候，大数据来了”
+                        </small>
+                        <div style="height:20px;padding:0;margin:0;display:block;text-align:right;"><small><small>马云在卸任阿里集团CEO的晚会上如是说</small></small></div>
+                    </blockquote>
+                    <br>
+                    <p class="fragment">
+                        <small>在数据每时每刻都在产生的今天，还需要一种手段<strong>快捷</strong>的为客户直观形象的呈现那些能够反应当前状态或洞悉未来趋势的数据。</small>
+                    </p>
+                    <p class="fragment">
+                        <small>或许我们应该利用互联网技术快速甚至实时的获取客户所关心的数据，然后提供可以<strong>辅助分析</strong>，<strong>辅助人们进行视觉化思考</strong>的产品。</small>
+                    </p>
+                    <br>
+                    <div class="fragment">
+                        <hr>
+                        <p>
+                            <small>
+                                这就是<a href="http://www.anxinyun.cn/" target="_blank" class="roll"><span data-title="安心云">安心云</span></a>
+                                <br>对客户提供<strong>高效，快捷，可靠</strong>的基础设施安全服务，基于云物联技术实现的智能化在线安全监测平台。
+                            </small>
+                        </p>
+                    </div>
+   
+                </section>
+
+                <section>
+                    <h4>这就是安心云</h4>
+                    <p class="fragment">
+                        <small>我们尽我们所能为客户呈现数据真实的一面，</small>
+                    </p>
+                    <p class="fragment">
+                        <small>
+                            让客户可以更加<span style="color:#ff4500">专注</span>于该关心地方，无论是状态评估、风险趋势还是保养维护，
+                            <br><strong>（周期性分析报告、实时预告警推送）</strong>
+                        </small>
+                    </p>
+                    <p class="fragment">
+                        <small>
+                            并且提供数据接口服务以方便三方科研机构对数据进行再次<span style="color:#ff4500">挖掘、提取、模型定义和修正</span>，
+                            <br><strong>（基于Web Service的API、SPI）</strong>
+                        </small>
+                    </p>
+                    <p class="fragment">
+                        <small>让你可以有<span style="color:#ff4500">不同的手段、方法实时获取到结构物的安全状态和评估报告</span>。
+                            <br><strong>（基于互联网的PC、移动端访问）</strong>
+                        </small>
+                    </p>
+                </section>
+
+                <section>
+                    <h4>致谢</h4>
+                    <p><small>
+                        <a href="http://www.anxinyun.cn" target="_blank" class="roll"><span data-title="飞尚">安心云</span></a>的发展离不开他们辛勤的汗水：
+                        <br>
+                        <a href="http://weibo.com/u/3220060623" target="_blank" class="roll"><span data-title="@JulinPeng">@JulinPeng</span></a>
+                        <a href="http://weibo.com/u/1767168072" target="_blank" class="roll"><span data-title="@何足道哉8888">@何足道哉8888</span></a>
+                        <a href="http://weibo.com/u/2289885511" target="_blank" class="roll"><span data-title="@ako_578137">@ako_578137</span></a>
+                        <a href="http://weibo.com/u/311011186" target="_blank" class="roll"><span data-title="@龍龖龘龑曌">@龍龖龘龑曌</span></a>
+                        <a href="http://weibo.com/u/2883073274" target="_blank" class="roll"><span data-title="@彼得潘-_-">@彼得潘-_-</span></a>
+                        <a href="http://weibo.com/jinliangwei123" target="_blank" class="roll"><span data-title="@Jinliang_金亮">@Jinliang_金亮</span></a>
+                        <a href="http://weibo.com/u/1968959731" target="_blank" class="roll"><span data-title="@杀马特的熊">@杀马特的熊</span></a>
+                        <a href="http://weibo.com/u/1641192055" target="_blank" class="roll"><span data-title="@Yuan_SU">@Yuan_SU</span></a>
+                        <a href="http://weibo.com/u/3953917676" target="_blank" class="roll"><span data-title="@_刘小水">@_刘小水</span></a>
+                        <a href="http://weibo.com/u/1875073834" target="_blank" class="roll"><span data-title="@请叫我徐小枣">@请叫我徐小枣</span></a>
+                        </small>
+                    </p>
+                    <br>
+                    <p>
+                        <small>以及他们、她们的鼓舞助威、摇旗呐喊、推波助澜、煽风点火...<br>
+                        <a href="http://weibo.com/u/1899213704" target="_blank" class="roll"><span data-title="@刘文峰-监测人">@刘文峰-监测人</span></a>
+                        <a href="http://weibo.com/u/2995340624" target="_blank" class="roll"><span data-title="@江懿HD">@江懿HD</span></a> 
+                        <a href="http://weibo.com/u/2100189601" target="_blank" class="roll"><span data-title="@free莎莎">@free莎莎</span></a>
+                        <a href="http://weibo.com/u/1587857072" target="_blank" class="roll"><span data-title="@蔡菲blog">@蔡菲blog</span></a>
+                        <a href="http://weibo.com/mimi0405" target="_blank" class="roll"><span data-title="@献给AriesChow">@献给AriesChow</span></a>
+                        <a href="http://weibo.com/u/2482133434" target="_blank" class="roll"><span data-title="@F-song大国">@F-song大国</span></a>
+                        </small>
+                    </p>
+                    <br>
+                    <p>
+                        <small>当然，还有我们全体<strong>飞尚人</strong>以及可敬可爱的<strong>家属们</strong>！<br></small>
+                    </p>
+                    <br>
+                    <p class="fragment">
+                        <small>最后，我们更是热切期待您的<a href="http://www.free-sun.com.cn" target="_blank" class="roll"><span data-title="加入">加入</span></a>，并预祝合作愉快！</small>
+                    </p>
+                </section>
+
+                <section>
+                    <h1>THE END</h1>
+                    <h5>Thank you</h5>
+                    <br>
+                    <div>
+                        <small>Created by <a href="http://weibo.com/thincamel" target="_blank" class="roll"><span data-title="@谢镇的动物园">@谢镇的动物园</span></a></small>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <script src="js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                height: '100%',
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+        <script type="text/javascript" src="js/highlight.js"></script>
+        <script type="text/javascript" src="js/notes.js"></script>
+        
+        <script src="./js/whyEcharts.js"></script>
+    
+
+</body></html>

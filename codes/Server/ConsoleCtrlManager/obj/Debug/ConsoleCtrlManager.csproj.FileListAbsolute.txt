@@ -1,0 +1,6 @@
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager\bin\Debug\ConsoleCtrlManager.dll
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager\bin\Debug\ConsoleCtrlManager.pdb
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager\bin\Debug\log4net.dll
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager\bin\Debug\log4net.xml
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager\obj\Debug\ConsoleCtrlManager.dll
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager\obj\Debug\ConsoleCtrlManager.pdb

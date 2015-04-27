@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<service>
+  <ps>
+    <publisher address="tcp://*:9101"/>
+    <subscribe>
+      <service name="alarm" address="tcp://127.0.0.1:9001"/>
+    </subscribe>
+  </ps>
+  <pp>
+    <pull address="tcp://*:9102"/>
+    <push>
+      <service name="alarm" address="tcp://127.0.0.1:9002"/>
+    </push>
+  </pp>
+  <rr>
+    <response address="tcp://*:9103"/>
+    <request>
+      <service name ="alarm" address="tcp://127.0.0.1:9003"/>
+    </request>
+  </rr>
+</service>

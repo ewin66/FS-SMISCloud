@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <consumers>
+    <add name="DataValidator" assembly="DAC.DataValidator.dll" type="FS.SMIS_Cloud.DAC.DataValidator.DataValidator"/>
+    <add name="DataCalc" assembly="DAC.DataCalc.dll" type="FS.SMIS_Cloud.DAC.DataCalc.DataCalc"/>
+    <add name="DataAnalyzer" assembly="DAC.DataAnalyzer.dll" type="FS.SMIS_Cloud.DAC.DataAnalyzer.DataAnalyzer" />
+    <add name="Storage" assembly="DAC.Storage.iSecureCloud.dll" type="FS.SMIS_Cloud.DAC.Storage.iSecureCloud.SeclureCloudStorge" />
+  </consumers>
+  <queues>
+    <queue sync="false">
+      <add name="DataValidator" />
+      <add name="DataCalc" />
+      <add name="DataAnalyzer" />
+      <add name="Storage" />
+    </queue>
+  </queues>
+</configuration>

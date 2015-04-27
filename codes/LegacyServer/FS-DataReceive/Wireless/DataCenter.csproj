@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FABA193A-0720-4E1F-8356-7336C949BB80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataCenter</RootNamespace>
+    <AssemblyName>WirelessReceiver</AssemblyName>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\DataReceiver\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\DataReceiver\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FreeSun.FS_SMISCloud.Server.Common.Messages, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\FreeSun.FS_SMISCloud.Server.Common.Messages.dll</HintPath>
+    </Reference>
+    <Reference Include="gprs.net">
+      <HintPath>..\CommunicattionMode\lib\gprs.net.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.IWshRuntimeLibrary">
+      <HintPath>lib\Interop.IWshRuntimeLibrary.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accessor\Bll.cs" />
+    <Compile Include="Accessor\DbHelperSQL.cs" />
+    <Compile Include="Accessor\SqlDal.cs" />
+    <Compile Include="Accessor\ViewBLL\DeviceInfoBll.cs" />
+    <Compile Include="Accessor\ViewDal\DeviceInfoDal.cs" />
+    <Compile Include="Communication\Communication\ModBusTCPIPWrapper.cs" />
+    <Compile Include="Communication\Communication\ModBusWrapper.cs" />
+    <Compile Include="Communication\ConfigSettings.cs" />
+    <Compile Include="DtuInfo.cs" />
+    <Compile Include="Model\AddNewDTUDataArgs.cs" />
+    <Compile Include="Model\DataThemes\CollectOriginalDataValue.cs" />
+    <Compile Include="Model\DataThemes\ThemesCableForce.cs" />
+    <Compile Include="Model\DataThemes\ThemesDeformationBridgeDeflection.cs" />
+    <Compile Include="Model\DataThemes\ThemesDeformationCrack.cs" />
+    <Compile Include="Model\DataThemes\ThemesDeformationDeepDisplacement.cs" />
+    <Compile Include="Model\DataThemes\ThemesDeformationSurfaceDisplacement.cs" />
+    <Compile Include="Model\DataThemes\ThemesEnviTempHumi.cs" />
+    <Compile Include="Model\DataThemes\ThemesEnviWind.cs" />
+    <Compile Include="Model\DataThemes\ThemesForceSteelbar.cs" />
+    <Compile Include="Model\DataThemes\ThemesVibrationDeckVibration.cs" />
+    <Compile Include="Model\DeceiveInfoDic.cs" />
+    <Compile Include="Model\DTUConnectionEventArgs.cs" />
+    <Compile Include="Model\FileParamStruct.cs" />
+    <Compile Include="Model\ProtocolEntry.cs" />
+    <Compile Include="Model\ReceiveBytes.cs" />
+    <Compile Include="Model\ReceiveDataInfo.cs" />
+    <Compile Include="Task\DataSmoothModel\DataInfo.cs" />
+    <Compile Include="Task\DataSmoothModel\DataQueue.cs" />
+    <Compile Include="Task\DepConfig.cs" />
+    <Compile Include="Task\MonitoringSensorData.cs" />
+    <Compile Include="Task\Process\GpsProcess.cs" />
+    <Compile Include="Task\Process\PressureProcess.cs" />
+    <Compile Include="Task\ResolveThread.cs" />
+    <Compile Include="Model\SensorInfo.cs" />
+    <Compile Include="Model\ThemesDataBase.cs" />
+    <Compile Include="Model\ThemesDataUtility.cs" />
+    <Compile Include="Task\CollectThread.cs" />
+    <Compile Include="Task\LogShowEventArgs.cs" />
+    <Compile Include="Util\Check\CheckAddSum.cs" />
+    <Compile Include="Util\Check\CheckCrc16.cs" />
+    <Compile Include="Util\Check\CheckCrc8.cs" />
+    <Compile Include="Util\Check\CheckModeResult.cs" />
+    <Compile Include="Util\Check\CheckType.cs" />
+    <Compile Include="Util\Check\ICheckSum.cs" />
+    <Compile Include="Util\ComPackage.cs" />
+    <Compile Include="Util\LoggerInfo.cs" />
+    <Compile Include="Util\PackageOrders.cs" />
+    <Compile Include="Util\ReceiveDataInfo.cs" />
+    <Compile Include="Util\Register.cs" />
+    <Compile Include="Util\SerialPortParams.cs" />
+    <Compile Include="Util\ValueHelper.cs" />
+    <Compile Include="View\AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\HelperTools.cs" />
+    <Compile Include="Task\WorkThread.cs" />
+    <Compile Include="WirelessCustomTransmission\DataTypeFactory.cs" />
+    <Compile Include="WirelessCustomTransmission\IReloveTransData.cs" />
+    <Compile Include="WirelessCustomTransmission\MakeMsgToDataCalc.cs" />
+    <Compile Include="WirelessCustomTransmission\ReloveBigDataTransData.cs" />
+    <Compile Include="WirelessCustomTransmission\ReloveCustomTransData.cs" />
+    <Compile Include="WirelessCustomTransmission\ReloveCustomTransLCJData.cs" />
+    <Compile Include="WirelessCustomTransmission\ReloveFiberGratingData.cs" />
+    <Compile Include="WirelessCustomTransmission\ReloveGeneralHasCalcuTransData.cs" />
+    <Compile Include="WirelessCustomTransmission\ReloveGeneralNoCalcuTransData.cs" />
+    <Compile Include="WirelessCustomTransmission\SensorTypes.cs" />
+    <EmbeddedResource Include="View\AboutBox1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FS-DataExtraction\Communication\Communication.csproj">
+      <Project>{3EC3399E-CA74-475A-95F9-8D409914B419}</Project>
+      <Name>Communication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MakeWarningInfo\MakeWarningInfo.csproj">
+      <Project>{615EA95C-DC98-423E-8BD1-672614FED925}</Project>
+      <Name>MakeWarningInfo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Communication\lib\gprs.net.dll" />
+    <Content Include="lib\gprs.net.dll" />
+    <Content Include="lib\Interop.IWshRuntimeLibrary.dll" />
+    <Content Include="lib\log4net.dll" />
+    <Content Include="lib\log4net.xml" />
+    <Content Include="lib\MDSCommonLib.dll" />
+    <Content Include="lib\MDSCommonLib.pdb" />
+    <Content Include="lib\MDSCommonLib.xml" />
+    <Content Include="pic\1.png" />
+    <Content Include="pic\2.png" />
+    <Content Include="pic\3.png" />
+    <Content Include="pic\4.png" />
+    <Content Include="pic\5.png" />
+    <Content Include="pic\6.png" />
+    <Content Include="pic\7.png" />
+    <Content Include="pic\8.png" />
+    <Content Include="pic\9.png" />
+    <None Include="config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="pic\app.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="pic\Clock.png" />
+    <Content Include="pic\computer.ico" />
+    <Content Include="pic\Green.png" />
+    <Content Include="pic\Red.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,4 @@
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Comm\bin\Debug\Agg.Comm.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Comm\bin\Debug\Agg.Comm.pdb
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Comm\obj\Debug\Agg.Comm.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Comm\obj\Debug\Agg.Comm.pdb

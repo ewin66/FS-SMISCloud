@@ -1,0 +1,2342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReportGeneratorServiceDataModuleStoreContainer" CdmEntityContainer="DW_iSecureCloud_EmptyEntities">
+    <EntitySetMapping Name="BATCH_JOB_EXECUTION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.BATCH_JOB_EXECUTION">
+        <MappingFragment StoreEntitySet="BATCH_JOB_EXECUTION">
+          <ScalarProperty Name="JOB_EXECUTION_ID" ColumnName="JOB_EXECUTION_ID" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+          <ScalarProperty Name="JOB_INSTANCE_ID" ColumnName="JOB_INSTANCE_ID" />
+          <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+          <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+          <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="EXIT_CODE" ColumnName="EXIT_CODE" />
+          <ScalarProperty Name="EXIT_MESSAGE" ColumnName="EXIT_MESSAGE" />
+          <ScalarProperty Name="LAST_UPDATED" ColumnName="LAST_UPDATED" />
+          <ScalarProperty Name="JOB_CONFIGURATION_LOCATION" ColumnName="JOB_CONFIGURATION_LOCATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BATCH_JOB_EXECUTION_CONTEXT">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.BATCH_JOB_EXECUTION_CONTEXT">
+        <MappingFragment StoreEntitySet="BATCH_JOB_EXECUTION_CONTEXT">
+          <ScalarProperty Name="JOB_EXECUTION_ID" ColumnName="JOB_EXECUTION_ID" />
+          <ScalarProperty Name="SHORT_CONTEXT" ColumnName="SHORT_CONTEXT" />
+          <ScalarProperty Name="SERIALIZED_CONTEXT" ColumnName="SERIALIZED_CONTEXT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BATCH_JOB_EXECUTION_PARAMS">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.BATCH_JOB_EXECUTION_PARAMS">
+        <MappingFragment StoreEntitySet="BATCH_JOB_EXECUTION_PARAMS">
+          <ScalarProperty Name="JOB_EXECUTION_ID" ColumnName="JOB_EXECUTION_ID" />
+          <ScalarProperty Name="TYPE_CD" ColumnName="TYPE_CD" />
+          <ScalarProperty Name="KEY_NAME" ColumnName="KEY_NAME" />
+          <ScalarProperty Name="STRING_VAL" ColumnName="STRING_VAL" />
+          <ScalarProperty Name="DATE_VAL" ColumnName="DATE_VAL" />
+          <ScalarProperty Name="LONG_VAL" ColumnName="LONG_VAL" />
+          <ScalarProperty Name="DOUBLE_VAL" ColumnName="DOUBLE_VAL" />
+          <ScalarProperty Name="IDENTIFYING" ColumnName="IDENTIFYING" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BATCH_JOB_EXECUTION_SEQ">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.BATCH_JOB_EXECUTION_SEQ">
+        <MappingFragment StoreEntitySet="BATCH_JOB_EXECUTION_SEQ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BATCH_JOB_INSTANCE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.BATCH_JOB_INSTANCE">
+        <MappingFragment StoreEntitySet="BATCH_JOB_INSTANCE">
+          <ScalarProperty Name="JOB_INSTANCE_ID" ColumnName="JOB_INSTANCE_ID" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+          <ScalarProperty Name="JOB_NAME" ColumnName="JOB_NAME" />
+          <ScalarProperty Name="JOB_KEY" ColumnName="JOB_KEY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BATCH_JOB_SEQ">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.BATCH_JOB_SEQ">
+        <MappingFragment StoreEntitySet="BATCH_JOB_SEQ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BATCH_STEP_EXECUTION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.BATCH_STEP_EXECUTION">
+        <MappingFragment StoreEntitySet="BATCH_STEP_EXECUTION">
+          <ScalarProperty Name="STEP_EXECUTION_ID" ColumnName="STEP_EXECUTION_ID" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+          <ScalarProperty Name="STEP_NAME" ColumnName="STEP_NAME" />
+          <ScalarProperty Name="JOB_EXECUTION_ID" ColumnName="JOB_EXECUTION_ID" />
+          <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+          <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="COMMIT_COUNT" ColumnName="COMMIT_COUNT" />
+          <ScalarProperty Name="READ_COUNT" ColumnName="READ_COUNT" />
+          <ScalarProperty Name="FILTER_COUNT" ColumnName="FILTER_COUNT" />
+          <ScalarProperty Name="WRITE_COUNT" ColumnName="WRITE_COUNT" />
+          <ScalarProperty Name="READ_SKIP_COUNT" ColumnName="READ_SKIP_COUNT" />
+          <ScalarProperty Name="WRITE_SKIP_COUNT" ColumnName="WRITE_SKIP_COUNT" />
+          <ScalarProperty Name="PROCESS_SKIP_COUNT" ColumnName="PROCESS_SKIP_COUNT" />
+          <ScalarProperty Name="ROLLBACK_COUNT" ColumnName="ROLLBACK_COUNT" />
+          <ScalarProperty Name="EXIT_CODE" ColumnName="EXIT_CODE" />
+          <ScalarProperty Name="EXIT_MESSAGE" ColumnName="EXIT_MESSAGE" />
+          <ScalarProperty Name="LAST_UPDATED" ColumnName="LAST_UPDATED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BATCH_STEP_EXECUTION_CONTEXT">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.BATCH_STEP_EXECUTION_CONTEXT">
+        <MappingFragment StoreEntitySet="BATCH_STEP_EXECUTION_CONTEXT">
+          <ScalarProperty Name="STEP_EXECUTION_ID" ColumnName="STEP_EXECUTION_ID" />
+          <ScalarProperty Name="SHORT_CONTEXT" ColumnName="SHORT_CONTEXT" />
+          <ScalarProperty Name="SERIALIZED_CONTEXT" ColumnName="SERIALIZED_CONTEXT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BATCH_STEP_EXECUTION_SEQ">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.BATCH_STEP_EXECUTION_SEQ">
+        <MappingFragment StoreEntitySet="BATCH_STEP_EXECUTION_SEQ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AGG__DAY_SAFETY_FACTOR_SCORE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_AGG__DAY_SAFETY_FACTOR_SCORE">
+        <MappingFragment StoreEntitySet="T_AGG__DAY_SAFETY_FACTOR_SCORE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DATETIME_ID" ColumnName="DATETIME_ID" />
+          <ScalarProperty Name="DAY_CODE" ColumnName="DAY_CODE" />
+          <ScalarProperty Name="DAY_FULL_CN" ColumnName="DAY_FULL_CN" />
+          <ScalarProperty Name="DAY_SHORT_CN" ColumnName="DAY_SHORT_CN" />
+          <ScalarProperty Name="WEEK_CODE" ColumnName="WEEK_CODE" />
+          <ScalarProperty Name="TEN_DAY_CODE" ColumnName="TEN_DAY_CODE" />
+          <ScalarProperty Name="MONTH_CODE" ColumnName="MONTH_CODE" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_NAME" ColumnName="SAFETY_FACTOR_TYPE_NAME" />
+          <ScalarProperty Name="SAFETY_FACTOR_HIGH_SCORE" ColumnName="SAFETY_FACTOR_HIGH_SCORE" />
+          <ScalarProperty Name="SAFETY_FACTOR_HIGH_SCORE_DATETIME" ColumnName="SAFETY_FACTOR_HIGH_SCORE_DATETIME" />
+          <ScalarProperty Name="SAFETY_FACTOR_LOW_SCORE" ColumnName="SAFETY_FACTOR_LOW_SCORE" />
+          <ScalarProperty Name="SAFETY_FACTOR_LOW_SCORE_DATETIME" ColumnName="SAFETY_FACTOR_LOW_SCORE_DATETIME" />
+          <ScalarProperty Name="SAFETY_FACTOR_AVG_SCORE" ColumnName="SAFETY_FACTOR_AVG_SCORE" />
+          <ScalarProperty Name="SAFETY_FACTOR_AVG_SCORE_DATETIME" ColumnName="SAFETY_FACTOR_AVG_SCORE_DATETIME" />
+          <ScalarProperty Name="ABB_NAME_CN" ColumnName="ABB_NAME_CN" />
+          <ScalarProperty Name="FULL__NAME_CN" ColumnName="FULL__NAME_CN" />
+          <ScalarProperty Name="TRIAL_NAME_CN" ColumnName="TRIAL_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_NAME_CN" ColumnName="STRUCTURE_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_ALIAS_CN" ColumnName="STRUCTURE_ALIAS_CN" />
+          <ScalarProperty Name="STRUCTURE_TRIAL_CN" ColumnName="STRUCTURE_TRIAL_CN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AGG__DAY_STRUCTURE_SCORE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_AGG__DAY_STRUCTURE_SCORE">
+        <MappingFragment StoreEntitySet="T_AGG__DAY_STRUCTURE_SCORE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DATETIME_ID" ColumnName="DATETIME_ID" />
+          <ScalarProperty Name="DAY_CODE" ColumnName="DAY_CODE" />
+          <ScalarProperty Name="DAY_FULL_CN" ColumnName="DAY_FULL_CN" />
+          <ScalarProperty Name="DAY_SHORT_CN" ColumnName="DAY_SHORT_CN" />
+          <ScalarProperty Name="WEEK_CODE" ColumnName="WEEK_CODE" />
+          <ScalarProperty Name="TEN_DAY_CODE" ColumnName="TEN_DAY_CODE" />
+          <ScalarProperty Name="MONTH_CODE" ColumnName="MONTH_CODE" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="ABB_NAME_CN" ColumnName="ABB_NAME_CN" />
+          <ScalarProperty Name="FULL__NAME_CN" ColumnName="FULL__NAME_CN" />
+          <ScalarProperty Name="TRIAL_NAME_CN" ColumnName="TRIAL_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_NAME_CN" ColumnName="STRUCTURE_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_ALIAS_CN" ColumnName="STRUCTURE_ALIAS_CN" />
+          <ScalarProperty Name="STRUCTURE_TRIAL_CN" ColumnName="STRUCTURE_TRIAL_CN" />
+          <ScalarProperty Name="HEALTH_HIGH_SCORE" ColumnName="HEALTH_HIGH_SCORE" />
+          <ScalarProperty Name="HEALTH_HIGH_SCORE_LEVEL" ColumnName="HEALTH_HIGH_SCORE_LEVEL" />
+          <ScalarProperty Name="HEALTH_HIGH_SCORE_DATETIME" ColumnName="HEALTH_HIGH_SCORE_DATETIME" />
+          <ScalarProperty Name="HEALTH_LOW_SCORE" ColumnName="HEALTH_LOW_SCORE" />
+          <ScalarProperty Name="HEALTH_LOW_SCORE_LEVEL" ColumnName="HEALTH_LOW_SCORE_LEVEL" />
+          <ScalarProperty Name="HEALTH_LOW_SCORE_DATETIME" ColumnName="HEALTH_LOW_SCORE_DATETIME" />
+          <ScalarProperty Name="HEALTH_AVG_SCORE" ColumnName="HEALTH_AVG_SCORE" />
+          <ScalarProperty Name="HEALTH_AVG_SCORE_LEVEL" ColumnName="HEALTH_AVG_SCORE_LEVEL" />
+          <ScalarProperty Name="HEALTH_AVG_SCORE_DATETIME" ColumnName="HEALTH_AVG_SCORE_DATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AGG__HOUR_SAFETY_FACTOR_SCORE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_AGG__HOUR_SAFETY_FACTOR_SCORE">
+        <MappingFragment StoreEntitySet="T_AGG__HOUR_SAFETY_FACTOR_SCORE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DATETIME_ID" ColumnName="DATETIME_ID" />
+          <ScalarProperty Name="H_ID" ColumnName="H_ID" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_NAME" ColumnName="SAFETY_FACTOR_TYPE_NAME" />
+          <ScalarProperty Name="SAFETY_FACTOR_HIGH_SCORE" ColumnName="SAFETY_FACTOR_HIGH_SCORE" />
+          <ScalarProperty Name="SAFETY_FACTOR_HIGH_SCORE_DATETIME" ColumnName="SAFETY_FACTOR_HIGH_SCORE_DATETIME" />
+          <ScalarProperty Name="SAFETY_FACTOR_LOW_SCORE" ColumnName="SAFETY_FACTOR_LOW_SCORE" />
+          <ScalarProperty Name="SAFETY_FACTOR_LOW_SCORE_DATETIME" ColumnName="SAFETY_FACTOR_LOW_SCORE_DATETIME" />
+          <ScalarProperty Name="SAFETY_FACTOR_AVG_SCORE" ColumnName="SAFETY_FACTOR_AVG_SCORE" />
+          <ScalarProperty Name="SAFETY_FACTOR_AVG_SCORE_DATETIME" ColumnName="SAFETY_FACTOR_AVG_SCORE_DATETIME" />
+          <ScalarProperty Name="ABB_NAME_CN" ColumnName="ABB_NAME_CN" />
+          <ScalarProperty Name="FULL__NAME_CN" ColumnName="FULL__NAME_CN" />
+          <ScalarProperty Name="TRIAL_NAME_CN" ColumnName="TRIAL_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_NAME_CN" ColumnName="STRUCTURE_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_ALIAS_CN" ColumnName="STRUCTURE_ALIAS_CN" />
+          <ScalarProperty Name="STRUCTURE_TRIAL_CN" ColumnName="STRUCTURE_TRIAL_CN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AGG__HOUR_STRUCTURE_SCORE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_AGG__HOUR_STRUCTURE_SCORE">
+        <MappingFragment StoreEntitySet="T_AGG__HOUR_STRUCTURE_SCORE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DATETIME_ID" ColumnName="DATETIME_ID" />
+          <ScalarProperty Name="H_ID" ColumnName="H_ID" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="ABB_NAME_CN" ColumnName="ABB_NAME_CN" />
+          <ScalarProperty Name="FULL__NAME_CN" ColumnName="FULL__NAME_CN" />
+          <ScalarProperty Name="TRIAL_NAME_CN" ColumnName="TRIAL_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_NAME_CN" ColumnName="STRUCTURE_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_ALIAS_CN" ColumnName="STRUCTURE_ALIAS_CN" />
+          <ScalarProperty Name="STRUCTURE_TRIAL_CN" ColumnName="STRUCTURE_TRIAL_CN" />
+          <ScalarProperty Name="HEALTH_HIGH_SCORE" ColumnName="HEALTH_HIGH_SCORE" />
+          <ScalarProperty Name="HEALTH_HIGH_SCORE_LEVEL" ColumnName="HEALTH_HIGH_SCORE_LEVEL" />
+          <ScalarProperty Name="HEALTH_HIGH_SCORE_DATETIME" ColumnName="HEALTH_HIGH_SCORE_DATETIME" />
+          <ScalarProperty Name="HEALTH_LOW_SCORE" ColumnName="HEALTH_LOW_SCORE" />
+          <ScalarProperty Name="HEALTH_LOW_SCORE_LEVEL" ColumnName="HEALTH_LOW_SCORE_LEVEL" />
+          <ScalarProperty Name="HEALTH_LOW_SCORE_DATETIME" ColumnName="HEALTH_LOW_SCORE_DATETIME" />
+          <ScalarProperty Name="HEALTH_AVG_SCORE" ColumnName="HEALTH_AVG_SCORE" />
+          <ScalarProperty Name="HEALTH_AVG_SCORE_LEVEL" ColumnName="HEALTH_AVG_SCORE_LEVEL" />
+          <ScalarProperty Name="HEALTH_AVG_SCORE_DATETIME" ColumnName="HEALTH_AVG_SCORE_DATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AGG__MONTH_SAFETY_FACTOR_SCORE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_AGG__MONTH_SAFETY_FACTOR_SCORE">
+        <MappingFragment StoreEntitySet="T_AGG__MONTH_SAFETY_FACTOR_SCORE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DATETIME_ID" ColumnName="DATETIME_ID" />
+          <ScalarProperty Name="MONTH_CODE" ColumnName="MONTH_CODE" />
+          <ScalarProperty Name="MONTH_FULL_CN" ColumnName="MONTH_FULL_CN" />
+          <ScalarProperty Name="MONTH_SHORT_CN" ColumnName="MONTH_SHORT_CN" />
+          <ScalarProperty Name="QUARTER_CODE" ColumnName="QUARTER_CODE" />
+          <ScalarProperty Name="HALF_YEAR_CODE" ColumnName="HALF_YEAR_CODE" />
+          <ScalarProperty Name="YEAR_CODE" ColumnName="YEAR_CODE" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_NAME" ColumnName="SAFETY_FACTOR_TYPE_NAME" />
+          <ScalarProperty Name="SAFETY_FACTOR_HIGH_SCORE" ColumnName="SAFETY_FACTOR_HIGH_SCORE" />
+          <ScalarProperty Name="SAFETY_FACTOR_HIGH_SCORE_DATETIME" ColumnName="SAFETY_FACTOR_HIGH_SCORE_DATETIME" />
+          <ScalarProperty Name="SAFETY_FACTOR_LOW_SCORE" ColumnName="SAFETY_FACTOR_LOW_SCORE" />
+          <ScalarProperty Name="SAFETY_FACTOR_LOW_SCORE_DATETIME" ColumnName="SAFETY_FACTOR_LOW_SCORE_DATETIME" />
+          <ScalarProperty Name="SAFETY_FACTOR_AVG_SCORE" ColumnName="SAFETY_FACTOR_AVG_SCORE" />
+          <ScalarProperty Name="SAFETY_FACTOR_AVG_SCORE_DATETIME" ColumnName="SAFETY_FACTOR_AVG_SCORE_DATETIME" />
+          <ScalarProperty Name="ABB_NAME_CN" ColumnName="ABB_NAME_CN" />
+          <ScalarProperty Name="FULL__NAME_CN" ColumnName="FULL__NAME_CN" />
+          <ScalarProperty Name="TRIAL_NAME_CN" ColumnName="TRIAL_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_NAME_CN" ColumnName="STRUCTURE_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_ALIAS_CN" ColumnName="STRUCTURE_ALIAS_CN" />
+          <ScalarProperty Name="STRUCTURE_TRIAL_CN" ColumnName="STRUCTURE_TRIAL_CN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AGG__MONTH_STRUCTURE_SCORE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_AGG__MONTH_STRUCTURE_SCORE">
+        <MappingFragment StoreEntitySet="T_AGG__MONTH_STRUCTURE_SCORE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DATETIME_ID" ColumnName="DATETIME_ID" />
+          <ScalarProperty Name="MONTH_CODE" ColumnName="MONTH_CODE" />
+          <ScalarProperty Name="MONTH_FULL_CN" ColumnName="MONTH_FULL_CN" />
+          <ScalarProperty Name="MONTH_SHORT_CN" ColumnName="MONTH_SHORT_CN" />
+          <ScalarProperty Name="QUARTER_CODE" ColumnName="QUARTER_CODE" />
+          <ScalarProperty Name="HALF_YEAR_CODE" ColumnName="HALF_YEAR_CODE" />
+          <ScalarProperty Name="YEAR_CODE" ColumnName="YEAR_CODE" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="ABB_NAME_CN" ColumnName="ABB_NAME_CN" />
+          <ScalarProperty Name="FULL__NAME_CN" ColumnName="FULL__NAME_CN" />
+          <ScalarProperty Name="TRIAL_NAME_CN" ColumnName="TRIAL_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_NAME_CN" ColumnName="STRUCTURE_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_ALIAS_CN" ColumnName="STRUCTURE_ALIAS_CN" />
+          <ScalarProperty Name="STRUCTURE_TRIAL_CN" ColumnName="STRUCTURE_TRIAL_CN" />
+          <ScalarProperty Name="HEALTH_HIGH_SCORE" ColumnName="HEALTH_HIGH_SCORE" />
+          <ScalarProperty Name="HEALTH_HIGH_SCORE_LEVEL" ColumnName="HEALTH_HIGH_SCORE_LEVEL" />
+          <ScalarProperty Name="HEALTH_HIGH_SCORE_DATETIME" ColumnName="HEALTH_HIGH_SCORE_DATETIME" />
+          <ScalarProperty Name="HEALTH_LOW_SCORE" ColumnName="HEALTH_LOW_SCORE" />
+          <ScalarProperty Name="HEALTH_LOW_SCORE_LEVEL" ColumnName="HEALTH_LOW_SCORE_LEVEL" />
+          <ScalarProperty Name="HEALTH_LOW_SCORE_DATETIME" ColumnName="HEALTH_LOW_SCORE_DATETIME" />
+          <ScalarProperty Name="HEALTH_AVG_SCORE" ColumnName="HEALTH_AVG_SCORE" />
+          <ScalarProperty Name="HEALTH_AVG_SCORE_LEVEL" ColumnName="HEALTH_AVG_SCORE_LEVEL" />
+          <ScalarProperty Name="HEALTH_AVG_SCORE_DATETIME" ColumnName="HEALTH_AVG_SCORE_DATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AGG__WEEK_STRUCTURE_SCORE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_AGG__WEEK_STRUCTURE_SCORE">
+        <MappingFragment StoreEntitySet="T_AGG__WEEK_STRUCTURE_SCORE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DATETIME_ID" ColumnName="DATETIME_ID" />
+          <ScalarProperty Name="WEEK_CODE" ColumnName="WEEK_CODE" />
+          <ScalarProperty Name="WEEK_FULL_CN" ColumnName="WEEK_FULL_CN" />
+          <ScalarProperty Name="WEEK_SHORT_CN" ColumnName="WEEK_SHORT_CN" />
+          <ScalarProperty Name="MONTH_CODE" ColumnName="MONTH_CODE" />
+          <ScalarProperty Name="QUARTER_CODE" ColumnName="QUARTER_CODE" />
+          <ScalarProperty Name="HALF_YEAR_CODE" ColumnName="HALF_YEAR_CODE" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="ABB_NAME_CN" ColumnName="ABB_NAME_CN" />
+          <ScalarProperty Name="TRIAL_NAME_CN" ColumnName="TRIAL_NAME_CN" />
+          <ScalarProperty Name="FULL__NAME_CN" ColumnName="FULL__NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_NAME_CN" ColumnName="STRUCTURE_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_ALIAS_CN" ColumnName="STRUCTURE_ALIAS_CN" />
+          <ScalarProperty Name="STRUCTURE_TRIAL_CN" ColumnName="STRUCTURE_TRIAL_CN" />
+          <ScalarProperty Name="HEALTH_HIGH_SCORE" ColumnName="HEALTH_HIGH_SCORE" />
+          <ScalarProperty Name="HEALTH_HIGH_SCORE_LEVEL" ColumnName="HEALTH_HIGH_SCORE_LEVEL" />
+          <ScalarProperty Name="HEALTH_HIGH_SCORE_DATETIME" ColumnName="HEALTH_HIGH_SCORE_DATETIME" />
+          <ScalarProperty Name="HEALTH_LOW_SCORE" ColumnName="HEALTH_LOW_SCORE" />
+          <ScalarProperty Name="HEALTH_LOW_SCORE_LEVEL" ColumnName="HEALTH_LOW_SCORE_LEVEL" />
+          <ScalarProperty Name="HEALTH_LOW_SCORE_DATETIME" ColumnName="HEALTH_LOW_SCORE_DATETIME" />
+          <ScalarProperty Name="HEALTH_AVG_SCORE" ColumnName="HEALTH_AVG_SCORE" />
+          <ScalarProperty Name="HEALTH_AVG_SCORE_LEVEL" ColumnName="HEALTH_AVG_SCORE_LEVEL" />
+          <ScalarProperty Name="HEALTH_AVG_SCORE_DATETIME" ColumnName="HEALTH_AVG_SCORE_DATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AGG_WEEK_SAFETY_FACTOR_SCORE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_AGG_WEEK_SAFETY_FACTOR_SCORE">
+        <MappingFragment StoreEntitySet="T_AGG_WEEK_SAFETY_FACTOR_SCORE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DATETIME_ID" ColumnName="DATETIME_ID" />
+          <ScalarProperty Name="WEEK_CODE" ColumnName="WEEK_CODE" />
+          <ScalarProperty Name="WEEK_FULL_CN" ColumnName="WEEK_FULL_CN" />
+          <ScalarProperty Name="WEEK_SHORT_CN" ColumnName="WEEK_SHORT_CN" />
+          <ScalarProperty Name="MONTH_CODE" ColumnName="MONTH_CODE" />
+          <ScalarProperty Name="QUARTER_CODE" ColumnName="QUARTER_CODE" />
+          <ScalarProperty Name="HALF_YEAR_CODE" ColumnName="HALF_YEAR_CODE" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_NAME" ColumnName="SAFETY_FACTOR_TYPE_NAME" />
+          <ScalarProperty Name="SAFETY_FACTOR_HIGH_SCORE" ColumnName="SAFETY_FACTOR_HIGH_SCORE" />
+          <ScalarProperty Name="SAFETY_FACTOR_HIGH_SCORE_DATETIME" ColumnName="SAFETY_FACTOR_HIGH_SCORE_DATETIME" />
+          <ScalarProperty Name="SAFETY_FACTOR_LOW_SCORE" ColumnName="SAFETY_FACTOR_LOW_SCORE" />
+          <ScalarProperty Name="SAFETY_FACTOR_LOW_SCORE_DATETIME" ColumnName="SAFETY_FACTOR_LOW_SCORE_DATETIME" />
+          <ScalarProperty Name="SAFETY_FACTOR_AVG_SCORE" ColumnName="SAFETY_FACTOR_AVG_SCORE" />
+          <ScalarProperty Name="SAFETY_FACTOR_AVG_SCORE_DATETIME" ColumnName="SAFETY_FACTOR_AVG_SCORE_DATETIME" />
+          <ScalarProperty Name="ABB_NAME_CN" ColumnName="ABB_NAME_CN" />
+          <ScalarProperty Name="FULL__NAME_CN" ColumnName="FULL__NAME_CN" />
+          <ScalarProperty Name="TRIAL_NAME_CN" ColumnName="TRIAL_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_NAME_CN" ColumnName="STRUCTURE_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_ALIAS_CN" ColumnName="STRUCTURE_ALIAS_CN" />
+          <ScalarProperty Name="STRUCTURE_TRIAL_CN" ColumnName="STRUCTURE_TRIAL_CN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_API_LOG">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_API_LOG">
+        <MappingFragment StoreEntitySet="T_API_LOG">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LogTime" ColumnName="LogTime" />
+          <ScalarProperty Name="ClientIP" ColumnName="ClientIP" />
+          <ScalarProperty Name="UserAgent" ColumnName="UserAgent" />
+          <ScalarProperty Name="ClientType" ColumnName="ClientType" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Method" ColumnName="Method" />
+          <ScalarProperty Name="Parameter" ColumnName="Parameter" />
+          <ScalarProperty Name="ParameterShow" ColumnName="ParameterShow" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="UserNo" ColumnName="UserNo" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="IsVisible" ColumnName="IsVisible" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_API_RESOURCE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_API_RESOURCE">
+        <MappingFragment StoreEntitySet="T_API_RESOURCE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RouteTemplate" ColumnName="RouteTemplate" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_COL_ORIGINAL_DATAVALUE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_COL_ORIGINAL_DATAVALUE">
+        <MappingFragment StoreEntitySet="T_COL_ORIGINAL_DATAVALUE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STRUCTURE_ID" ColumnName="STRUCTURE_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="MODULE_NO" ColumnName="MODULE_NO" />
+          <ScalarProperty Name="CHANNEL_NUMBER" ColumnName="CHANNEL_NUMBER" />
+          <ScalarProperty Name="CollectOriginalValue1" ColumnName="CollectOriginalValue1" />
+          <ScalarProperty Name="CollectOriginalValue2" ColumnName="CollectOriginalValue2" />
+          <ScalarProperty Name="CollectOriginalValue3" ColumnName="CollectOriginalValue3" />
+          <ScalarProperty Name="CollectOriginalValue4" ColumnName="CollectOriginalValue4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DATA_AGGREGATION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DATA_AGGREGATION">
+        <MappingFragment StoreEntitySet="T_DATA_AGGREGATION">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SensorId" ColumnName="SensorId" />
+          <ScalarProperty Name="PreviousValue1" ColumnName="PreviousValue1" />
+          <ScalarProperty Name="CurrentValue1" ColumnName="CurrentValue1" />
+          <ScalarProperty Name="Dlt1" ColumnName="Dlt1" />
+          <ScalarProperty Name="Speed1" ColumnName="Speed1" />
+          <ScalarProperty Name="Acc1" ColumnName="Acc1" />
+          <ScalarProperty Name="PreviousValue2" ColumnName="PreviousValue2" />
+          <ScalarProperty Name="CurrentValue2" ColumnName="CurrentValue2" />
+          <ScalarProperty Name="Dlt2" ColumnName="Dlt2" />
+          <ScalarProperty Name="Speed2" ColumnName="Speed2" />
+          <ScalarProperty Name="Acc2" ColumnName="Acc2" />
+          <ScalarProperty Name="PreviousValue3" ColumnName="PreviousValue3" />
+          <ScalarProperty Name="CurrentValue3" ColumnName="CurrentValue3" />
+          <ScalarProperty Name="Dlt3" ColumnName="Dlt3" />
+          <ScalarProperty Name="Speed3" ColumnName="Speed3" />
+          <ScalarProperty Name="Acc3" ColumnName="Acc3" />
+          <ScalarProperty Name="PreviousValue4" ColumnName="PreviousValue4" />
+          <ScalarProperty Name="CurrentValue4" ColumnName="CurrentValue4" />
+          <ScalarProperty Name="Dlt4" ColumnName="Dlt4" />
+          <ScalarProperty Name="Speed4" ColumnName="Speed4" />
+          <ScalarProperty Name="Acc4" ColumnName="Acc4" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="CollectTime" ColumnName="CollectTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DATA_LATEST">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DATA_LATEST">
+        <MappingFragment StoreEntitySet="T_DATA_LATEST">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SensorId" ColumnName="SensorId" />
+          <ScalarProperty Name="Value1" ColumnName="Value1" />
+          <ScalarProperty Name="Value2" ColumnName="Value2" />
+          <ScalarProperty Name="Value3" ColumnName="Value3" />
+          <ScalarProperty Name="Value4" ColumnName="Value4" />
+          <ScalarProperty Name="CollectTime" ColumnName="CollectTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DATA_ORIGINAL">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DATA_ORIGINAL">
+        <MappingFragment StoreEntitySet="T_DATA_ORIGINAL">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SensorId" ColumnName="SensorId" />
+          <ScalarProperty Name="Value1" ColumnName="Value1" />
+          <ScalarProperty Name="Value2" ColumnName="Value2" />
+          <ScalarProperty Name="Value3" ColumnName="Value3" />
+          <ScalarProperty Name="Value4" ColumnName="Value4" />
+          <ScalarProperty Name="CollectTime" ColumnName="CollectTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DATA_ORIGINAL_ARCHIVE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DATA_ORIGINAL_ARCHIVE">
+        <MappingFragment StoreEntitySet="T_DATA_ORIGINAL_ARCHIVE">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SensorId" ColumnName="SensorId" />
+          <ScalarProperty Name="Value1" ColumnName="Value1" />
+          <ScalarProperty Name="FilterValue1" ColumnName="FilterValue1" />
+          <ScalarProperty Name="Value2" ColumnName="Value2" />
+          <ScalarProperty Name="FilterValue2" ColumnName="FilterValue2" />
+          <ScalarProperty Name="Value3" ColumnName="Value3" />
+          <ScalarProperty Name="FilterValue3" ColumnName="FilterValue3" />
+          <ScalarProperty Name="Value4" ColumnName="Value4" />
+          <ScalarProperty Name="FilterValue4" ColumnName="FilterValue4" />
+          <ScalarProperty Name="IsFilter" ColumnName="IsFilter" />
+          <ScalarProperty Name="CollectTime" ColumnName="CollectTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DATA_RATIONAL_FILTER_CONFIG">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DATA_RATIONAL_FILTER_CONFIG">
+        <MappingFragment StoreEntitySet="T_DATA_RATIONAL_FILTER_CONFIG">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SensorId" ColumnName="SensorId" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="RationalLower" ColumnName="RationalLower" />
+          <ScalarProperty Name="RationalUpper" ColumnName="RationalUpper" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DATA_STABLE_FILTER_CONFIG">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DATA_STABLE_FILTER_CONFIG">
+        <MappingFragment StoreEntitySet="T_DATA_STABLE_FILTER_CONFIG">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SensorId" ColumnName="SensorId" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="WindowSize" ColumnName="WindowSize" />
+          <ScalarProperty Name="KT" ColumnName="KT" />
+          <ScalarProperty Name="DT" ColumnName="DT" />
+          <ScalarProperty Name="RT" ColumnName="RT" />
+          <ScalarProperty Name="NeedLog" ColumnName="NeedLog" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_COMPANY">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_COMPANY">
+        <MappingFragment StoreEntitySet="T_DIM_COMPANY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="COMPANY_NAME" ColumnName="COMPANY_NAME" />
+          <ScalarProperty Name="COMPANY_REGION_ID" ColumnName="COMPANY_REGION_ID" />
+          <ScalarProperty Name="COMPANY_ADDRESS" ColumnName="COMPANY_ADDRESS" />
+          <ScalarProperty Name="COMPANY_PHONE_NUMBER" ColumnName="COMPANY_PHONE_NUMBER" />
+          <ScalarProperty Name="COMPANY_FAX" ColumnName="COMPANY_FAX" />
+          <ScalarProperty Name="COMPANY_WEBSITE" ColumnName="COMPANY_WEBSITE" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="CONTACT_FIXED_PHONE_NUMBER" ColumnName="CONTACT_FIXED_PHONE_NUMBER" />
+          <ScalarProperty Name="CONTACT_MOBILE__PHONE_NUMBER" ColumnName="CONTACT_MOBILE__PHONE_NUMBER" />
+          <ScalarProperty Name="CONTACT_EMAIL" ColumnName="CONTACT_EMAIL" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_CORRELATION_FACTOR">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_CORRELATION_FACTOR">
+        <MappingFragment StoreEntitySet="T_DIM_CORRELATION_FACTOR">
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="FactorId" ColumnName="FactorId" />
+          <ScalarProperty Name="Factor_Id" ColumnName="Factor_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_DAI">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_DAI">
+        <MappingFragment StoreEntitySet="T_DIM_DAI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="DAI_ID" ColumnName="DAI_ID" />
+          <ScalarProperty Name="DTU_ID" ColumnName="DTU_ID" />
+          <ScalarProperty Name="PROTOCOL_ID" ColumnName="PROTOCOL_ID" />
+          <ScalarProperty Name="DAI_IDENTIFICATION_CODE" ColumnName="DAI_IDENTIFICATION_CODE" />
+          <ScalarProperty Name="DAI_MODULE_NO" ColumnName="DAI_MODULE_NO" />
+          <ScalarProperty Name="DAI_LOCATION_DESCRIPTION" ColumnName="DAI_LOCATION_DESCRIPTION" />
+          <ScalarProperty Name="DAI_LOCATION_X" ColumnName="DAI_LOCATION_X" />
+          <ScalarProperty Name="DAI_LOCATION_Y" ColumnName="DAI_LOCATION_Y" />
+          <ScalarProperty Name="DAI_LOCATION_Z" ColumnName="DAI_LOCATION_Z" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="PRODUCED_DATE" ColumnName="PRODUCED_DATE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="MRAK" ColumnName="MRAK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_DAI_PRODUCT">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_DAI_PRODUCT">
+        <MappingFragment StoreEntitySet="T_DIM_DAI_PRODUCT">
+          <ScalarProperty Name="DAI_ID" ColumnName="DAI_ID" />
+          <ScalarProperty Name="PROTOCOL_ID" ColumnName="PROTOCOL_ID" />
+          <ScalarProperty Name="PRODUCT_TYPE_ID" ColumnName="PRODUCT_TYPE_ID" />
+          <ScalarProperty Name="POWER_SUPPLY_TYPE_ID" ColumnName="POWER_SUPPLY_TYPE_ID" />
+          <ScalarProperty Name="DAI_PRODUCT_TYPE_ID" ColumnName="DAI_PRODUCT_TYPE_ID" />
+          <ScalarProperty Name="PROTOCOL_TYPE_ID" ColumnName="PROTOCOL_TYPE_ID" />
+          <ScalarProperty Name="DAI_CHANNEL_NUMBER" ColumnName="DAI_CHANNEL_NUMBER" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="FormulaID" ColumnName="FormulaID" />
+          <ScalarProperty Name="PRODUCT_MODEL" ColumnName="PRODUCT_MODEL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_DATETIME">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_DATETIME">
+        <MappingFragment StoreEntitySet="T_DIM_DATETIME">
+          <ScalarProperty Name="DATETIME_ID" ColumnName="DATETIME_ID" />
+          <ScalarProperty Name="DAY_CODE" ColumnName="DAY_CODE" />
+          <ScalarProperty Name="DAY_FULL_CN" ColumnName="DAY_FULL_CN" />
+          <ScalarProperty Name="DAY_FULL_EN" ColumnName="DAY_FULL_EN" />
+          <ScalarProperty Name="DAY_SHORT_CN" ColumnName="DAY_SHORT_CN" />
+          <ScalarProperty Name="DAY_SHORT_EN" ColumnName="DAY_SHORT_EN" />
+          <ScalarProperty Name="WEEK_CODE" ColumnName="WEEK_CODE" />
+          <ScalarProperty Name="WEEK_FULL_CN" ColumnName="WEEK_FULL_CN" />
+          <ScalarProperty Name="WEEK_FULL_EN" ColumnName="WEEK_FULL_EN" />
+          <ScalarProperty Name="WEEK_SHORT_CN" ColumnName="WEEK_SHORT_CN" />
+          <ScalarProperty Name="WEEK_SHORT_EN" ColumnName="WEEK_SHORT_EN" />
+          <ScalarProperty Name="TEN_DAY_CODE" ColumnName="TEN_DAY_CODE" />
+          <ScalarProperty Name="TEN_DAY_FULL_CN" ColumnName="TEN_DAY_FULL_CN" />
+          <ScalarProperty Name="TEN_DAY_FULL_EN" ColumnName="TEN_DAY_FULL_EN" />
+          <ScalarProperty Name="TEN_DAY_SHORT_CN" ColumnName="TEN_DAY_SHORT_CN" />
+          <ScalarProperty Name="TEN_DAY_SHORT_EN" ColumnName="TEN_DAY_SHORT_EN" />
+          <ScalarProperty Name="MONTH_CODE" ColumnName="MONTH_CODE" />
+          <ScalarProperty Name="MONTH_FULL_CN" ColumnName="MONTH_FULL_CN" />
+          <ScalarProperty Name="MONTH_FULL_EN" ColumnName="MONTH_FULL_EN" />
+          <ScalarProperty Name="MONTH_SHORT_CN" ColumnName="MONTH_SHORT_CN" />
+          <ScalarProperty Name="MONTH_SHORT_EN" ColumnName="MONTH_SHORT_EN" />
+          <ScalarProperty Name="QUARTER_CODE" ColumnName="QUARTER_CODE" />
+          <ScalarProperty Name="QUARTER_FULL_CN" ColumnName="QUARTER_FULL_CN" />
+          <ScalarProperty Name="QUARTER_FULL_EN" ColumnName="QUARTER_FULL_EN" />
+          <ScalarProperty Name="QUARTER_SHORT_CN" ColumnName="QUARTER_SHORT_CN" />
+          <ScalarProperty Name="QUARTER_SHORT_EN" ColumnName="QUARTER_SHORT_EN" />
+          <ScalarProperty Name="HALF_YEAR_CODE" ColumnName="HALF_YEAR_CODE" />
+          <ScalarProperty Name="HALF_YEAR_FULL_CN" ColumnName="HALF_YEAR_FULL_CN" />
+          <ScalarProperty Name="HALF_YEAR_FULL_EN" ColumnName="HALF_YEAR_FULL_EN" />
+          <ScalarProperty Name="HALF_YEAR_SHORT_CN" ColumnName="HALF_YEAR_SHORT_CN" />
+          <ScalarProperty Name="HALF_YEAR_SHORT_EN" ColumnName="HALF_YEAR_SHORT_EN" />
+          <ScalarProperty Name="YEAR_CODE" ColumnName="YEAR_CODE" />
+          <ScalarProperty Name="YEAR_FULL_CN" ColumnName="YEAR_FULL_CN" />
+          <ScalarProperty Name="YEAR_FULL_EN" ColumnName="YEAR_FULL_EN" />
+          <ScalarProperty Name="YEAR_SHORT_CN" ColumnName="YEAR_SHORT_CN" />
+          <ScalarProperty Name="YEAR_SHORT_EN" ColumnName="YEAR_SHORT_EN" />
+          <ScalarProperty Name="ALL_TIME_CODE" ColumnName="ALL_TIME_CODE" />
+          <ScalarProperty Name="ALL_TIME_CN" ColumnName="ALL_TIME_CN" />
+          <ScalarProperty Name="ALL_TIME_EN" ColumnName="ALL_TIME_EN" />
+          <ScalarProperty Name="DAY_TIMESPAN" ColumnName="DAY_TIMESPAN" />
+          <ScalarProperty Name="DAY_END_DATE" ColumnName="DAY_END_DATE" />
+          <ScalarProperty Name="WEEK_TIMESPAN" ColumnName="WEEK_TIMESPAN" />
+          <ScalarProperty Name="WEEK_END_DATE" ColumnName="WEEK_END_DATE" />
+          <ScalarProperty Name="TEN_DAY_TIMESPAN" ColumnName="TEN_DAY_TIMESPAN" />
+          <ScalarProperty Name="TEN_DAY_END_DATE" ColumnName="TEN_DAY_END_DATE" />
+          <ScalarProperty Name="MONTH_TIMESPAN" ColumnName="MONTH_TIMESPAN" />
+          <ScalarProperty Name="MONTH_END_DATE" ColumnName="MONTH_END_DATE" />
+          <ScalarProperty Name="QUARTER_TIMESPAN" ColumnName="QUARTER_TIMESPAN" />
+          <ScalarProperty Name="QUARTER_END_DATE" ColumnName="QUARTER_END_DATE" />
+          <ScalarProperty Name="HALF_YEAR_TIMESPAN" ColumnName="HALF_YEAR_TIMESPAN" />
+          <ScalarProperty Name="HALF_YEAR_END_DATE" ColumnName="HALF_YEAR_END_DATE" />
+          <ScalarProperty Name="YEAR_TIMESPAN" ColumnName="YEAR_TIMESPAN" />
+          <ScalarProperty Name="YEAR_END_DATE" ColumnName="YEAR_END_DATE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_DEVICETOKEN">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_DEVICETOKEN">
+        <MappingFragment StoreEntitySet="T_DIM_DEVICETOKEN">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DeviceToken" ColumnName="DeviceToken" />
+          <ScalarProperty Name="OnlineUser" ColumnName="OnlineUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_dim_Dictionary">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_dim_Dictionary">
+        <MappingFragment StoreEntitySet="T_dim_Dictionary">
+          <ScalarProperty Name="DictId" ColumnName="DictId" />
+          <ScalarProperty Name="DictType" ColumnName="DictType" />
+          <ScalarProperty Name="DictClass" ColumnName="DictClass" />
+          <ScalarProperty Name="DictName" ColumnName="DictName" />
+          <ScalarProperty Name="DictValue" ColumnName="DictValue" />
+          <ScalarProperty Name="IsDel" ColumnName="IsDel" />
+          <ScalarProperty Name="IsLock" ColumnName="IsLock" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_DTU_PRODUCT">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_DTU_PRODUCT">
+        <MappingFragment StoreEntitySet="T_DIM_DTU_PRODUCT">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="DtuFactory" ColumnName="DtuFactory" />
+          <ScalarProperty Name="DtuModel" ColumnName="DtuModel" />
+          <ScalarProperty Name="NetworkType" ColumnName="NetworkType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_DTU_STATUS">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_DTU_STATUS">
+        <MappingFragment StoreEntitySet="T_DIM_DTU_STATUS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DtuId" ColumnName="DtuId" />
+          <ScalarProperty Name="DtuStatus" ColumnName="DtuStatus" />
+          <ScalarProperty Name="LastOnlineTime" ColumnName="LastOnlineTime" />
+          <ScalarProperty Name="CurrentOfflineTime" ColumnName="CurrentOfflineTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_FORMULA_PARA">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_FORMULA_PARA">
+        <MappingFragment StoreEntitySet="T_DIM_FORMULA_PARA">
+          <ScalarProperty Name="FormulaParaID" ColumnName="FormulaParaID" />
+          <ScalarProperty Name="FormulaID" ColumnName="FormulaID" />
+          <ScalarProperty Name="ParaNameID" ColumnName="ParaNameID" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_FORMULA_PARA_NAME">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_FORMULA_PARA_NAME">
+        <MappingFragment StoreEntitySet="T_DIM_FORMULA_PARA_NAME">
+          <ScalarProperty Name="ParaNameID" ColumnName="ParaNameID" />
+          <ScalarProperty Name="ParaName" ColumnName="ParaName" />
+          <ScalarProperty Name="ParaAlias" ColumnName="ParaAlias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_FORMULAID">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_FORMULAID">
+        <MappingFragment StoreEntitySet="T_DIM_FORMULAID">
+          <ScalarProperty Name="FormulaID" ColumnName="FormulaID" />
+          <ScalarProperty Name="FormulaName" ColumnName="FormulaName" />
+          <ScalarProperty Name="FormulaExpression" ColumnName="FormulaExpression" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_FORMULAID_SET">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_FORMULAID_SET">
+        <MappingFragment StoreEntitySet="T_DIM_FORMULAID_SET">
+          <ScalarProperty Name="FORMAULA_SETID" ColumnName="FORMAULA_SETID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="FormulaParaID1" ColumnName="FormulaParaID1" />
+          <ScalarProperty Name="Parameter1" ColumnName="Parameter1" />
+          <ScalarProperty Name="FormulaParaID2" ColumnName="FormulaParaID2" />
+          <ScalarProperty Name="Parameter2" ColumnName="Parameter2" />
+          <ScalarProperty Name="FormulaParaID3" ColumnName="FormulaParaID3" />
+          <ScalarProperty Name="Parameter3" ColumnName="Parameter3" />
+          <ScalarProperty Name="FormulaParaID4" ColumnName="FormulaParaID4" />
+          <ScalarProperty Name="Parameter4" ColumnName="Parameter4" />
+          <ScalarProperty Name="FormulaParaID5" ColumnName="FormulaParaID5" />
+          <ScalarProperty Name="Parameter5" ColumnName="Parameter5" />
+          <ScalarProperty Name="FormulaParaID6" ColumnName="FormulaParaID6" />
+          <ScalarProperty Name="Parameter6" ColumnName="Parameter6" />
+          <ScalarProperty Name="FormulaParaID7" ColumnName="FormulaParaID7" />
+          <ScalarProperty Name="Parameter7" ColumnName="Parameter7" />
+          <ScalarProperty Name="FormulaParaID8" ColumnName="FormulaParaID8" />
+          <ScalarProperty Name="Parameter8" ColumnName="Parameter8" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_GROUP">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_GROUP">
+        <MappingFragment StoreEntitySet="T_DIM_GROUP">
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="GROUP_NAME" ColumnName="GROUP_NAME" />
+          <ScalarProperty Name="GROUP_TYPE_ID" ColumnName="GROUP_TYPE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_GROUP_TYPE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_GROUP_TYPE">
+        <MappingFragment StoreEntitySet="T_DIM_GROUP_TYPE">
+          <ScalarProperty Name="GROUP_TYPE_ID" ColumnName="GROUP_TYPE_ID" />
+          <ScalarProperty Name="GROUP_TYPE_NAME" ColumnName="GROUP_TYPE_NAME" />
+          <ScalarProperty Name="GROUP_DESCRIPTION" ColumnName="GROUP_DESCRIPTION" />
+          <ScalarProperty Name="SENSOR_GROUP_TABLENAME" ColumnName="SENSOR_GROUP_TABLENAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_HALF_HOUR">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_HALF_HOUR">
+        <MappingFragment StoreEntitySet="T_DIM_HALF_HOUR">
+          <ScalarProperty Name="C_ID" ColumnName="C_ID" />
+          <ScalarProperty Name="C_SECTION" ColumnName="C_SECTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_HOTSPOT">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_HOTSPOT">
+        <MappingFragment StoreEntitySet="T_DIM_HOTSPOT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SPOT_X_AXIS" ColumnName="SPOT_X_AXIS" />
+          <ScalarProperty Name="SPOT_Y_AXIS" ColumnName="SPOT_Y_AXIS" />
+          <ScalarProperty Name="IS_REALTIME_SENSOR" ColumnName="IS_REALTIME_SENSOR" />
+          <ScalarProperty Name="INFO_X_AXIS" ColumnName="INFO_X_AXIS" />
+          <ScalarProperty Name="INFO_Y_AXIS" ColumnName="INFO_Y_AXIS" />
+          <ScalarProperty Name="SPOT_PATH" ColumnName="SPOT_PATH" />
+          <ScalarProperty Name="SECTION_ID" ColumnName="SECTION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_HOTSPOT_SECTION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_HOTSPOT_SECTION">
+        <MappingFragment StoreEntitySet="T_DIM_HOTSPOT_SECTION">
+          <ScalarProperty Name="SpotId" ColumnName="SpotId" />
+          <ScalarProperty Name="SectionId" ColumnName="SectionId" />
+          <ScalarProperty Name="Spot_X_Axis" ColumnName="Spot_X_Axis" />
+          <ScalarProperty Name="Spot_Y_Axis" ColumnName="Spot_Y_Axis" />
+          <ScalarProperty Name="SpotPath" ColumnName="SpotPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_HOTSPOTTest">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_HOTSPOTTest">
+        <MappingFragment StoreEntitySet="T_DIM_HOTSPOTTest">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SPOT_X_AXIS" ColumnName="SPOT_X_AXIS" />
+          <ScalarProperty Name="SPOT_Y_AXIS" ColumnName="SPOT_Y_AXIS" />
+          <ScalarProperty Name="IS_REALTIME_SENSOR" ColumnName="IS_REALTIME_SENSOR" />
+          <ScalarProperty Name="INFO_X_AXIS" ColumnName="INFO_X_AXIS" />
+          <ScalarProperty Name="INFO_Y_AXIS" ColumnName="INFO_Y_AXIS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_HOUR">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_HOUR">
+        <MappingFragment StoreEntitySet="T_DIM_HOUR">
+          <ScalarProperty Name="H_ID" ColumnName="H_ID" />
+          <ScalarProperty Name="H_SECTION" ColumnName="H_SECTION" />
+          <ScalarProperty Name="H_START" ColumnName="H_START" />
+          <ScalarProperty Name="H_END" ColumnName="H_END" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_OPERATION_LOG">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_OPERATION_LOG">
+        <MappingFragment StoreEntitySet="T_DIM_OPERATION_LOG">
+          <ScalarProperty Name="OPERATION_LOG_ID" ColumnName="OPERATION_LOG_ID" />
+          <ScalarProperty Name="OPERATION_TYPE_ID" ColumnName="OPERATION_TYPE_ID" />
+          <ScalarProperty Name="OPERATION_OBJECT_ID" ColumnName="OPERATION_OBJECT_ID" />
+          <ScalarProperty Name="OPERATION_CONTENT_CN" ColumnName="OPERATION_CONTENT_CN" />
+          <ScalarProperty Name="OPERATION_CONTENT_EN" ColumnName="OPERATION_CONTENT_EN" />
+          <ScalarProperty Name="OPERATOR_ID" ColumnName="OPERATOR_ID" />
+          <ScalarProperty Name="OPERATOR_SOURCE_IP" ColumnName="OPERATOR_SOURCE_IP" />
+          <ScalarProperty Name="LOG_GENERATE_DATETIME" ColumnName="LOG_GENERATE_DATETIME" />
+          <ScalarProperty Name="LOG_UPDATE_DATETIME" ColumnName="LOG_UPDATE_DATETIME" />
+          <ScalarProperty Name="LOG_VISIBLE_FLAG" ColumnName="LOG_VISIBLE_FLAG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_OPERATION_RESOURCE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_OPERATION_RESOURCE">
+        <MappingFragment StoreEntitySet="T_DIM_OPERATION_RESOURCE">
+          <ScalarProperty Name="OPERATION_RES_ID" ColumnName="OPERATION_RES_ID" />
+          <ScalarProperty Name="OPERATION_RES_FUNC_CODE" ColumnName="OPERATION_RES_FUNC_CODE" />
+          <ScalarProperty Name="OPERATION_RES_PARENT_CODE" ColumnName="OPERATION_RES_PARENT_CODE" />
+          <ScalarProperty Name="OPERATION_RES_NAME_CN" ColumnName="OPERATION_RES_NAME_CN" />
+          <ScalarProperty Name="OPERATION_RES_NAME_EN" ColumnName="OPERATION_RES_NAME_EN" />
+          <ScalarProperty Name="OPERATION_RES_ICON_SRC" ColumnName="OPERATION_RES_ICON_SRC" />
+          <ScalarProperty Name="OPERATION_RES_URL" ColumnName="OPERATION_RES_URL" />
+          <ScalarProperty Name="OPERATION_RES_ENABLE" ColumnName="OPERATION_RES_ENABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_OPERATION_TYPE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_OPERATION_TYPE">
+        <MappingFragment StoreEntitySet="T_DIM_OPERATION_TYPE">
+          <ScalarProperty Name="OPERATION_TYPE_ID" ColumnName="OPERATION_TYPE_ID" />
+          <ScalarProperty Name="OPERATION_TYPE_NAME_CN" ColumnName="OPERATION_TYPE_NAME_CN" />
+          <ScalarProperty Name="OPERATION_TYPE_NAME_EN" ColumnName="OPERATION_TYPE_NAME_EN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_ORG_STUCTURE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_ORG_STUCTURE">
+        <MappingFragment StoreEntitySet="T_DIM_ORG_STUCTURE">
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="ORGANIZATION_ID" ColumnName="ORGANIZATION_ID" />
+          <ScalarProperty Name="STRUCTURE_ID" ColumnName="STRUCTURE_ID" />
+          <ScalarProperty Name="ABB_NAME_CN" ColumnName="ABB_NAME_CN" />
+          <ScalarProperty Name="FULL__NAME_CN" ColumnName="FULL__NAME_CN" />
+          <ScalarProperty Name="TRIAL_NAME_CN" ColumnName="TRIAL_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_NAME_CN" ColumnName="STRUCTURE_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_ALIAS_CN" ColumnName="STRUCTURE_ALIAS_CN" />
+          <ScalarProperty Name="STRUCTURE_TRIAL_CN" ColumnName="STRUCTURE_TRIAL_CN" />
+          <ScalarProperty Name="ACTIVATION_CODE" ColumnName="ACTIVATION_CODE" />
+          <ScalarProperty Name="AggTime" ColumnName="AggTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_ORGANIZATION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_ORGANIZATION">
+        <MappingFragment StoreEntitySet="T_DIM_ORGANIZATION">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ABB_NAME_EN" ColumnName="ABB_NAME_EN" />
+          <ScalarProperty Name="ABB_NAME_CN" ColumnName="ABB_NAME_CN" />
+          <ScalarProperty Name="FULL_NAME_EN" ColumnName="FULL_NAME_EN" />
+          <ScalarProperty Name="FULL_NAME_CN" ColumnName="FULL_NAME_CN" />
+          <ScalarProperty Name="REGION_ID" ColumnName="REGION_ID" />
+          <ScalarProperty Name="ADDRESS_STREET_CN" ColumnName="ADDRESS_STREET_CN" />
+          <ScalarProperty Name="ADDRESS_STREET_EN" ColumnName="ADDRESS_STREET_EN" />
+          <ScalarProperty Name="FIXED_PHONE_NUMBER" ColumnName="FIXED_PHONE_NUMBER" />
+          <ScalarProperty Name="FAX_NUMBER" ColumnName="FAX_NUMBER" />
+          <ScalarProperty Name="MOBILE_PHONE_NUMBER" ColumnName="MOBILE_PHONE_NUMBER" />
+          <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="WEBSITE" ColumnName="WEBSITE" />
+          <ScalarProperty Name="ALIAS_ORGANIZATION_CN" ColumnName="ALIAS_ORGANIZATION_CN" />
+          <ScalarProperty Name="ALIAS_ORGANIZATION_EN" ColumnName="ALIAS_ORGANIZATION_EN" />
+          <ScalarProperty Name="TRIAL_NAME_CN" ColumnName="TRIAL_NAME_CN" />
+          <ScalarProperty Name="TRIAL_NAME_EN" ColumnName="TRIAL_NAME_EN" />
+          <ScalarProperty Name="PIC_BIG_ORGANIZATION" ColumnName="PIC_BIG_ORGANIZATION" />
+          <ScalarProperty Name="PIC_MEDIUM_ORGANIZATION" ColumnName="PIC_MEDIUM_ORGANIZATION" />
+          <ScalarProperty Name="PIC_SMALL_ORGANIZATION" ColumnName="PIC_SMALL_ORGANIZATION" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="ProvinceCode" ColumnName="ProvinceCode" />
+          <ScalarProperty Name="CityCode" ColumnName="CityCode" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_PERMISSION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_PERMISSION">
+        <MappingFragment StoreEntitySet="T_DIM_PERMISSION">
+          <ScalarProperty Name="PERMISSION_ID" ColumnName="PERMISSION_ID" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="USER_NO" ColumnName="USER_NO" />
+          <ScalarProperty Name="ABB_NAME_CN" ColumnName="ABB_NAME_CN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_POWER_SUPPLY_TYPE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_POWER_SUPPLY_TYPE">
+        <MappingFragment StoreEntitySet="T_DIM_POWER_SUPPLY_TYPE">
+          <ScalarProperty Name="POWER_SUPPLY_TYPE_ID" ColumnName="POWER_SUPPLY_TYPE_ID" />
+          <ScalarProperty Name="POWER_SUPPLY__TYPE" ColumnName="POWER_SUPPLY__TYPE" />
+          <ScalarProperty Name="VOLTAGE_RANGE" ColumnName="VOLTAGE_RANGE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_PRODUCT_CATEGORY">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_PRODUCT_CATEGORY">
+        <MappingFragment StoreEntitySet="T_DIM_PRODUCT_CATEGORY">
+          <ScalarProperty Name="PRODUCT_TYPE_KEY" ColumnName="PRODUCT_TYPE_KEY" />
+          <ScalarProperty Name="CATEGORYNAME" ColumnName="CATEGORYNAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_PRODUCT_TYPE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_PRODUCT_TYPE">
+        <MappingFragment StoreEntitySet="T_DIM_PRODUCT_TYPE">
+          <ScalarProperty Name="PRODUCT_TYPE_ID" ColumnName="PRODUCT_TYPE_ID" />
+          <ScalarProperty Name="PRODUCT_TYPE_NAME" ColumnName="PRODUCT_TYPE_NAME" />
+          <ScalarProperty Name="PARENT_PRODUCT_TYPE_ID" ColumnName="PARENT_PRODUCT_TYPE_ID" />
+          <ScalarProperty Name="PRODUCT_LEVEL" ColumnName="PRODUCT_LEVEL" />
+          <ScalarProperty Name="PRODUCT_TYPE_KEY" ColumnName="PRODUCT_TYPE_KEY" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_PRODUCTCATAGORY_ORIGINALDATA">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_PRODUCTCATAGORY_ORIGINALDATA">
+        <MappingFragment StoreEntitySet="T_DIM_PRODUCTCATAGORY_ORIGINALDATA">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductCatagoryId" ColumnName="ProductCatagoryId" />
+          <ScalarProperty Name="OriginalTableName" ColumnName="OriginalTableName" />
+          <ScalarProperty Name="ColumnNumber" ColumnName="ColumnNumber" />
+          <ScalarProperty Name="ValueColumnName" ColumnName="ValueColumnName" />
+          <ScalarProperty Name="ValueColumn" ColumnName="ValueColumn" />
+          <ScalarProperty Name="ValueDecimalDigits" ColumnName="ValueDecimalDigits" />
+          <ScalarProperty Name="ValueUnit" ColumnName="ValueUnit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_PROTOCOL_TYPE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_PROTOCOL_TYPE">
+        <MappingFragment StoreEntitySet="T_DIM_PROTOCOL_TYPE">
+          <ScalarProperty Name="PROTOCOL_ID" ColumnName="PROTOCOL_ID" />
+          <ScalarProperty Name="PROTOCOL_CODE" ColumnName="PROTOCOL_CODE" />
+          <ScalarProperty Name="PROTOCOL_TYPE" ColumnName="PROTOCOL_TYPE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_PROTOCOLCOMMAND">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_PROTOCOLCOMMAND">
+        <MappingFragment StoreEntitySet="T_DIM_PROTOCOLCOMMAND">
+          <ScalarProperty Name="COMMAND_ID" ColumnName="COMMAND_ID" />
+          <ScalarProperty Name="PROTOCOL_ID" ColumnName="PROTOCOL_ID" />
+          <ScalarProperty Name="PROTOCOL_TYPE_ID" ColumnName="PROTOCOL_TYPE_ID" />
+          <ScalarProperty Name="DAI_PRODUCT_ID" ColumnName="DAI_PRODUCT_ID" />
+          <ScalarProperty Name="COMMAND_TYPE" ColumnName="COMMAND_TYPE" />
+          <ScalarProperty Name="COMMAND_CONTENT" ColumnName="COMMAND_CONTENT" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_REGION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_REGION">
+        <MappingFragment StoreEntitySet="T_DIM_REGION">
+          <ScalarProperty Name="REGION_ID" ColumnName="REGION_ID" />
+          <ScalarProperty Name="PARENT_REGION_ID" ColumnName="PARENT_REGION_ID" />
+          <ScalarProperty Name="REGION_NAME_CN" ColumnName="REGION_NAME_CN" />
+          <ScalarProperty Name="REGION_FULL_NAME_CN" ColumnName="REGION_FULL_NAME_CN" />
+          <ScalarProperty Name="REGION_NAME_EN" ColumnName="REGION_NAME_EN" />
+          <ScalarProperty Name="REGION_FULL_NAME_EN" ColumnName="REGION_FULL_NAME_EN" />
+          <ScalarProperty Name="REGION_TYPE_ID" ColumnName="REGION_TYPE_ID" />
+          <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_REGION_TYPE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_REGION_TYPE">
+        <MappingFragment StoreEntitySet="T_DIM_REGION_TYPE">
+          <ScalarProperty Name="REGION_TYPE_ID" ColumnName="REGION_TYPE_ID" />
+          <ScalarProperty Name="REGION_TYPE_NAME_CN" ColumnName="REGION_TYPE_NAME_CN" />
+          <ScalarProperty Name="REGION_TYPE_NAME_EN" ColumnName="REGION_TYPE_NAME_EN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_REMOTE_DTU">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_REMOTE_DTU">
+        <MappingFragment StoreEntitySet="T_DIM_REMOTE_DTU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="REMOTE_DTU_NUMBER" ColumnName="REMOTE_DTU_NUMBER" />
+          <ScalarProperty Name="REMOTE_DTU_SUBSCRIBER" ColumnName="REMOTE_DTU_SUBSCRIBER" />
+          <ScalarProperty Name="REMOTE_DTU_GRANULARITY" ColumnName="REMOTE_DTU_GRANULARITY" />
+          <ScalarProperty Name="REMOTE_DTU_STATE" ColumnName="REMOTE_DTU_STATE" />
+          <ScalarProperty Name="REMOTE_DTU_LAST_ONLINE_TIME" ColumnName="REMOTE_DTU_LAST_ONLINE_TIME" />
+          <ScalarProperty Name="REMOTE_DTU_LAST_HEARTBEAT_TIME" ColumnName="REMOTE_DTU_LAST_HEARTBEAT_TIME" />
+          <ScalarProperty Name="HEARTBEAT_LOST_COUNT" ColumnName="HEARTBEAT_LOST_COUNT" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="DTU_PORT" ColumnName="DTU_PORT" />
+          <ScalarProperty Name="DTU_IP" ColumnName="DTU_IP" />
+          <ScalarProperty Name="M200901" ColumnName="M200901" />
+          <ScalarProperty Name="ProductDtuId" ColumnName="ProductDtuId" />
+          <ScalarProperty Name="P1" ColumnName="P1" />
+          <ScalarProperty Name="P2" ColumnName="P2" />
+          <ScalarProperty Name="P3" ColumnName="P3" />
+          <ScalarProperty Name="P4" ColumnName="P4" />
+          <ScalarProperty Name="DtuIp2" ColumnName="DtuIp2" />
+          <ScalarProperty Name="DtuPort2" ColumnName="DtuPort2" />
+          <ScalarProperty Name="DtuIp3" ColumnName="DtuIp3" />
+          <ScalarProperty Name="DtuPort3" ColumnName="DtuPort3" />
+          <ScalarProperty Name="DtuMode" ColumnName="DtuMode" />
+          <ScalarProperty Name="PacketSize" ColumnName="PacketSize" />
+          <ScalarProperty Name="PacketInterval" ColumnName="PacketInterval" />
+          <ScalarProperty Name="ReconnectionCount" ColumnName="ReconnectionCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_ROLE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_ROLE">
+        <MappingFragment StoreEntitySet="T_DIM_ROLE">
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="ROLE_CODE" ColumnName="ROLE_CODE" />
+          <ScalarProperty Name="ROLE_DESCRIPTION" ColumnName="ROLE_DESCRIPTION" />
+          <ScalarProperty Name="DefaultURL" ColumnName="DefaultURL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_ROLE_API_RESOURCE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_ROLE_API_RESOURCE">
+        <MappingFragment StoreEntitySet="T_DIM_ROLE_API_RESOURCE">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ApiReSourceID" ColumnName="ApiReSourceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_ROLE_RESOURCE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_ROLE_RESOURCE">
+        <MappingFragment StoreEntitySet="T_DIM_ROLE_RESOURCE">
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="OPERATION_RES_ID" ColumnName="OPERATION_RES_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_SAFETY_FACTOR_TYPE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_SAFETY_FACTOR_TYPE">
+        <MappingFragment StoreEntitySet="T_DIM_SAFETY_FACTOR_TYPE">
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_PARENT_ID" ColumnName="SAFETY_FACTOR_TYPE_PARENT_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_NAME" ColumnName="SAFETY_FACTOR_TYPE_NAME" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_NAME_EN" ColumnName="SAFETY_FACTOR_TYPE_NAME_EN" />
+          <ScalarProperty Name="FACTOR_VALUE_COLUMN_NUMBER" ColumnName="FACTOR_VALUE_COLUMN_NUMBER" />
+          <ScalarProperty Name="FACTOR_VALUE_COLUMNS" ColumnName="FACTOR_VALUE_COLUMNS" />
+          <ScalarProperty Name="FACTOR_VALUE_DECIMAL_PLACES" ColumnName="FACTOR_VALUE_DECIMAL_PLACES" />
+          <ScalarProperty Name="FACTOR_VALUE_UNIT" ColumnName="FACTOR_VALUE_UNIT" />
+          <ScalarProperty Name="SAFETY_FACTOR_FLAG" ColumnName="SAFETY_FACTOR_FLAG" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_COLOR" ColumnName="SAFETY_FACTOR_TYPE_COLOR" />
+          <ScalarProperty Name="IMG_SRC" ColumnName="IMG_SRC" />
+          <ScalarProperty Name="THEMES_TABLE_NAME" ColumnName="THEMES_TABLE_NAME" />
+          <ScalarProperty Name="THEMES_COLUMNS" ColumnName="THEMES_COLUMNS" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ORIGINAL_TABLE_NAME" ColumnName="ORIGINAL_TABLE_NAME" />
+          <ScalarProperty Name="ORIGINAL_COLUMNS" ColumnName="ORIGINAL_COLUMNS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_SECTION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_SECTION">
+        <MappingFragment StoreEntitySet="T_DIM_SECTION">
+          <ScalarProperty Name="SectionId" ColumnName="SectionId" />
+          <ScalarProperty Name="SectionName" ColumnName="SectionName" />
+          <ScalarProperty Name="SectionStatus" ColumnName="SectionStatus" />
+          <ScalarProperty Name="HeapMapName" ColumnName="HeapMapName" />
+          <ScalarProperty Name="StructId" ColumnName="StructId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_SENSOR">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_SENSOR">
+        <MappingFragment StoreEntitySet="T_DIM_SENSOR">
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="PRODUCT_SENSOR_ID" ColumnName="PRODUCT_SENSOR_ID" />
+          <ScalarProperty Name="DAI_CHANNEL_NUMBER" ColumnName="DAI_CHANNEL_NUMBER" />
+          <ScalarProperty Name="SENSOR_IDENTIFICATION_CODE" ColumnName="SENSOR_IDENTIFICATION_CODE" />
+          <ScalarProperty Name="SENSOR_LOCATION_DESCRIPTION" ColumnName="SENSOR_LOCATION_DESCRIPTION" />
+          <ScalarProperty Name="SENSOR_LOCATION_X" ColumnName="SENSOR_LOCATION_X" />
+          <ScalarProperty Name="SENSOR_LOCATION_Y" ColumnName="SENSOR_LOCATION_Y" />
+          <ScalarProperty Name="SENSOR_LOCATION_Z" ColumnName="SENSOR_LOCATION_Z" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="PRODUCED_DATE" ColumnName="PRODUCED_DATE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="STRUCT_ID" ColumnName="STRUCT_ID" />
+          <ScalarProperty Name="DTU_ID" ColumnName="DTU_ID" />
+          <ScalarProperty Name="MODULE_NO" ColumnName="MODULE_NO" />
+          <ScalarProperty Name="Identification" ColumnName="Identification" />
+          <ScalarProperty Name="SensorGranularity" ColumnName="SensorGranularity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_SENSOR_CORRENT">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_SENSOR_CORRENT">
+        <MappingFragment StoreEntitySet="T_DIM_SENSOR_CORRENT">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SensorId" ColumnName="SensorId" />
+          <ScalarProperty Name="CorrentSensorId" ColumnName="CorrentSensorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_SENSOR_DATASTATUS">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_SENSOR_DATASTATUS">
+        <MappingFragment StoreEntitySet="T_DIM_SENSOR_DATASTATUS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SensorId" ColumnName="SensorId" />
+          <ScalarProperty Name="DataStatus" ColumnName="DataStatus" />
+          <ScalarProperty Name="LastAcquisitionTime" ColumnName="LastAcquisitionTime" />
+          <ScalarProperty Name="CurrentAcquisitionTime" ColumnName="CurrentAcquisitionTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_SENSOR_GPS">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_SENSOR_GPS">
+        <MappingFragment StoreEntitySet="T_DIM_SENSOR_GPS">
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="GPS_TABLE" ColumnName="GPS_TABLE" />
+          <ScalarProperty Name="INITIAL_X" ColumnName="INITIAL_X" />
+          <ScalarProperty Name="INITIAL_Y" ColumnName="INITIAL_Y" />
+          <ScalarProperty Name="INITIAL_Z" ColumnName="INITIAL_Z" />
+          <ScalarProperty Name="GPS_CONN" ColumnName="GPS_CONN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_SENSOR_GROUP_CEXIE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_SENSOR_GROUP_CEXIE">
+        <MappingFragment StoreEntitySet="T_DIM_SENSOR_GROUP_CEXIE">
+          <ScalarProperty Name="SENSOR_GROUP_ID" ColumnName="SENSOR_GROUP_ID" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="DEPTH" ColumnName="DEPTH" />
+          <ScalarProperty Name="DISPLAY_DEPTH" ColumnName="DISPLAY_DEPTH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_SENSOR_GROUP_CHENJIANG">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_SENSOR_GROUP_CHENJIANG">
+        <MappingFragment StoreEntitySet="T_DIM_SENSOR_GROUP_CHENJIANG">
+          <ScalarProperty Name="SENSOR_GROUP_ID" ColumnName="SENSOR_GROUP_ID" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="LENGTH" ColumnName="LENGTH" />
+          <ScalarProperty Name="isJIZHUNDIAN" ColumnName="isJIZHUNDIAN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_SENSOR_GROUP_JINRUNXIAN">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_SENSOR_GROUP_JINRUNXIAN">
+        <MappingFragment StoreEntitySet="T_DIM_SENSOR_GROUP_JINRUNXIAN">
+          <ScalarProperty Name="SENSOR_GROUP_ID" ColumnName="SENSOR_GROUP_ID" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="HEIGHT" ColumnName="HEIGHT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_Sensor_Init">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_Sensor_Init">
+        <MappingFragment StoreEntitySet="T_DIM_Sensor_Init">
+          <ScalarProperty Name="SensorInitID" ColumnName="SensorInitID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SENSORINIT1" ColumnName="SENSORINIT1" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="INITNUM" ColumnName="INITNUM" />
+          <ScalarProperty Name="SENSORINIT2" ColumnName="SENSORINIT2" />
+          <ScalarProperty Name="SENSORINIT3" ColumnName="SENSORINIT3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_SENSOR_PRODUCT">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_SENSOR_PRODUCT">
+        <MappingFragment StoreEntitySet="T_DIM_SENSOR_PRODUCT">
+          <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+          <ScalarProperty Name="PRODUCT_TYPE_ID" ColumnName="PRODUCT_TYPE_ID" />
+          <ScalarProperty Name="PRODUCT_NAME" ColumnName="PRODUCT_NAME" />
+          <ScalarProperty Name="PRODUCT_CODE" ColumnName="PRODUCT_CODE" />
+          <ScalarProperty Name="PRODUCT_UPPER_LIMIT1" ColumnName="PRODUCT_UPPER_LIMIT1" />
+          <ScalarProperty Name="PRODUCT_LOWER_LIMIT1" ColumnName="PRODUCT_LOWER_LIMIT1" />
+          <ScalarProperty Name="PRODUCT_UPPER_LIMIT2" ColumnName="PRODUCT_UPPER_LIMIT2" />
+          <ScalarProperty Name="PRODUCT_LOWER_LIMIT2" ColumnName="PRODUCT_LOWER_LIMIT2" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="PRODUCT_TYPE_KEY" ColumnName="PRODUCT_TYPE_KEY" />
+          <ScalarProperty Name="PROTOCOL_ID" ColumnName="PROTOCOL_ID" />
+          <ScalarProperty Name="FORMAULAID" ColumnName="FORMAULAID" />
+          <ScalarProperty Name="PRODUCT_UPPER_LIMIT3" ColumnName="PRODUCT_UPPER_LIMIT3" />
+          <ScalarProperty Name="PRODUCT_LOWER_LIMIT3" ColumnName="PRODUCT_LOWER_LIMIT3" />
+          <ScalarProperty Name="PRODUCT_UPPER_LIMIT4" ColumnName="PRODUCT_UPPER_LIMIT4" />
+          <ScalarProperty Name="PRODUCT_LOWER_LIMIT4" ColumnName="PRODUCT_LOWER_LIMIT4" />
+          <ScalarProperty Name="LIMIT_MAP" ColumnName="LIMIT_MAP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_SENSORPRODUCT_SAFETYFACTORTYPE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_SENSORPRODUCT_SAFETYFACTORTYPE">
+        <MappingFragment StoreEntitySet="T_DIM_SENSORPRODUCT_SAFETYFACTORTYPE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_PRODUCT_ID" ColumnName="SENSOR_PRODUCT_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_STRUCT_DTU">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_STRUCT_DTU">
+        <MappingFragment StoreEntitySet="T_DIM_STRUCT_DTU">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StructureId" ColumnName="StructureId" />
+          <ScalarProperty Name="DtuId" ColumnName="DtuId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_STRUCTUER_LINE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_STRUCTUER_LINE">
+        <MappingFragment StoreEntitySet="T_DIM_STRUCTUER_LINE">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Line_Name" ColumnName="Line_Name" />
+          <ScalarProperty Name="Line_Length" ColumnName="Line_Length" />
+          <ScalarProperty Name="Start_Id" ColumnName="Start_Id" />
+          <ScalarProperty Name="End_Id" ColumnName="End_Id" />
+          <ScalarProperty Name="Structure_Id" ColumnName="Structure_Id" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_STRUCTUER_PROGRESS">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_STRUCTUER_PROGRESS">
+        <MappingFragment StoreEntitySet="T_DIM_STRUCTUER_PROGRESS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Line_Id" ColumnName="Line_Id" />
+          <ScalarProperty Name="Construct_Length" ColumnName="Construct_Length" />
+          <ScalarProperty Name="Up_Datatime" ColumnName="Up_Datatime" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_STRUCTURE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_STRUCTURE">
+        <MappingFragment StoreEntitySet="T_DIM_STRUCTURE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STRUCTURE_TYPE_ID" ColumnName="STRUCTURE_TYPE_ID" />
+          <ScalarProperty Name="STRUCTURE_NAME_CN" ColumnName="STRUCTURE_NAME_CN" />
+          <ScalarProperty Name="STRUCTURE_NAME_EN" ColumnName="STRUCTURE_NAME_EN" />
+          <ScalarProperty Name="STRUCTURE_ALIAS_CN" ColumnName="STRUCTURE_ALIAS_CN" />
+          <ScalarProperty Name="STRUCTURE_ALIAS_EN" ColumnName="STRUCTURE_ALIAS_EN" />
+          <ScalarProperty Name="STRUCTURE_TRIAL_CN" ColumnName="STRUCTURE_TRIAL_CN" />
+          <ScalarProperty Name="STRUCTURE_TRIAL_EN" ColumnName="STRUCTURE_TRIAL_EN" />
+          <ScalarProperty Name="STRUCTURE_REGION" ColumnName="STRUCTURE_REGION" />
+          <ScalarProperty Name="STRUCTURE_DETAIL_ADDRESS" ColumnName="STRUCTURE_DETAIL_ADDRESS" />
+          <ScalarProperty Name="STRUCTURE_LONGITUDE" ColumnName="STRUCTURE_LONGITUDE" />
+          <ScalarProperty Name="STRUCTURE_LATITUDE" ColumnName="STRUCTURE_LATITUDE" />
+          <ScalarProperty Name="CONSTRUCTION_COMPANY_NAME" ColumnName="CONSTRUCTION_COMPANY_NAME" />
+          <ScalarProperty Name="CONSTRUCTION_DATE" ColumnName="CONSTRUCTION_DATE" />
+          <ScalarProperty Name="USEFUL_LIFE" ColumnName="USEFUL_LIFE" />
+          <ScalarProperty Name="STRUCTURE_HOT_SPOT_MAP" ColumnName="STRUCTURE_HOT_SPOT_MAP" />
+          <ScalarProperty Name="STRUCTURE_HOT_SPOT_MAP_TYPE" ColumnName="STRUCTURE_HOT_SPOT_MAP_TYPE" />
+          <ScalarProperty Name="PIC_BIG_STRUCTURE" ColumnName="PIC_BIG_STRUCTURE" />
+          <ScalarProperty Name="PIC_MEDIUM_STRUCTURE" ColumnName="PIC_MEDIUM_STRUCTURE" />
+          <ScalarProperty Name="PIC_SMALL_STRUCTURE" ColumnName="PIC_SMALL_STRUCTURE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="STRUCTURE_ALTITUDE" ColumnName="STRUCTURE_ALTITUDE" />
+          <ScalarProperty Name="Imagename" ColumnName="Imagename" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="RegionPath" ColumnName="RegionPath" />
+          <ScalarProperty Name="StructureTypePath" ColumnName="StructureTypePath" />
+          <ScalarProperty Name="ProjectStatus" ColumnName="ProjectStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_STRUCTURE_FACTOR">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_STRUCTURE_FACTOR">
+        <MappingFragment StoreEntitySet="T_DIM_STRUCTURE_FACTOR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STRUCTURE_ID" ColumnName="STRUCTURE_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_STRUCTURE_TYPE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_STRUCTURE_TYPE">
+        <MappingFragment StoreEntitySet="T_DIM_STRUCTURE_TYPE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_STRUCTURE_TYPE_CN" ColumnName="NAME_STRUCTURE_TYPE_CN" />
+          <ScalarProperty Name="NAME_STRUCTURE_TYPE_EN" ColumnName="NAME_STRUCTURE_TYPE_EN" />
+          <ScalarProperty Name="PARENT_STRUCTURE_TYPE_ID" ColumnName="PARENT_STRUCTURE_TYPE_ID" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="STRUCTURE_TYPE_KEY" ColumnName="STRUCTURE_TYPE_KEY" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_STRUCTURE_TYPE_FACTOR">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_STRUCTURE_TYPE_FACTOR">
+        <MappingFragment StoreEntitySet="T_DIM_STRUCTURE_TYPE_FACTOR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STRUCTURE_TYPE_ID" ColumnName="STRUCTURE_TYPE_ID" />
+          <ScalarProperty Name="FACTOR_TYPE_ID" ColumnName="FACTOR_TYPE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_USER">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_USER">
+        <MappingFragment StoreEntitySet="T_DIM_USER">
+          <ScalarProperty Name="USER_NO" ColumnName="USER_NO" />
+          <ScalarProperty Name="USER_PWD" ColumnName="USER_PWD" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_EMAIL" ColumnName="USER_EMAIL" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="USER_IS_TRIL" ColumnName="USER_IS_TRIL" />
+          <ScalarProperty Name="USER_IS_ENABLED" ColumnName="USER_IS_ENABLED" />
+          <ScalarProperty Name="SYSTEM_NAME" ColumnName="SYSTEM_NAME" />
+          <ScalarProperty Name="USER_PHONE" ColumnName="USER_PHONE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_USER_ORG">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_USER_ORG">
+        <MappingFragment StoreEntitySet="T_DIM_USER_ORG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USER_NO" ColumnName="USER_NO" />
+          <ScalarProperty Name="ORGANIZATION_ID" ColumnName="ORGANIZATION_ID" />
+          <ScalarProperty Name="username" ColumnName="username" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_USER_ROLE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_USER_ROLE">
+        <MappingFragment StoreEntitySet="T_DIM_USER_ROLE">
+          <ScalarProperty Name="USER_NO" ColumnName="USER_NO" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_USER_STRUCTURE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_USER_STRUCTURE">
+        <MappingFragment StoreEntitySet="T_DIM_USER_STRUCTURE">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="USER_NO" ColumnName="USER_NO" />
+          <ScalarProperty Name="STRUCTURE_ID" ColumnName="STRUCTURE_ID" />
+          <ScalarProperty Name="StructConcerned" ColumnName="StructConcerned" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_WARNING_DEVICETYPE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_WARNING_DEVICETYPE">
+        <MappingFragment StoreEntitySet="T_DIM_WARNING_DEVICETYPE">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DeviceTypeCode" ColumnName="DeviceTypeCode" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIM_WARNING_TYPE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_DIM_WARNING_TYPE">
+        <MappingFragment StoreEntitySet="T_DIM_WARNING_TYPE">
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="WarningLevel" ColumnName="WarningLevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_DEFAULTGPS">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_DEFAULTGPS">
+        <MappingFragment StoreEntitySet="T_FACT_DEFAULTGPS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_1" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_1" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_1" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_1" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_1" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_1" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_2" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_2" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_2" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_2" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_2" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_2" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_3" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_3" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_3" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_3" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_3" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_3" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_4" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_4" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_4" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_4" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_4" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_4" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_1" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_1" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_1" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_1" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_1" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_1" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_2" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_2" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_2" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_2" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_2" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_2" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_3" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_3" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_3" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_3" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_3" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_3" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_4" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_4" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_4" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_4" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_4" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_4" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_UP_VALUE_1" ColumnName="Z_AXIS_THRESHOLD_UP_VALUE_1" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_DOWN_VALUE_1" ColumnName="Z_AXIS_THRESHOLD_DOWN_VALUE_1" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_LEVEL_SCORE_1" ColumnName="Z_AXIS_THRESHOLD_LEVEL_SCORE_1" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_UP_VALUE_2" ColumnName="Z_AXIS_THRESHOLD_UP_VALUE_2" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_DOWN_VALUE_2" ColumnName="Z_AXIS_THRESHOLD_DOWN_VALUE_2" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_LEVEL_SCORE_2" ColumnName="Z_AXIS_THRESHOLD_LEVEL_SCORE_2" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_UP_VALUE_3" ColumnName="Z_AXIS_THRESHOLD_UP_VALUE_3" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_DOWN_VALUE_3" ColumnName="Z_AXIS_THRESHOLD_DOWN_VALUE_3" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_LEVEL_SCORE_3" ColumnName="Z_AXIS_THRESHOLD_LEVEL_SCORE_3" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_UP_VALUE_4" ColumnName="Z_AXIS_THRESHOLD_UP_VALUE_4" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_DOWN_VALUE_4" ColumnName="Z_AXIS_THRESHOLD_DOWN_VALUE_4" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_LEVEL_SCORE_4" ColumnName="Z_AXIS_THRESHOLD_LEVEL_SCORE_4" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_DEFAULTINCLINOMETER">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_DEFAULTINCLINOMETER">
+        <MappingFragment StoreEntitySet="T_FACT_DEFAULTINCLINOMETER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_1" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_1" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_1" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_1" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_1" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_1" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_2" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_2" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_2" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_2" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_2" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_2" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_3" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_3" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_3" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_3" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_3" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_3" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_4" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_4" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_4" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_4" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_4" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_4" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_1" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_1" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_1" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_1" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_1" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_1" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_2" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_2" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_2" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_2" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_2" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_2" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_3" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_3" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_3" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_3" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_3" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_3" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_4" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_4" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_4" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_4" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_4" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_4" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_DEFAULTSENSOR_THRESHOLD">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_DEFAULTSENSOR_THRESHOLD">
+        <MappingFragment StoreEntitySet="T_FACT_DEFAULTSENSOR_THRESHOLD">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+          <ScalarProperty Name="THRESHOLD_UP_VALUE_1" ColumnName="THRESHOLD_UP_VALUE_1" />
+          <ScalarProperty Name="THRESHOLD_DOWN_VALUE_1" ColumnName="THRESHOLD_DOWN_VALUE_1" />
+          <ScalarProperty Name="THRESHOLD_LEVEL_SCORE_1" ColumnName="THRESHOLD_LEVEL_SCORE_1" />
+          <ScalarProperty Name="THRESHOLD_UP_VALUE_2" ColumnName="THRESHOLD_UP_VALUE_2" />
+          <ScalarProperty Name="THRESHOLD_DOWN_VALUE_2" ColumnName="THRESHOLD_DOWN_VALUE_2" />
+          <ScalarProperty Name="THRESHOLD_LEVEL_SCORE_2" ColumnName="THRESHOLD_LEVEL_SCORE_2" />
+          <ScalarProperty Name="THRESHOLD_UP_VALUE_3" ColumnName="THRESHOLD_UP_VALUE_3" />
+          <ScalarProperty Name="THRESHOLD_DOWN_VALUE_3" ColumnName="THRESHOLD_DOWN_VALUE_3" />
+          <ScalarProperty Name="THRESHOLD_LEVEL_SCORE_3" ColumnName="THRESHOLD_LEVEL_SCORE_3" />
+          <ScalarProperty Name="THRESHOLD_UP_VALUE_4" ColumnName="THRESHOLD_UP_VALUE_4" />
+          <ScalarProperty Name="THRESHOLD_DOWN_VALUE_4" ColumnName="THRESHOLD_DOWN_VALUE_4" />
+          <ScalarProperty Name="THRESHOLD_LEVEL_SCORE_4" ColumnName="THRESHOLD_LEVEL_SCORE_4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_GPS">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_GPS">
+        <MappingFragment StoreEntitySet="T_FACT_GPS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="THRESHOLD_CONFIG_ID" ColumnName="THRESHOLD_CONFIG_ID" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_1" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_1" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_1" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_1" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_1" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_1" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_2" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_2" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_2" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_2" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_2" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_2" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_3" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_3" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_3" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_3" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_3" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_3" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_4" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_4" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_4" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_4" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_4" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_4" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_1" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_1" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_1" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_1" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_1" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_1" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_2" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_2" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_2" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_2" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_2" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_2" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_3" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_3" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_3" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_3" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_3" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_3" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_4" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_4" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_4" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_4" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_4" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_4" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_UP_VALUE_1" ColumnName="Z_AXIS_THRESHOLD_UP_VALUE_1" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_DOWN_VALUE_1" ColumnName="Z_AXIS_THRESHOLD_DOWN_VALUE_1" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_LEVEL_SCORE_1" ColumnName="Z_AXIS_THRESHOLD_LEVEL_SCORE_1" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_UP_VALUE_2" ColumnName="Z_AXIS_THRESHOLD_UP_VALUE_2" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_DOWN_VALUE_2" ColumnName="Z_AXIS_THRESHOLD_DOWN_VALUE_2" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_LEVEL_SCORE_2" ColumnName="Z_AXIS_THRESHOLD_LEVEL_SCORE_2" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_UP_VALUE_3" ColumnName="Z_AXIS_THRESHOLD_UP_VALUE_3" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_DOWN_VALUE_3" ColumnName="Z_AXIS_THRESHOLD_DOWN_VALUE_3" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_LEVEL_SCORE_3" ColumnName="Z_AXIS_THRESHOLD_LEVEL_SCORE_3" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_UP_VALUE_4" ColumnName="Z_AXIS_THRESHOLD_UP_VALUE_4" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_DOWN_VALUE_4" ColumnName="Z_AXIS_THRESHOLD_DOWN_VALUE_4" />
+          <ScalarProperty Name="Z_AXIS_THRESHOLD_LEVEL_SCORE_4" ColumnName="Z_AXIS_THRESHOLD_LEVEL_SCORE_4" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_INCLINOMETER">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_INCLINOMETER">
+        <MappingFragment StoreEntitySet="T_FACT_INCLINOMETER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="THRESHOLD_CONFIG_ID" ColumnName="THRESHOLD_CONFIG_ID" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_1" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_1" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_1" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_1" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_1" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_1" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_2" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_2" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_2" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_2" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_2" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_2" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_3" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_3" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_3" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_3" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_3" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_3" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_UP_VALUE_4" ColumnName="X_AXIS_THRESHOLD_UP_VALUE_4" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_DOWN_VALUE_4" ColumnName="X_AXIS_THRESHOLD_DOWN_VALUE_4" />
+          <ScalarProperty Name="X_AXIS_THRESHOLD_LEVEL_SCORE_4" ColumnName="X_AXIS_THRESHOLD_LEVEL_SCORE_4" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_1" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_1" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_1" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_1" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_1" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_1" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_2" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_2" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_2" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_2" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_2" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_2" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_3" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_3" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_3" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_3" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_3" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_3" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_UP_VALUE_4" ColumnName="Y_AXIS_THRESHOLD_UP_VALUE_4" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_DOWN_VALUE_4" ColumnName="Y_AXIS_THRESHOLD_DOWN_VALUE_4" />
+          <ScalarProperty Name="Y_AXIS_THRESHOLD_LEVEL_SCORE_4" ColumnName="Y_AXIS_THRESHOLD_LEVEL_SCORE_4" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_NORMALIZED">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_NORMALIZED">
+        <MappingFragment StoreEntitySet="T_FACT_NORMALIZED">
+          <ScalarProperty Name="THRESHOLD_CONFIG_ID" ColumnName="THRESHOLD_CONFIG_ID" />
+          <ScalarProperty Name="X_AXIS_WEIGHTS" ColumnName="X_AXIS_WEIGHTS" />
+          <ScalarProperty Name="Y_AXIS_WEIGHTS" ColumnName="Y_AXIS_WEIGHTS" />
+          <ScalarProperty Name="Z_AXIS_WEIGHTS" ColumnName="Z_AXIS_WEIGHTS" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_SAFETY_FACTOR_SCORE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_SAFETY_FACTOR_SCORE">
+        <MappingFragment StoreEntitySet="T_FACT_SAFETY_FACTOR_SCORE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_SCORE" ColumnName="SAFETY_FACTOR_SCORE" />
+          <ScalarProperty Name="EVALUATION_DATETIME" ColumnName="EVALUATION_DATETIME" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_SAFETY_FACTOR_WEIGHTS">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_SAFETY_FACTOR_WEIGHTS">
+        <MappingFragment StoreEntitySet="T_FACT_SAFETY_FACTOR_WEIGHTS">
+          <ScalarProperty Name="SAFETY_FACTOR_WEIGHTS_ID" ColumnName="SAFETY_FACTOR_WEIGHTS_ID" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_WEIGHTS" ColumnName="SAFETY_FACTOR_WEIGHTS" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_SENSOR_THRESHOLD">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_SENSOR_THRESHOLD">
+        <MappingFragment StoreEntitySet="T_FACT_SENSOR_THRESHOLD">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SensorId" ColumnName="SensorId" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ThresholdLevel" ColumnName="ThresholdLevel" />
+          <ScalarProperty Name="ThresholdDownValue" ColumnName="ThresholdDownValue" />
+          <ScalarProperty Name="ThresholdUpValue" ColumnName="ThresholdUpValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_SENSOR_WEIGHTS">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_SENSOR_WEIGHTS">
+        <MappingFragment StoreEntitySet="T_FACT_SENSOR_WEIGHTS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SENSOR_WEIGHTS" ColumnName="SENSOR_WEIGHTS" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_STRUCTURE_SCORE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_STRUCTURE_SCORE">
+        <MappingFragment StoreEntitySet="T_FACT_STRUCTURE_SCORE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+          <ScalarProperty Name="STRUCTURE_SCORE" ColumnName="STRUCTURE_SCORE" />
+          <ScalarProperty Name="EVALUATION_DATETIME" ColumnName="EVALUATION_DATETIME" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_SUB_SAFETY_FACTOR_WEIGHTS">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_SUB_SAFETY_FACTOR_WEIGHTS">
+        <MappingFragment StoreEntitySet="T_FACT_SUB_SAFETY_FACTOR_WEIGHTS">
+          <ScalarProperty Name="SUB_SAFETY_FACTOR_WEIGHTS_ID" ColumnName="SUB_SAFETY_FACTOR_WEIGHTS_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="SUB_SAFETY_FACTOR_WEIGHTS" ColumnName="SUB_SAFETY_FACTOR_WEIGHTS" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ORG_STRUC_ID" ColumnName="ORG_STRUC_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FACT_WEIGHT_SCORE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_FACT_WEIGHT_SCORE">
+        <MappingFragment StoreEntitySet="T_FACT_WEIGHT_SCORE">
+          <ScalarProperty Name="SCORE_ID" ColumnName="SCORE_ID" />
+          <ScalarProperty Name="SCORE_LEVEL" ColumnName="SCORE_LEVEL" />
+          <ScalarProperty Name="SCORE_VALUE_LOWER_LIMIT" ColumnName="SCORE_VALUE_LOWER_LIMIT" />
+          <ScalarProperty Name="SCORE_VALUE_UPPER_LIMIT" ColumnName="SCORE_VALUE_UPPER_LIMIT" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_IOS_VERSION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_IOS_VERSION">
+        <MappingFragment StoreEntitySet="T_IOS_VERSION">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="UpgradeUrl" ColumnName="UpgradeUrl" />
+          <ScalarProperty Name="ReleaseTime" ColumnName="ReleaseTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_REPORT_COLLECTION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_REPORT_COLLECTION">
+        <MappingFragment StoreEntitySet="T_REPORT_COLLECTION">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OrgId" ColumnName="OrgId" />
+          <ScalarProperty Name="StructId" ColumnName="StructId" />
+          <ScalarProperty Name="FactorId" ColumnName="FactorId" />
+          <ScalarProperty Name="RptType" ColumnName="RptType" />
+          <ScalarProperty Name="DateType" ColumnName="DateType" />
+          <ScalarProperty Name="FileFullName" ColumnName="FileFullName" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UnconfirmedFileUrl" ColumnName="UnconfirmedFileUrl" />
+          <ScalarProperty Name="UnconfirmedDate" ColumnName="UnconfirmedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_REPORT_CONFIG">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_REPORT_CONFIG">
+        <MappingFragment StoreEntitySet="T_REPORT_CONFIG">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrgId" ColumnName="OrgId" />
+          <ScalarProperty Name="StructId" ColumnName="StructId" />
+          <ScalarProperty Name="FactorId" ColumnName="FactorId" />
+          <ScalarProperty Name="RptType" ColumnName="RptType" />
+          <ScalarProperty Name="DateType" ColumnName="DateType" />
+          <ScalarProperty Name="ReportName" ColumnName="ReportName" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="CreateInterval" ColumnName="CreateInterval" />
+          <ScalarProperty Name="NeedConfirmed" ColumnName="NeedConfirmed" />
+          <ScalarProperty Name="GetDataTime" ColumnName="GetDataTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_REPORT_CONFIG_TEMPLATE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_REPORT_CONFIG_TEMPLATE">
+        <MappingFragment StoreEntitySet="T_REPORT_CONFIG_TEMPLATE">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ReportConfigId" ColumnName="ReportConfigId" />
+          <ScalarProperty Name="ReportTemplateId" ColumnName="ReportTemplateId" />
+          <ScalarProperty Name="Para1" ColumnName="Para1" />
+          <ScalarProperty Name="Para2" ColumnName="Para2" />
+          <ScalarProperty Name="Para3" ColumnName="Para3" />
+          <ScalarProperty Name="Para4" ColumnName="Para4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_REPORT_TEMPLATE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_REPORT_TEMPLATE">
+        <MappingFragment StoreEntitySet="T_REPORT_TEMPLATE">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="HandleName" ColumnName="HandleName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FactorId" ColumnName="FactorId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SYSTEM_LOG">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_SYSTEM_LOG">
+        <MappingFragment StoreEntitySet="T_SYSTEM_LOG">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RecordTime" ColumnName="RecordTime" />
+          <ScalarProperty Name="ProcessName" ColumnName="ProcessName" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="LineNo" ColumnName="LineNo" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Exception" ColumnName="Exception" />
+          <ScalarProperty Name="IsSend" ColumnName="IsSend" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_TASK_INSTANT">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_TASK_INSTANT">
+        <MappingFragment StoreEntitySet="T_TASK_INSTANT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DTU_ID" ColumnName="DTU_ID" />
+          <ScalarProperty Name="SENSORS" ColumnName="SENSORS" />
+          <ScalarProperty Name="TASK_NAME" ColumnName="TASK_NAME" />
+          <ScalarProperty Name="REQUESTER" ColumnName="REQUESTER" />
+          <ScalarProperty Name="REQUESTED" ColumnName="REQUESTED" />
+          <ScalarProperty Name="FINISHED" ColumnName="FINISHED" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="ELAPSED" ColumnName="ELAPSED" />
+          <ScalarProperty Name="RESULT_CODE" ColumnName="RESULT_CODE" />
+          <ScalarProperty Name="RESULT_MSG" ColumnName="RESULT_MSG" />
+          <ScalarProperty Name="REQUEST_JSON" ColumnName="REQUEST_JSON" />
+          <ScalarProperty Name="RESULT_JSON" ColumnName="RESULT_JSON" />
+          <ScalarProperty Name="MSG_ID" ColumnName="MSG_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_CABLE_FORCE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_CABLE_FORCE">
+        <MappingFragment StoreEntitySet="T_THEMES_CABLE_FORCE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="CABLE_FORCE_QUANTITY_VALUE" ColumnName="CABLE_FORCE_QUANTITY_VALUE" />
+          <ScalarProperty Name="CABLE_FORCE_VALUE" ColumnName="CABLE_FORCE_VALUE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="RESERVED_FIELD_1" ColumnName="RESERVED_FIELD_1" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_DEFORMATION_BRIDGE_DEFLECTION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_BRIDGE_DEFLECTION">
+        <MappingFragment StoreEntitySet="T_THEMES_DEFORMATION_BRIDGE_DEFLECTION">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="DEFLECTION_PHYSICAL_QUANTITY_VALUE" ColumnName="DEFLECTION_PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="DEFLECTION_VALUE" ColumnName="DEFLECTION_VALUE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="RESERVED_FIELD_1" ColumnName="RESERVED_FIELD_1" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_DEFORMATION_CRACK">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_CRACK">
+        <MappingFragment StoreEntitySet="T_THEMES_DEFORMATION_CRACK">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="CRACK_PHYSICAL_QUANTITY_VALUE" ColumnName="CRACK_PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="CRACK_VALUE" ColumnName="CRACK_VALUE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="RESERVED_FIELD_1" ColumnName="RESERVED_FIELD_1" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_DEFORMATION_DEEP_DISPLACEMENT">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_DEEP_DISPLACEMENT">
+        <MappingFragment StoreEntitySet="T_THEMES_DEFORMATION_DEEP_DISPLACEMENT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_X_VALUE" ColumnName="PHYSICAL_QUANTITY_X_VALUE" />
+          <ScalarProperty Name="DEEP_DISPLACEMENT_X_VALUE" ColumnName="DEEP_DISPLACEMENT_X_VALUE" />
+          <ScalarProperty Name="DEEP_DISPLACEMENT_X_SCORE" ColumnName="DEEP_DISPLACEMENT_X_SCORE" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_Y_VALUE" ColumnName="PHYSICAL_QUANTITY_Y_VALUE" />
+          <ScalarProperty Name="DEEP_DISPLACEMENT_Y_VALUE" ColumnName="DEEP_DISPLACEMENT_Y_VALUE" />
+          <ScalarProperty Name="DEEP_DISPLACEMENT_Y_SCORE" ColumnName="DEEP_DISPLACEMENT_Y_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="DEEP_CUMULATIVEDISPLACEMENT_X_VALUE" ColumnName="DEEP_CUMULATIVEDISPLACEMENT_X_VALUE" />
+          <ScalarProperty Name="DEEP_CUMULATIVEDISPLACEMENT_Y_VALUE" ColumnName="DEEP_CUMULATIVEDISPLACEMENT_Y_VALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_DEFORMATION_DEEP_DISPLACEMENT_DAILY">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_DEEP_DISPLACEMENT_DAILY">
+        <MappingFragment StoreEntitySet="T_THEMES_DEFORMATION_DEEP_DISPLACEMENT_DAILY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_X_VALUE" ColumnName="PHYSICAL_QUANTITY_X_VALUE" />
+          <ScalarProperty Name="DEEP_DISPLACEMENT_X_VALUE" ColumnName="DEEP_DISPLACEMENT_X_VALUE" />
+          <ScalarProperty Name="DEEP_DISPLACEMENT_X_SCORE" ColumnName="DEEP_DISPLACEMENT_X_SCORE" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_Y_VALUE" ColumnName="PHYSICAL_QUANTITY_Y_VALUE" />
+          <ScalarProperty Name="DEEP_DISPLACEMENT_Y_VALUE" ColumnName="DEEP_DISPLACEMENT_Y_VALUE" />
+          <ScalarProperty Name="DEEP_DISPLACEMENT_Y_SCORE" ColumnName="DEEP_DISPLACEMENT_Y_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="DEEP_CUMULATIVEDISPLACEMENT_X_VALUE" ColumnName="DEEP_CUMULATIVEDISPLACEMENT_X_VALUE" />
+          <ScalarProperty Name="DEEP_CUMULATIVEDISPLACEMENT_Y_VALUE" ColumnName="DEEP_CUMULATIVEDISPLACEMENT_Y_VALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_DEFORMATION_SETTLEMENT">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_SETTLEMENT">
+        <MappingFragment StoreEntitySet="T_THEMES_DEFORMATION_SETTLEMENT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_VALUE" ColumnName="PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="SETTLEMENT_VALUE" ColumnName="SETTLEMENT_VALUE" />
+          <ScalarProperty Name="SETTLEMENT_SCORE" ColumnName="SETTLEMENT_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+          <ScalarProperty Name="Press_Original" ColumnName="Press_Original" />
+          <ScalarProperty Name="SETTLEMENT_VALUE_Original" ColumnName="SETTLEMENT_VALUE_Original" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT">
+        <MappingFragment StoreEntitySet="T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_X_VALUE" ColumnName="PHYSICAL_QUANTITY_X_VALUE" />
+          <ScalarProperty Name="SURFACE_DISPLACEMENT_X_VALUE" ColumnName="SURFACE_DISPLACEMENT_X_VALUE" />
+          <ScalarProperty Name="SURFACE_DISPLACEMENT_X_SCORE" ColumnName="SURFACE_DISPLACEMENT_X_SCORE" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_Y_VALUE" ColumnName="PHYSICAL_QUANTITY_Y_VALUE" />
+          <ScalarProperty Name="SURFACE_DISPLACEMENT_Y_VALUE" ColumnName="SURFACE_DISPLACEMENT_Y_VALUE" />
+          <ScalarProperty Name="SURFACE_DISPLACEMENT_Y_SCORE" ColumnName="SURFACE_DISPLACEMENT_Y_SCORE" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_Z_VALUE" ColumnName="PHYSICAL_QUANTITY_Z_VALUE" />
+          <ScalarProperty Name="SURFACE_DISPLACEMENT_Z_VALUE" ColumnName="SURFACE_DISPLACEMENT_Z_VALUE" />
+          <ScalarProperty Name="SURFACE_DISPLACEMENT_Z_SCORE" ColumnName="SURFACE_DISPLACEMENT_Z_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRITIPOIN" ColumnName="DESCRITIPOIN" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT_DAILY">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT_DAILY">
+        <MappingFragment StoreEntitySet="T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT_DAILY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_X_VALUE" ColumnName="PHYSICAL_QUANTITY_X_VALUE" />
+          <ScalarProperty Name="SURFACE_DISPLACEMENT_X_VALUE" ColumnName="SURFACE_DISPLACEMENT_X_VALUE" />
+          <ScalarProperty Name="SURFACE_DISPLACEMENT_X_SCORE" ColumnName="SURFACE_DISPLACEMENT_X_SCORE" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_Y_VALUE" ColumnName="PHYSICAL_QUANTITY_Y_VALUE" />
+          <ScalarProperty Name="SURFACE_DISPLACEMENT_Y_VALUE" ColumnName="SURFACE_DISPLACEMENT_Y_VALUE" />
+          <ScalarProperty Name="SURFACE_DISPLACEMENT_Y_SCORE" ColumnName="SURFACE_DISPLACEMENT_Y_SCORE" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_Z_VALUE" ColumnName="PHYSICAL_QUANTITY_Z_VALUE" />
+          <ScalarProperty Name="SURFACE_DISPLACEMENT_Z_VALUE" ColumnName="SURFACE_DISPLACEMENT_Z_VALUE" />
+          <ScalarProperty Name="SURFACE_DISPLACEMENT_Z_SCORE" ColumnName="SURFACE_DISPLACEMENT_Z_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRITIPOIN" ColumnName="DESCRITIPOIN" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_ENVI_BEACH">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_ENVI_BEACH">
+        <MappingFragment StoreEntitySet="T_THEMES_ENVI_BEACH">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="BEACH_LENGTH" ColumnName="BEACH_LENGTH" />
+          <ScalarProperty Name="WATER_LEVEL" ColumnName="WATER_LEVEL" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_ENVI_RAINFALL">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_ENVI_RAINFALL">
+        <MappingFragment StoreEntitySet="T_THEMES_ENVI_RAINFALL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_VALUE" ColumnName="PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="RAINFALL_VALUE" ColumnName="RAINFALL_VALUE" />
+          <ScalarProperty Name="RAINFALL_SCORE" ColumnName="RAINFALL_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="RESERVED_FIELD_1" ColumnName="RESERVED_FIELD_1" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_ENVI_SATURATION_LINE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_ENVI_SATURATION_LINE">
+        <MappingFragment StoreEntitySet="T_THEMES_ENVI_SATURATION_LINE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="HOLE_DIS" ColumnName="HOLE_DIS" />
+          <ScalarProperty Name="HEIGHT" ColumnName="HEIGHT" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_ENVI_SEEPAGE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_ENVI_SEEPAGE">
+        <MappingFragment StoreEntitySet="T_THEMES_ENVI_SEEPAGE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="SEEPAGE" ColumnName="SEEPAGE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_ENVI_TEMP_HUMI">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_ENVI_TEMP_HUMI">
+        <MappingFragment StoreEntitySet="T_THEMES_ENVI_TEMP_HUMI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_TEMPERATURE_VALUE" ColumnName="PHYSICAL_QUANTITY_TEMPERATURE_VALUE" />
+          <ScalarProperty Name="TEMPERATURE_SCORE" ColumnName="TEMPERATURE_SCORE" />
+          <ScalarProperty Name="HUMILITY_VALUE" ColumnName="HUMILITY_VALUE" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_HUMILITY_VALUE" ColumnName="PHYSICAL_QUANTITY_HUMILITY_VALUE" />
+          <ScalarProperty Name="HUMILITY_SCORE" ColumnName="HUMILITY_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="RESERVED_FIELD_1" ColumnName="RESERVED_FIELD_1" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_ENVI_WATER_LEVEL">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_ENVI_WATER_LEVEL">
+        <MappingFragment StoreEntitySet="T_THEMES_ENVI_WATER_LEVEL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_VALUE" ColumnName="PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="WATER_LEVEL_VALUE" ColumnName="WATER_LEVEL_VALUE" />
+          <ScalarProperty Name="WATER_LEVEL_CUMULATIVEVALUE" ColumnName="WATER_LEVEL_CUMULATIVEVALUE" />
+          <ScalarProperty Name="WATER_LEVEL_SCORE" ColumnName="WATER_LEVEL_SCORE" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_ENVI_WIND">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_ENVI_WIND">
+        <MappingFragment StoreEntitySet="T_THEMES_ENVI_WIND">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="SPEED_PHYSICAL_QUANTITY_VALUE" ColumnName="SPEED_PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="DIRECTION_PHYSICAL_QUANTITY_VALUE" ColumnName="DIRECTION_PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="ELEVATION_PHYSICAL_QUANTITY_VALUE" ColumnName="ELEVATION_PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="WIND_SPEED_VALUE" ColumnName="WIND_SPEED_VALUE" />
+          <ScalarProperty Name="WIND_DIRECTION_VALUE" ColumnName="WIND_DIRECTION_VALUE" />
+          <ScalarProperty Name="WIND_ELEVATION_VALUE" ColumnName="WIND_ELEVATION_VALUE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="RESERVED_FIELD_1" ColumnName="RESERVED_FIELD_1" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_FBG_STRESS_STRAIN">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_FBG_STRESS_STRAIN">
+        <MappingFragment StoreEntitySet="T_THEMES_FBG_STRESS_STRAIN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_VALUE" ColumnName="PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="STRESS_STRAIN_VALUE" ColumnName="STRESS_STRAIN_VALUE" />
+          <ScalarProperty Name="STRESS_STRAIN_SCORE" ColumnName="STRESS_STRAIN_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_FORCE_ANCHOR">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_FORCE_ANCHOR">
+        <MappingFragment StoreEntitySet="T_THEMES_FORCE_ANCHOR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_VALUE" ColumnName="PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="ANCHOR_FORCE_VALUE" ColumnName="ANCHOR_FORCE_VALUE" />
+          <ScalarProperty Name="ANCHOR_FORCE_SCORE" ColumnName="ANCHOR_FORCE_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_FORCE_AXIAL">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_FORCE_AXIAL">
+        <MappingFragment StoreEntitySet="T_THEMES_FORCE_AXIAL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_VALUE" ColumnName="PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="AXIAL_FORCE_VALUE" ColumnName="AXIAL_FORCE_VALUE" />
+          <ScalarProperty Name="AXIAL_FORCE_SCORE" ColumnName="AXIAL_FORCE_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_FORCE_BEAM">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_FORCE_BEAM">
+        <MappingFragment StoreEntitySet="T_THEMES_FORCE_BEAM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_VALUE" ColumnName="PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="FORCE_VALUE" ColumnName="FORCE_VALUE" />
+          <ScalarProperty Name="FORCE_SCORE" ColumnName="FORCE_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_FORCE_EARTH_PRESSURE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_FORCE_EARTH_PRESSURE">
+        <MappingFragment StoreEntitySet="T_THEMES_FORCE_EARTH_PRESSURE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_VALUE" ColumnName="PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="EARTH_PRESSURE_VALUE" ColumnName="EARTH_PRESSURE_VALUE" />
+          <ScalarProperty Name="EARTH_PRESSURE_SCORE" ColumnName="EARTH_PRESSURE_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_FORCE_STEELBAR">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_FORCE_STEELBAR">
+        <MappingFragment StoreEntitySet="T_THEMES_FORCE_STEELBAR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_VALUE" ColumnName="PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="STEELBAR_FORCE_VALUE" ColumnName="STEELBAR_FORCE_VALUE" />
+          <ScalarProperty Name="STEELBAR_FORCE_SCORE" ColumnName="STEELBAR_FORCE_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_STRESS_STRAIN_PORE_WATER_PRESSURE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_STRESS_STRAIN_PORE_WATER_PRESSURE">
+        <MappingFragment StoreEntitySet="T_THEMES_STRESS_STRAIN_PORE_WATER_PRESSURE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_VALUE" ColumnName="PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="PORE_WATER_PRESSURE_VALUE" ColumnName="PORE_WATER_PRESSURE_VALUE" />
+          <ScalarProperty Name="PORE_WATER_PRESSURE_SCORE" ColumnName="PORE_WATER_PRESSURE_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="PORE_WATER_PRESSURE_VALUE_CUMULATIVEVALUE" ColumnName="PORE_WATER_PRESSURE_VALUE_CUMULATIVEVALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_STRESS_STRAIN_RETAININGWALL">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_STRESS_STRAIN_RETAININGWALL">
+        <MappingFragment StoreEntitySet="T_THEMES_STRESS_STRAIN_RETAININGWALL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="PHYSICAL_QUANTITY_VALUE" ColumnName="PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="STRESS_STRAIN_VALUE" ColumnName="STRESS_STRAIN_VALUE" />
+          <ScalarProperty Name="STRESS_STRAIN_SCORE" ColumnName="STRESS_STRAIN_SCORE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TEMPERATURE_VALUE" ColumnName="TEMPERATURE_VALUE" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_VIBRATION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_VIBRATION">
+        <MappingFragment StoreEntitySet="T_THEMES_VIBRATION">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_VIBRATION_ARCHIVE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_VIBRATION_ARCHIVE">
+        <MappingFragment StoreEntitySet="T_THEMES_VIBRATION_ARCHIVE">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_VIBRATION_BATCH">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_VIBRATION_BATCH">
+        <MappingFragment StoreEntitySet="T_THEMES_VIBRATION_BATCH">
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="SensorId" ColumnName="SensorId" />
+          <ScalarProperty Name="MaxFrequency" ColumnName="MaxFrequency" />
+          <ScalarProperty Name="CollectTime" ColumnName="CollectTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_VIBRATION_BATCH_ARCHIVE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_VIBRATION_BATCH_ARCHIVE">
+        <MappingFragment StoreEntitySet="T_THEMES_VIBRATION_BATCH_ARCHIVE">
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="SensorId" ColumnName="SensorId" />
+          <ScalarProperty Name="MaxFrequency" ColumnName="MaxFrequency" />
+          <ScalarProperty Name="CollectTime" ColumnName="CollectTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_VIBRATION_DECK_VIBRATION">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_VIBRATION_DECK_VIBRATION">
+        <MappingFragment StoreEntitySet="T_THEMES_VIBRATION_DECK_VIBRATION">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SENSOR_ID" ColumnName="SENSOR_ID" />
+          <ScalarProperty Name="SAFETY_FACTOR_TYPE_ID" ColumnName="SAFETY_FACTOR_TYPE_ID" />
+          <ScalarProperty Name="DECK_VIBRATION_PHYSICAL_QUANTITY_VALUE" ColumnName="DECK_VIBRATION_PHYSICAL_QUANTITY_VALUE" />
+          <ScalarProperty Name="DECK_VIBRATION_VALUE" ColumnName="DECK_VIBRATION_VALUE" />
+          <ScalarProperty Name="ACQUISITION_DATETIME" ColumnName="ACQUISITION_DATETIME" />
+          <ScalarProperty Name="ORDERBY_COLUMN" ColumnName="ORDERBY_COLUMN" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="RESERVED_FIELD_1" ColumnName="RESERVED_FIELD_1" />
+          <ScalarProperty Name="RESERVED_FIELD_2" ColumnName="RESERVED_FIELD_2" />
+          <ScalarProperty Name="RESERVED_FIELD_3" ColumnName="RESERVED_FIELD_3" />
+          <ScalarProperty Name="RESERVED_FIELD_4" ColumnName="RESERVED_FIELD_4" />
+          <ScalarProperty Name="RESERVED_FIELD_5" ColumnName="RESERVED_FIELD_5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_VIBRATION_ORIGINAL">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_VIBRATION_ORIGINAL">
+        <MappingFragment StoreEntitySet="T_THEMES_VIBRATION_ORIGINAL">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="CollectTime" ColumnName="CollectTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_THEMES_VIBRATION_ORIGINAL_ARCHIVE">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_THEMES_VIBRATION_ORIGINAL_ARCHIVE">
+        <MappingFragment StoreEntitySet="T_THEMES_VIBRATION_ORIGINAL_ARCHIVE">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="CollectTime" ColumnName="CollectTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_WARNING_DEALDETAILS">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_WARNING_DEALDETAILS">
+        <MappingFragment StoreEntitySet="T_WARNING_DEALDETAILS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WarningId" ColumnName="WarningId" />
+          <ScalarProperty Name="UserNo" ColumnName="UserNo" />
+          <ScalarProperty Name="Suggestion" ColumnName="Suggestion" />
+          <ScalarProperty Name="ConfirmTime" ColumnName="ConfirmTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_WARNING_LEVEL">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_WARNING_LEVEL">
+        <MappingFragment StoreEntitySet="T_WARNING_LEVEL">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="P1" ColumnName="P1" />
+          <ScalarProperty Name="P2" ColumnName="P2" />
+          <ScalarProperty Name="P3" ColumnName="P3" />
+          <ScalarProperty Name="P4" ColumnName="P4" />
+          <ScalarProperty Name="P5" ColumnName="P5" />
+          <ScalarProperty Name="P6" ColumnName="P6" />
+          <ScalarProperty Name="P7" ColumnName="P7" />
+          <ScalarProperty Name="P8" ColumnName="P8" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="Baurd" ColumnName="Baurd" />
+          <ScalarProperty Name="t1" ColumnName="t1" />
+          <ScalarProperty Name="t2" ColumnName="t2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_WARNING_SENSOR">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_WARNING_SENSOR">
+        <MappingFragment StoreEntitySet="T_WARNING_SENSOR">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WarningTypeId" ColumnName="WarningTypeId" />
+          <ScalarProperty Name="StructId" ColumnName="StructId" />
+          <ScalarProperty Name="DeviceTypeId" ColumnName="DeviceTypeId" />
+          <ScalarProperty Name="DeviceId" ColumnName="DeviceId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="DealFlag" ColumnName="DealFlag" />
+          <ScalarProperty Name="WarningStatus" ColumnName="WarningStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_WARNING_SMS_RECIEVER">
+      <EntityTypeMapping TypeName="ReportGeneratorService.DataModule.T_WARNING_SMS_RECIEVER">
+        <MappingFragment StoreEntitySet="T_WARNING_SMS_RECIEVER">
+          <ScalarProperty Name="ReceiverId" ColumnName="ReceiverId" />
+          <ScalarProperty Name="RecieverName" ColumnName="RecieverName" />
+          <ScalarProperty Name="RecieverPhone" ColumnName="RecieverPhone" />
+          <ScalarProperty Name="FilterLevel" ColumnName="FilterLevel" />
+          <ScalarProperty Name="UserNo" ColumnName="UserNo" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="ReceiveMode" ColumnName="ReceiveMode" />
+          <ScalarProperty Name="RecieverMail" ColumnName="RecieverMail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

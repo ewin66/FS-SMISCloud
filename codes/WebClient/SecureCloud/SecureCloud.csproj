@@ -1,0 +1,1640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A83BA138-CBEC-4177-B6B5-5ADA009CB7AA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SecureCloud</RootNamespace>
+    <AssemblyName>SecureCloud</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="NetMQ">
+      <HintPath>..\packages\FSService.1.0.0\lib\NetMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Service">
+      <HintPath>..\packages\FSService.1.0.0\lib\Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Service.NetMQ">
+      <HintPath>..\packages\FSService.1.0.0\lib\Service.NetMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="about.html" />
+    <Content Include="account.html" />
+    <Content Include="anxinyun-master\css\echarts-slide.css" />
+    <Content Include="anxinyun-master\css\reveal.min.css" />
+    <Content Include="anxinyun-master\css\theme\default.css" />
+    <Content Include="anxinyun-master\css\zenburn.css" />
+    <Content Include="anxinyun-master\detail.html" />
+    <Content Include="anxinyun-master\img\bigData.jpg" />
+    <Content Include="anxinyun-master\img\charts.jpg" />
+    <Content Include="anxinyun-master\img\creativity.jpg" />
+    <Content Include="anxinyun-master\img\echarts_logo.png" />
+    <Content Include="anxinyun-master\img\favicon.ico" />
+    <Content Include="anxinyun-master\img\focus.jpg" />
+    <Content Include="anxinyun-master\img\fork.png" />
+    <Content Include="anxinyun-master\img\frontcover.jpg" />
+    <Content Include="anxinyun-master\img\hardware.png" />
+    <Content Include="anxinyun-master\img\iconBarChart.png" />
+    <Content Include="anxinyun-master\img\iconDataView.png" />
+    <Content Include="anxinyun-master\img\iconDataZoom.png" />
+    <Content Include="anxinyun-master\img\iconDataZoomReset.png" />
+    <Content Include="anxinyun-master\img\iconLineChart.png" />
+    <Content Include="anxinyun-master\img\iconStack.png" />
+    <Content Include="anxinyun-master\img\intro.jpg" />
+    <Content Include="anxinyun-master\img\logicalview.png" />
+    <Content Include="anxinyun-master\img\physicalview.png" />
+    <Content Include="anxinyun-master\img\software.png" />
+    <Content Include="anxinyun-master\img\tableau.jpg" />
+    <Content Include="anxinyun-master\img\userview-mobile.png" />
+    <Content Include="anxinyun-master\img\userview-pc.png" />
+    <Content Include="anxinyun-master\js\classList.js" />
+    <Content Include="anxinyun-master\js\echarts-map.js" />
+    <Content Include="anxinyun-master\js\esl.js" />
+    <Content Include="anxinyun-master\js\head.min.js" />
+    <Content Include="anxinyun-master\js\highlight.js" />
+    <Content Include="anxinyun-master\js\markdown.js" />
+    <Content Include="anxinyun-master\js\marked.js" />
+    <Content Include="anxinyun-master\js\notes.js" />
+    <Content Include="anxinyun-master\js\reveal.min.js" />
+    <Content Include="anxinyun-master\js\webkit-dep.js" />
+    <Content Include="anxinyun-master\js\whyEcharts.js" />
+    <Content Include="commFactor\js\commfactor1.js" />
+    <Content Include="commFactor\js\Comm_Factor2.js" />
+    <Content Include="commFactor\js\Comm_Factor2_StressStrain.js" />
+    <Content Include="commFactor\js\Comm_Factor3.js" />
+    <Content Include="commFactor\js\Comm_Factor4.js" />
+    <Content Include="commFactor\js\Comm_Factor5.js" />
+    <Content Include="commFactor\js\dataParse_ReticulatedShell.js" />
+    <Content Include="commFactor\js\dataParse_StressStrain.js" />
+    <Content Include="commFactor\js\Deep_Displacement.js" />
+    <Content Include="commFactor\js\SlightShockChar.js" />
+    <Content Include="Global.asax" />
+    <Content Include="img\logo.png" />
+    <Content Include="MonitorProject\SlightShockChar.aspx" />
+    <Content Include="resource\img\factorGif\icon-11101-1.gif" />
+    <Content Include="resource\img\factorGif\icon-11101-2.gif" />
+    <Content Include="resource\img\factorGif\icon-11101-3.gif" />
+    <Content Include="resource\img\factorGif\icon-11101-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20203-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20203-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20203-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20203-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20204-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20204-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20204-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20204-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20205-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20205-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20205-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20205-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20208-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20208-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20208-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20208-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20209-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20209-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20209-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20209-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20210-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20210-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20210-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20210-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20301-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20301-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20301-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20301-4.gif" />
+    <Content Include="resource\img\factorGif\icon-22001-1.gif" />
+    <Content Include="resource\img\factorGif\icon-22001-2.gif" />
+    <Content Include="resource\img\factorGif\icon-22001-3.gif" />
+    <Content Include="resource\img\factorGif\icon-22001-4.gif" />
+    <Content Include="resource\img\factorGif\icon-23001-1.gif" />
+    <Content Include="resource\img\factorGif\icon-23001-2.gif" />
+    <Content Include="resource\img\factorGif\icon-23001-3.gif" />
+    <Content Include="resource\img\factorGif\icon-23001-4.gif" />
+    <Content Include="resource\img\factorGif\icon-23002-1.gif" />
+    <Content Include="resource\img\factorGif\icon-23002-2.gif" />
+    <Content Include="resource\img\factorGif\icon-23002-3.gif" />
+    <Content Include="resource\img\factorGif\icon-23002-4.gif" />
+    <Content Include="resource\img\factorIcon\icon-11101-0.png" />
+    <Content Include="resource\img\factorIcon\icon-11101-1.png" />
+    <Content Include="resource\img\factorIcon\icon-11101-2.png" />
+    <Content Include="resource\img\factorIcon\icon-11101-3.png" />
+    <Content Include="resource\img\factorIcon\icon-11101-4.png" />
+    <Content Include="resource\img\factorIcon\icon-11101-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20203-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20203-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20203-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20203-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20203-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20203-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20204-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20204-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20204-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20204-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20204-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20204-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20205-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20205-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20205-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20205-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20205-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20205-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20208-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20208-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20208-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20208-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20208-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20208-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20209-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20209-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20209-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20209-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20209-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20209-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20210-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20210-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20210-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20210-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20210-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20210-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20301-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20301-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20301-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20301-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20301-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20301-5.png" />
+    <Content Include="resource\img\factorIcon\icon-22001-0.png" />
+    <Content Include="resource\img\factorIcon\icon-22001-1.png" />
+    <Content Include="resource\img\factorIcon\icon-22001-2.png" />
+    <Content Include="resource\img\factorIcon\icon-22001-3.png" />
+    <Content Include="resource\img\factorIcon\icon-22001-4.png" />
+    <Content Include="resource\img\factorIcon\icon-22001-5.png" />
+    <Content Include="resource\img\factorIcon\icon-23001-0.png" />
+    <Content Include="resource\img\factorIcon\icon-23001-1.png" />
+    <Content Include="resource\img\factorIcon\icon-23001-2.png" />
+    <Content Include="resource\img\factorIcon\icon-23001-3.png" />
+    <Content Include="resource\img\factorIcon\icon-23001-4.png" />
+    <Content Include="resource\img\factorIcon\icon-23001-5.png" />
+    <Content Include="resource\img\factorIcon\icon-23002-0.png" />
+    <Content Include="resource\img\factorIcon\icon-23002-1.png" />
+    <Content Include="resource\img\factorIcon\icon-23002-2.png" />
+    <Content Include="resource\img\factorIcon\icon-23002-3.png" />
+    <Content Include="resource\img\factorIcon\icon-23002-4.png" />
+    <Content Include="resource\img\factorIcon\icon-23002-5.png" />
+    <Content Include="resource\img\Topo\topo-72-0b2315f4-008f-e54e-84b5-bb84ce045fcc-老动物园1.svg" />
+    <Content Include="resource\img\Topo\topo-72-2.svg" />
+    <Content Include="resource\img\Topo\topo-72-37a2e89f-187c-4d68-5290-19b0ecba0e22-老动物园2.svg" />
+    <Content Include="resource\img\Topo\topo-72-ade0768a-1e0f-07a2-8525-381b5fc6d420-老动物园4.svg" />
+    <Content Include="resource\img\Topo\topo-72-c16c4237-8f30-c8d6-b2c6-946936d68167-老动物园3.svg" />
+    <Content Include="resource\img\Topo\topo-89-.svg" />
+    <Content Include="resource\library\bootstrap-switch\css\bootstrap-switch.css" />
+    <Content Include="resource\library\bootstrap-switch\css\bootstrap-switch.min.css" />
+    <Content Include="resource\library\bootstrap-switch\js\bootstrap-switch.js" />
+    <Content Include="resource\library\bootstrap-switch\js\bootstrap-switch.min.js" />
+    <Content Include="resource\library\echarts\echarts-all.js" />
+    <Content Include="resource\library\echarts\echarts-blue.js" />
+    <Content Include="commFactor\js\highcharDoubleAxis.js" />
+    <Content Include="commFactor\js\highchartband.js" />
+    <Content Include="commFactor\js\dataParse.js" />
+    <Content Include="commFactor\js\highchartband_StressStrain.js" />
+    <Content Include="commFactor\js\InfiltrationLine.js" />
+    <Content Include="commFactor\js\SettleContrast.js" />
+    <Content Include="commFactor\js\Vibration.js" />
+    <Content Include="commFactor\js\Vibration_ReticulatedShell.js" />
+    <Content Include="commFactor\js\WindRose.js" />
+    <Content Include="commFactor\js\windRoseTheme.js" />
+    <Content Include="commFactor\js\WindTab.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="MonitorProject\TwoCharStressStrain.aspx" />
+    <Content Include="MonitorProject\VibrationCharReticulatedShell.aspx" />
+    <Content Include="MonitorProject\windRoseTheme.aspx" />
+    <Content Include="contact.html" />
+    <Content Include="css\jquery.bxslider.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\print.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="dataContact.aspx" />
+    <Content Include="dataContact3.aspx" />
+    <Content Include="dataContrast\monitorFactorStation.js" />
+    <Content Include="dataCorrelation\double.js" />
+    <Content Include="dataCorrelation\factorCorrelation.js" />
+    <Content Include="DataService\js\DataDownload.js" />
+    <Content Include="DataWarningTest.aspx" />
+    <Content Include="data\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="data\css\images\icon_calendar.gif" />
+    <Content Include="data\css\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="data\css\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="data\css\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="data\css\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="data\css\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="data\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="data\css\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="data\css\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="data\css\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="data\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="data\css\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="data\css\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="data\css\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="data\css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="data\css\jquery-ui-1.8.17.custom.css" />
+    <Content Include="data\css\jquery-ui-timepicker-addon.css" />
+    <Content Include="data\data.html" />
+    <Content Include="data\dataInit.js" />
+    <Content Include="data\js\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="data\js\bootstrap.min.js" />
+    <Content Include="data\js\bootstrap-datetimepicker.js" />
+    <Content Include="data\js\jquery-1.7.1.min.js" />
+    <Content Include="data\js\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="data\js\jquery-ui-timepicker-addon.js" />
+    <Content Include="data\js\jquery-ui-timepicker-zh-CN.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="GPRS\BatchExport.aspx" />
+    <Content Include="GPRS\js\batchExport.js" />
+    <Content Include="GPRS\js\mainPage.js" />
+    <Content Include="GPRS\MainPage.aspx" />
+    <Content Include="images\bx_loader.gif" />
+    <Content Include="images\controls.png" />
+    <Content Include="img\404.jpg" />
+    <Content Include="img\404.png" />
+    <Content Include="img\cite.png" />
+    <Content Include="img\coming-soon.png" />
+    <Content Include="img\icon-awards.png" />
+    <Content Include="img\icon-backup.png" />
+    <Content Include="img\icon-location.png" />
+    <Content Include="img\icon-stats.png" />
+    <Content Include="img\icon-tools.png" />
+    <Content Include="img\icon-twitter.png" />
+    <Content Include="img\intro-middle.png" />
+    <Content Include="img\intro-repeat.png" />
+    <Content Include="img\logo-.png" />
+    <Content Include="img\logo-freesun.gif" />
+    <Content Include="img\logo-freesun.png" />
+    <Content Include="img\mail.png" />
+    <Content Include="img\more.png" />
+    <Content Include="img\nav-more.png" />
+    <Content Include="img\nav-sep.png" />
+    <Content Include="img\small-facebook.png" />
+    <Content Include="img\small-rss.png" />
+    <Content Include="img\small-twitter.png" />
+    <Content Include="img\small-weibo-c.png" />
+    <Content Include="img\small-weibo.png" />
+    <Content Include="img\structs\bianpo.png" />
+    <Content Include="img\structs\daba.jpg" />
+    <Content Include="img\structs\ditie.png" />
+    <Content Include="img\structs\qiaoliang.jpg" />
+    <Content Include="img\structs\suidao.jpg" />
+    <Content Include="img\structs\tezhong.jpg" />
+    <Content Include="img\structs\tezhongjiegou.jpg" />
+    <Content Include="img\structs\weikuang.jpg" />
+    <Content Include="img\subnav-bg.png" />
+    <Content Include="img\twitter.png" />
+    <Content Include="img\weibo.png" />
+    <Content Include="index.html" />
+    <Content Include="js\index.js" />
+    <Content Include="js\googleanalytics.js" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\jquery.bxslider.min.js" />
+    <Content Include="js\jquery.mousewheel.min.js" />
+    <Content Include="js\userAccessVerification.js" />
+    <Content Include="MonitorProject\DeepDispChar.aspx" />
+    <Content Include="MonitorProject\DoubleChar.aspx" />
+    <Content Include="MonitorProject\InfiltrationLineChar.aspx" />
+    <Content Include="MonitorProject\OneChar.aspx" />
+    <Content Include="MonitorProject\SettleContrast.aspx" />
+    <Content Include="MonitorProject\SettleGroup.aspx" />
+    <Content Include="MonitorProject\ThreeChar.aspx" />
+    <Content Include="MonitorProject\TwoChar.aspx" />
+    <Content Include="MonitorProject\VibrationChar.aspx" />
+    <Content Include="MonitorProject\WindRowChar.aspx" />
+    <Content Include="Param_Alert.aspx" />
+    <Content Include="ProgressConfig.aspx" />
+    <Content Include="ProgressLook.aspx" />
+    <Content Include="Report.aspx" />
+    <Content Include="ReportStruct.aspx" />
+    <Content Include="resource\css\HotSpot.css" />
+    <Content Include="resource\css\jquery-ui-1.10.0.custom.css" />
+    <Content Include="resource\img\ajax-loader.gif" />
+    <Content Include="resource\img\factorGif\icon-20101-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20101-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20101-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20101-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20202-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20202-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20202-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20202-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20203-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20203-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20203-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20203-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20205-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20205-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20205-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20205-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20206-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20206-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20206-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20206-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20208-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20208-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20208-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20208-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20209-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20209-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20209-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20209-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20210-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20210-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20210-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20210-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20301-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20301-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20301-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20301-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20302-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20302-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20302-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20302-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20401-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20401-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20401-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20401-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20402-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20402-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20402-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20402-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20601-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20601-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20601-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20601-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20701-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20701-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20701-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20701-4.gif" />
+    <Content Include="resource\img\factorGif\icon-20901-1.gif" />
+    <Content Include="resource\img\factorGif\icon-20901-2.gif" />
+    <Content Include="resource\img\factorGif\icon-20901-3.gif" />
+    <Content Include="resource\img\factorGif\icon-20901-4.gif" />
+    <Content Include="resource\img\factorGif\icon-21000-1.gif" />
+    <Content Include="resource\img\factorGif\icon-21000-2.gif" />
+    <Content Include="resource\img\factorGif\icon-21000-3.gif" />
+    <Content Include="resource\img\factorGif\icon-21000-4.gif" />
+    <Content Include="resource\img\factorGif\icon-22001-1.gif" />
+    <Content Include="resource\img\factorGif\icon-22001-2.gif" />
+    <Content Include="resource\img\factorGif\icon-22001-3.gif" />
+    <Content Include="resource\img\factorGif\icon-22001-4.gif" />
+    <Content Include="resource\img\factorGif\icon-23001-1.gif" />
+    <Content Include="resource\img\factorGif\icon-23001-2.gif" />
+    <Content Include="resource\img\factorGif\icon-23001-3.gif" />
+    <Content Include="resource\img\factorGif\icon-23001-4.gif" />
+    <Content Include="resource\img\factorGif\icon-23002-1.gif" />
+    <Content Include="resource\img\factorGif\icon-23002-2.gif" />
+    <Content Include="resource\img\factorGif\icon-23002-3.gif" />
+    <Content Include="resource\img\factorGif\icon-23002-4.gif" />
+    <Content Include="resource\img\factorGif\icon-24002-1.gif" />
+    <Content Include="resource\img\factorGif\icon-24002-2.gif" />
+    <Content Include="resource\img\factorGif\icon-24002-3.gif" />
+    <Content Include="resource\img\factorGif\icon-24002-4.gif" />
+    <Content Include="resource\img\factorGif\icon-24003-1.gif" />
+    <Content Include="resource\img\factorGif\icon-24003-2.gif" />
+    <Content Include="resource\img\factorGif\icon-24003-3.gif" />
+    <Content Include="resource\img\factorGif\icon-24003-4.gif" />
+    <Content Include="resource\img\factorGif\icon-30001-1.gif" />
+    <Content Include="resource\img\factorGif\icon-30001-2.gif" />
+    <Content Include="resource\img\factorGif\icon-30001-3.gif" />
+    <Content Include="resource\img\factorGif\icon-30001-4.gif" />
+    <Content Include="resource\img\factorGif\icon-30002-1.gif" />
+    <Content Include="resource\img\factorGif\icon-30002-2.gif" />
+    <Content Include="resource\img\factorGif\icon-30002-3.gif" />
+    <Content Include="resource\img\factorGif\icon-30002-4.gif" />
+    <Content Include="resource\img\factorGif\icon-30003-1.gif" />
+    <Content Include="resource\img\factorGif\icon-30003-2.gif" />
+    <Content Include="resource\img\factorGif\icon-30003-3.gif" />
+    <Content Include="resource\img\factorGif\icon-30003-4.gif" />
+    <Content Include="resource\img\factorGif\icon-30004-1.gif" />
+    <Content Include="resource\img\factorGif\icon-30004-2.gif" />
+    <Content Include="resource\img\factorGif\icon-30004-3.gif" />
+    <Content Include="resource\img\factorGif\icon-30004-4.gif" />
+    <Content Include="resource\img\factorIcon\icon-20101-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20101-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20101-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20101-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20101-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20101-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20202-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20202-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20202-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20202-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20202-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20202-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20203-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20203-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20203-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20203-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20203-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20203-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20205-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20205-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20205-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20205-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20205-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20205-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20206-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20206-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20206-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20206-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20206-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20206-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20208-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20208-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20208-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20208-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20208-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20208-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20209-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20209-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20209-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20209-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20209-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20209-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20210-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20210-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20210-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20210-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20210-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20210-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20301-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20301-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20301-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20301-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20301-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20301-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20302-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20302-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20302-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20302-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20302-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20302-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20401-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20401-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20401-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20401-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20401-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20401-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20402-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20402-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20402-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20402-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20402-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20402-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20601-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20601-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20601-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20601-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20601-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20601-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20701-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20701-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20701-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20701-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20701-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20701-5.png" />
+    <Content Include="resource\img\factorIcon\icon-20901-0.png" />
+    <Content Include="resource\img\factorIcon\icon-20901-1.png" />
+    <Content Include="resource\img\factorIcon\icon-20901-2.png" />
+    <Content Include="resource\img\factorIcon\icon-20901-3.png" />
+    <Content Include="resource\img\factorIcon\icon-20901-4.png" />
+    <Content Include="resource\img\factorIcon\icon-20901-5.png" />
+    <Content Include="resource\img\factorIcon\icon-21000-0.png" />
+    <Content Include="resource\img\factorIcon\icon-21000-1.png" />
+    <Content Include="resource\img\factorIcon\icon-21000-2.png" />
+    <Content Include="resource\img\factorIcon\icon-21000-3.png" />
+    <Content Include="resource\img\factorIcon\icon-21000-4.png" />
+    <Content Include="resource\img\factorIcon\icon-21000-5.png" />
+    <Content Include="resource\img\factorIcon\icon-22001-0.png" />
+    <Content Include="resource\img\factorIcon\icon-22001-1.png" />
+    <Content Include="resource\img\factorIcon\icon-22001-2.png" />
+    <Content Include="resource\img\factorIcon\icon-22001-3.png" />
+    <Content Include="resource\img\factorIcon\icon-22001-4.png" />
+    <Content Include="resource\img\factorIcon\icon-22001-5.png" />
+    <Content Include="resource\img\factorIcon\icon-23001-0.png" />
+    <Content Include="resource\img\factorIcon\icon-23001-1.png" />
+    <Content Include="resource\img\factorIcon\icon-23001-2.png" />
+    <Content Include="resource\img\factorIcon\icon-23001-3.png" />
+    <Content Include="resource\img\factorIcon\icon-23001-4.png" />
+    <Content Include="resource\img\factorIcon\icon-23001-5.png" />
+    <Content Include="resource\img\factorIcon\icon-23002-0.png" />
+    <Content Include="resource\img\factorIcon\icon-23002-1.png" />
+    <Content Include="resource\img\factorIcon\icon-23002-2.png" />
+    <Content Include="resource\img\factorIcon\icon-23002-3.png" />
+    <Content Include="resource\img\factorIcon\icon-23002-4.png" />
+    <Content Include="resource\img\factorIcon\icon-23002-5.png" />
+    <Content Include="resource\img\factorIcon\icon-24002-0.png" />
+    <Content Include="resource\img\factorIcon\icon-24002-1.png" />
+    <Content Include="resource\img\factorIcon\icon-24002-2.png" />
+    <Content Include="resource\img\factorIcon\icon-24002-3.png" />
+    <Content Include="resource\img\factorIcon\icon-24002-4.png" />
+    <Content Include="resource\img\factorIcon\icon-24002-5.png" />
+    <Content Include="resource\img\factorIcon\icon-24003-0.png" />
+    <Content Include="resource\img\factorIcon\icon-24003-1.png" />
+    <Content Include="resource\img\factorIcon\icon-24003-2.png" />
+    <Content Include="resource\img\factorIcon\icon-24003-3.png" />
+    <Content Include="resource\img\factorIcon\icon-24003-4.png" />
+    <Content Include="resource\img\factorIcon\icon-24003-5.png" />
+    <Content Include="resource\img\factorIcon\icon-30001-0.png" />
+    <Content Include="resource\img\factorIcon\icon-30001-1.png" />
+    <Content Include="resource\img\factorIcon\icon-30001-2.png" />
+    <Content Include="resource\img\factorIcon\icon-30001-3.png" />
+    <Content Include="resource\img\factorIcon\icon-30001-4.png" />
+    <Content Include="resource\img\factorIcon\icon-30001-5.png" />
+    <Content Include="resource\img\factorIcon\icon-30002-0.png" />
+    <Content Include="resource\img\factorIcon\icon-30002-1.png" />
+    <Content Include="resource\img\factorIcon\icon-30002-2.png" />
+    <Content Include="resource\img\factorIcon\icon-30002-3.png" />
+    <Content Include="resource\img\factorIcon\icon-30002-4.png" />
+    <Content Include="resource\img\factorIcon\icon-30002-5.png" />
+    <Content Include="resource\img\factorIcon\icon-30003-0.png" />
+    <Content Include="resource\img\factorIcon\icon-30003-1.png" />
+    <Content Include="resource\img\factorIcon\icon-30003-2.png" />
+    <Content Include="resource\img\factorIcon\icon-30003-3.png" />
+    <Content Include="resource\img\factorIcon\icon-30003-4.png" />
+    <Content Include="resource\img\factorIcon\icon-30003-5.png" />
+    <Content Include="resource\img\factorIcon\icon-30004-0.png" />
+    <Content Include="resource\img\factorIcon\icon-30004-1.png" />
+    <Content Include="resource\img\factorIcon\icon-30004-2.png" />
+    <Content Include="resource\img\factorIcon\icon-30004-3.png" />
+    <Content Include="resource\img\factorIcon\icon-30004-4.png" />
+    <Content Include="resource\img\factorIcon\icon-30004-5.png" />
+    <Content Include="resource\img\gantan.jpg" />
+    <Content Include="resource\img\googleMap\green-dot.png" />
+    <Content Include="resource\img\googleMap\orange-dot.png" />
+    <Content Include="resource\img\googleMap\purple-dot.png" />
+    <Content Include="resource\img\googleMap\red-dot.png" />
+    <Content Include="resource\img\icon-section-0.png" />
+    <Content Include="resource\img\icon-section-1.png" />
+    <Content Include="resource\img\icon-section-2.png" />
+    <Content Include="resource\img\logo_azteca.jpg" />
+    <Content Include="resource\img\OrgLogo\test.txt" />
+    <Content Include="resource\img\report.png" />
+    <Content Include="resource\img\right.png" />
+    <Content Include="resource\img\settings.png" />
+    <Content Include="resource\img\strain_4.PNG" />
+    <Content Include="resource\img\strain_1.PNG" />
+    <Content Include="resource\img\strain_10.PNG" />
+    <Content Include="resource\img\strain_2.PNG" />
+    <Content Include="resource\img\strain_3.PNG" />
+    <Content Include="resource\img\strain_5.PNG" />
+    <Content Include="resource\img\strain_6.PNG" />
+    <Content Include="resource\img\strain_7.PNG" />
+    <Content Include="resource\img\strain_9.PNG" />
+    <Content Include="resource\img\Topo\bullet-red.png" />
+    <Content Include="resource\img\Topo\cookie.js" />
+    <Content Include="resource\img\Topo\hnljqiao.svg" />
+    <Content Include="resource\img\Topo\icon-20101-5.png" />
+    <Content Include="resource\img\Topo\icon-20201-5.png" />
+    <Content Include="resource\img\Topo\icon-20205-5.png" />
+    <Content Include="resource\img\Topo\icon-20402-5.png" />
+    <Content Include="resource\img\Topo\icon-20701-5.png" />
+    <Content Include="resource\img\Topo\icon-30002-5.png" />
+    <Content Include="resource\img\Topo\init.js" />
+    <Content Include="resource\img\Topo\jquery-2.0.3.min.js" />
+    <Content Include="resource\img\Topo\lancangjiang_top.jpg" />
+    <Content Include="resource\img\Topo\square_green.png" />
+    <Content Include="resource\img\Topo\topo-16-14标YK69 723~YK69 863.svg" />
+    <Content Include="resource\img\Topo\topo-17-2标K16 190涵洞.svg" />
+    <Content Include="resource\img\Topo\topo-19-15标K72 537.5~K72 697.5左侧.svg" />
+    <Content Include="resource\img\Topo\topo-2-K765 300-K765 500段.svg" />
+    <Content Include="resource\img\Topo\topo-2-K765300-K765500段.svg" />
+    <Content Include="resource\img\Topo\topo-20-15标K71 055涵洞.svg" />
+    <Content Include="resource\img\Topo\topo-21-7标K43 210~K43 400.svg" />
+    <Content Include="resource\img\Topo\topo-22-8A标K44878K45049.svg" />
+    <Content Include="resource\img\Topo\topo-22-8标K44 878~K45 049.svg" />
+    <Content Include="resource\img\Topo\topo-23-11标K56 272~K57 340.svg" />
+    <Content Include="resource\img\Topo\topo-23-11标K56272K57340.svg" />
+    <Content Include="resource\img\Topo\topo-25-14-2标YK69 495-YK69 643.svg" />
+    <Content Include="resource\img\Topo\topo-3-K775 432-K775 682段.svg" />
+    <Content Include="resource\img\Topo\topo-3-K775432-K775682段.svg" />
+    <Content Include="resource\img\Topo\topo-31-2标K13943-K14219.svg" />
+    <Content Include="resource\img\Topo\topo-32-8B标K46720-K46877.svg" />
+    <Content Include="resource\img\Topo\topo-36-15标K71478涵洞.svg" />
+    <Content Include="resource\img\Topo\topo-37-15标K71275涵洞.svg" />
+    <Content Include="resource\img\Topo\topo-39-K70910涵洞.svg" />
+    <Content Include="resource\img\Topo\topo-4-K791 700-K792 150段.svg" />
+    <Content Include="resource\img\Topo\topo-4-K791700-K792150段.svg" />
+    <Content Include="resource\img\Topo\topo-40-K70596涵洞.svg" />
+    <Content Include="resource\img\Topo\topo-41-K70490涵洞.svg" />
+    <Content Include="resource\img\Topo\topo-43-10标K55734-K55868.svg" />
+    <Content Include="resource\img\Topo\triangle_green.png" />
+    <Content Include="resource\js\account.js" />
+    <Content Include="resource\js\city.min.js" />
+    <Content Include="resource\js\common.js" />
+    <Content Include="resource\js\data.js" />
+    <Content Include="resource\js\DataWarningTest.js" />
+    <Content Include="resource\js\echarts-plain-map.js" />
+    <Content Include="resource\js\highchartTemplate2.js" />
+    <Content Include="resource\js\historyProgress.js" />
+    <Content Include="resource\js\HotSpotRShell.js" />
+    <Content Include="resource\js\index.js" />
+    <Content Include="resource\js\jquery-ui-1.10.0.custom.min.js" />
+    <Content Include="resource\js\jquery.cxselect.js" />
+    <Content Include="resource\js\jquery.number.min.js" />
+    <Content Include="resource\js\jquery.validate.min.js" />
+    <Content Include="resource\js\message_CN.js" />
+    <Content Include="resource\js\Param_Alert.js" />
+    <Content Include="resource\js\Progress.js" />
+    <Content Include="resource\js\Report.js" />
+    <Content Include="resource\js\ReportStruct.js" />
+    <Content Include="resource\js\RoseDate.js" />
+    <Content Include="resource\js\securecloud.js" />
+    <Content Include="resource\js\siteWarning.js" />
+    <Content Include="resource\js\statement.js" />
+    <Content Include="resource\js\StructChart.js" />
+    <Content Include="resource\js\structure.js" />
+    <Content Include="resource\js\topoSetting.js" />
+    <Content Include="resource\js\topoSettingSVG.js" />
+    <Content Include="resource\js\UserLog.js" />
+    <Content Include="resource\js\userWarning.js" />
+    <Content Include="resource\library\bootstrap\js\bootstrap-dropdown.js" />
+    <Content Include="resource\library\data-tables\css\dataTable.css" />
+    <Content Include="resource\library\DataTables-1.10.2\css\jquery.dataTables.min.css" />
+    <Content Include="resource\library\DataTables-1.10.2\images\back_disabled.png" />
+    <Content Include="resource\library\DataTables-1.10.2\images\back_enabled.png" />
+    <Content Include="resource\library\DataTables-1.10.2\images\back_enabled_hover.png" />
+    <Content Include="resource\library\DataTables-1.10.2\images\details_close.png" />
+    <Content Include="resource\library\DataTables-1.10.2\images\details_open.png" />
+    <Content Include="resource\library\DataTables-1.10.2\images\favicon.ico" />
+    <Content Include="resource\library\DataTables-1.10.2\images\forward_disabled.png" />
+    <Content Include="resource\library\DataTables-1.10.2\images\forward_enabled.png" />
+    <Content Include="resource\library\DataTables-1.10.2\images\forward_enabled_hover.png" />
+    <Content Include="resource\library\DataTables-1.10.2\images\sort_asc.png" />
+    <Content Include="resource\library\DataTables-1.10.2\images\sort_asc_disabled.png" />
+    <Content Include="resource\library\DataTables-1.10.2\images\sort_both.png" />
+    <Content Include="resource\library\DataTables-1.10.2\images\sort_desc.png" />
+    <Content Include="resource\library\DataTables-1.10.2\images\sort_desc_disabled.png" />
+    <Content Include="resource\library\DataTables-1.10.2\js\jquery.dataTables.min.js" />
+    <Content Include="resource\library\DataTables-1.10.2\js\jquery.js" />
+    <Content Include="resource\library\echarts\echarts-all.js" />
+    <Content Include="resource\library\echarts\echarts-blue.js" />
+    <Content Include="resource\library\font-awesome-4.3.0\css\font-awesome.css" />
+    <Content Include="resource\library\font-awesome-4.3.0\css\font-awesome.min.css" />
+    <Content Include="resource\library\font-awesome-4.3.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="resource\library\highcharts\highcharts-3d.js" />
+    <Content Include="resource\library\highcharts\highcharts-4.1.3.js" />
+    <Content Include="resource\library\jquery-bxslider\images\bx_loader.gif" />
+    <Content Include="resource\library\jquery-bxslider\images\controls-backup.png" />
+    <Content Include="resource\library\jquery-bxslider\images\controls.png" />
+    <Content Include="resource\library\jquery-bxslider\jquery.bxslider.css" />
+    <Content Include="resource\library\jquery-bxslider\jquery.bxslider.min.js" />
+    <Content Include="resource\library\jquery-nestable\jquery.nestable.css" />
+    <Content Include="resource\library\jquery-nestable\jquery.nestable.js" />
+    <Content Include="resource\library\uniform\css\uniform.default.css" />
+    <Content Include="resource\library\uniform\images\bg-input-focus.png" />
+    <Content Include="resource\library\uniform\images\bg-input.png" />
+    <Content Include="resource\library\uniform\images\sprite.png" />
+    <Content Include="resource\library\uniform\images\sprite_original.png" />
+    <Content Include="resource\library\uniform\jquery.uniform.min.js" />
+    <Content Include="resource\uipackage\logo\logo-big.png" />
+    <Content Include="resource\uipackage\logo\logo.png" />
+    <Content Include="resource\uipackage\uiTheme.js" />
+    <Content Include="service.html" />
+    <Content Include="smsPush.aspx" />
+    <Content Include="Statement.aspx" />
+    <Content Include="structure.aspx" />
+    <Content Include="login.html" />
+    <Content Include="MonitorProject\js\MonitorProject.js" />
+    <Content Include="MonitorProject\js\Tab.js" />
+    <Content Include="MonitorProject\Tab.aspx" />
+    <Content Include="resource\css\metro.css" />
+    <Content Include="resource\css\style.css" />
+    <Content Include="resource\css\style_blue.css" />
+    <Content Include="resource\css\style_brown.css" />
+    <Content Include="resource\css\style_default.css" />
+    <Content Include="resource\css\style_light.css" />
+    <Content Include="resource\css\style_purple.css" />
+    <Content Include="resource\css\style_responsive.css" />
+    <Content Include="resource\css\unionboostrap.css" />
+    <Content Include="resource\css\windowbox.css" />
+    <Content Include="resource\img\arrow-down.png" />
+    <Content Include="resource\img\avatar.png" />
+    <Content Include="resource\img\avatar1.jpg" />
+    <Content Include="resource\img\avatar1_small.jpg" />
+    <Content Include="resource\img\avatar2.jpg" />
+    <Content Include="resource\img\avatar3.jpg" />
+    <Content Include="resource\img\avatar3_small.jpg" />
+    <Content Include="resource\img\chart.png" />
+    <Content Include="resource\img\document-spreadsheet.png" />
+    <Content Include="resource\img\googleMap\blue-dot.png" />
+    <Content Include="resource\img\googleMap\marker.png" />
+    <Content Include="resource\img\googleMap\marker_green.png" />
+    <Content Include="resource\img\googleMap\marker_orange.png" />
+    <Content Include="resource\img\googleMap\marker_purple.png" />
+    <Content Include="resource\img\icon-color-close.png" />
+    <Content Include="resource\img\icon-color.png" />
+    <Content Include="resource\img\icon-img-down.png" />
+    <Content Include="resource\img\icon-img-up.png" />
+    <Content Include="resource\img\loading.gif" />
+    <Content Include="resource\img\logo-big.png" />
+    <Content Include="resource\img\logo.png" />
+    <Content Include="resource\img\menu-toggler.png" />
+    <Content Include="resource\img\overlay-icon.png" />
+    <Content Include="resource\img\photo1.jpg" />
+    <Content Include="resource\img\photo2.jpg" />
+    <Content Include="resource\img\portlet-collapse-icon-white.png" />
+    <Content Include="resource\img\portlet-collapse-icon.png" />
+    <Content Include="resource\img\portlet-config-icon-white.png" />
+    <Content Include="resource\img\portlet-config-icon.png" />
+    <Content Include="resource\img\portlet-expand-icon-white.png" />
+    <Content Include="resource\img\portlet-expand-icon.png" />
+    <Content Include="resource\img\portlet-reload-icon-white.png" />
+    <Content Include="resource\img\portlet-reload-icon.png" />
+    <Content Include="resource\img\portlet-remove-icon-white.png" />
+    <Content Include="resource\img\portlet-remove-icon.png" />
+    <Content Include="resource\img\remove-icon-small.png" />
+    <Content Include="resource\img\search-icon-blue.png" />
+    <Content Include="resource\img\search-icon-brown.png" />
+    <Content Include="resource\img\search-icon-purple.png" />
+    <Content Include="resource\img\search-icon-red.png" />
+    <Content Include="resource\img\search-icon-white.png" />
+    <Content Include="resource\img\search-icon.png" />
+    <Content Include="resource\img\select-caret.png" />
+    <Content Include="resource\img\sidebar-menu-arrow-green.png" />
+    <Content Include="resource\img\sidebar-menu-arrow.png" />
+    <Content Include="resource\img\sidebar-search-close-blue.png" />
+    <Content Include="resource\img\sidebar-search-close-brown.png" />
+    <Content Include="resource\img\sidebar-search-close-light.png" />
+    <Content Include="resource\img\sidebar-search-close-purple.png" />
+    <Content Include="resource\img\sidebar-search-close.png" />
+    <Content Include="resource\img\sidebar-toggler-blue.jpg" />
+    <Content Include="resource\img\sidebar-toggler-brown.jpg" />
+    <Content Include="resource\img\sidebar-toggler-light.jpg" />
+    <Content Include="resource\img\sidebar-toggler-purple.jpg" />
+    <Content Include="resource\img\sidebar-toggler.jpg" />
+    <Content Include="resource\img\sidebar-toggler.png" />
+    <Content Include="resource\img\sort_asc.png" />
+    <Content Include="resource\img\sort_asc_disabled.png" />
+    <Content Include="resource\img\sort_both.png" />
+    <Content Include="resource\img\sort_desc.png" />
+    <Content Include="resource\img\sort_desc_disabled.png" />
+    <Content Include="resource\img\syncfusion-icons-white.png" />
+    <Content Include="resource\img\syncfusion-icons.png" />
+    <Content Include="resource\img\toggle-collapse.png" />
+    <Content Include="resource\img\toggle-expand.png" />
+    <Content Include="resource\js\app.js" />
+    <Content Include="resource\js\dataTableInit.js" />
+    <Content Include="resource\js\datepickerInit.js" />
+    <Content Include="resource\js\highchartTemplate.js" />
+    <Content Include="resource\js\HotSpot.js" />
+    <Content Include="resource\js\jquery-1.8.3.min.js" />
+    <Content Include="resource\js\jquery-1.9.1.min.js" />
+    <Content Include="resource\js\jquery-2.0.3.min.js" />
+    <Content Include="resource\js\jquery.blockui.js" />
+    <Content Include="resource\js\jquery.cookie.js" />
+    <Content Include="resource\js\jquery.pulsate.min.js" />
+    <Content Include="resource\js\mapGIS.js" />
+    <Content Include="resource\language\zn_CN.txt" />
+    <Content Include="resource\library\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="resource\library\bootstrap\css\bootstrap-select.css" />
+    <Content Include="resource\library\bootstrap\css\bootstrap.min.css" />
+    <Content Include="resource\library\bootstrap\css\datepicker.css" />
+    <Content Include="resource\library\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="resource\library\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="resource\library\bootstrap\js\bootstrap-datepicker.js" />
+    <Content Include="resource\library\bootstrap\js\bootstrap-popover-svg.js" />
+    <Content Include="resource\library\bootstrap\js\bootstrap-select.js" />
+    <Content Include="resource\library\bootstrap\js\bootstrap-tooltip-svg.js" />
+    <Content Include="resource\library\bootstrap\js\bootstrap-tooltip.js" />
+    <Content Include="resource\library\bootstrap\js\bootstrap.min.js" />
+    <Content Include="resource\library\breakpoints\breakpoints.js" />
+    <Content Include="resource\library\chosen-bootstrap\chosen\chosen-sprite.png" />
+    <Content Include="resource\library\chosen-bootstrap\chosen\chosen.css" />
+    <Content Include="resource\library\chosen-bootstrap\chosen\chosen.jquery.js" />
+    <Content Include="resource\library\chosen-bootstrap\chosen\chosen.jquery.min.js" />
+    <Content Include="resource\library\chosen-bootstrap\chosen\chosen.proto.js" />
+    <Content Include="resource\library\chosen-bootstrap\chosen\chosen.proto.min.js" />
+    <Content Include="resource\library\chosen-bootstrap\example.jquery.html" />
+    <Content Include="resource\library\chosen-bootstrap\example.proto.html" />
+    <Content Include="resource\library\data-tables\css\datatable.min.css" />
+    <Content Include="resource\library\data-tables\css\demo_page.css" />
+    <Content Include="resource\library\data-tables\css\demo_table.css" />
+    <Content Include="resource\library\data-tables\css\demo_table_jui.css" />
+    <Content Include="resource\library\data-tables\css\jquery.dataTables.css" />
+    <Content Include="resource\library\data-tables\css\jquery.dataTables_themeroller.css" />
+    <Content Include="resource\library\data-tables\DT_bootstrap.css" />
+    <Content Include="resource\library\data-tables\DT_bootstrap.js" />
+    <Content Include="resource\library\data-tables\images\sort_asc.png" />
+    <Content Include="resource\library\data-tables\images\sort_both.png" />
+    <Content Include="resource\library\data-tables\images\sort_desc.png" />
+    <Content Include="resource\library\data-tables\jquery.dataTables.js" />
+    <Content Include="resource\library\data-tables\js\jquery.dataTables.js" />
+    <Content Include="resource\library\data-tables\js\jquery.dataTables.min.js" />
+    <Content Include="resource\library\data-tables\js\jquery.js" />
+    <Content Include="resource\library\font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="resource\library\font-awesome\css\font-awesome.css" />
+    <Content Include="resource\library\font-awesome\css\font-awesome.min.css" />
+    <Content Include="resource\library\gritter\css\jquery.gritter.css" />
+    <Content Include="resource\library\gritter\images\gritter-blue.png" />
+    <Content Include="resource\library\gritter\images\gritter-brown.png" />
+    <Content Include="resource\library\gritter\images\gritter-light.png" />
+    <Content Include="resource\library\gritter\images\gritter-long.png" />
+    <Content Include="resource\library\gritter\images\gritter-purple.png" />
+    <Content Include="resource\library\gritter\images\gritter.png" />
+    <Content Include="resource\library\gritter\images\ie-spacer.gif" />
+    <Content Include="resource\library\gritter\js\jquery.gritter.min.js" />
+    <Content Include="resource\library\highcharts\exporting.js" />
+    <Content Include="resource\library\highcharts\highcharts-more.js" />
+    <Content Include="resource\library\highcharts\highcharts.js" />
+    <Content Include="resource\library\jquery-slimscroll\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="resource\library\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="resource\library\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="resource\library\jquery-ui\images\animated-overlay.gif" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-icons_454545_256x240.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-icons_888888_256x240.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="resource\library\jquery-ui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="resource\library\jquery-ui\jquery-ui-1.10.1.custom.css" />
+    <Content Include="resource\library\jquery-ui\jquery-ui-1.10.1.custom.min.css" />
+    <Content Include="resource\library\jquery-ui\jquery-ui-1.10.1.custom.min.js" />
+    <Content Include="resource\library\jquery-ui\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="resource\library\jquery-validation\additional-methods.min.js" />
+    <Content Include="resource\library\jquery-validation\jquery.validate.min.js" />
+    <Content Include="resource\library\tableTools\css\TableTools.css" />
+    <Content Include="resource\library\tableTools\css\TableTools_JUI.css" />
+    <Content Include="resource\library\tableTools\images\background.png" />
+    <Content Include="resource\library\tableTools\images\collection.png" />
+    <Content Include="resource\library\tableTools\images\collection_hover.png" />
+    <Content Include="resource\library\tableTools\images\copy.png" />
+    <Content Include="resource\library\tableTools\images\copy_hover.png" />
+    <Content Include="resource\library\tableTools\images\csv.png" />
+    <Content Include="resource\library\tableTools\images\csv_hover.png" />
+    <Content Include="resource\library\tableTools\images\pdf.png" />
+    <Content Include="resource\library\tableTools\images\pdf_hover.png" />
+    <Content Include="resource\library\tableTools\images\print.png" />
+    <Content Include="resource\library\tableTools\images\print_hover.png" />
+    <Content Include="resource\library\tableTools\images\xls.png" />
+    <Content Include="resource\library\tableTools\images\xls_hover.png" />
+    <Content Include="resource\library\tableTools\js\TableTools.js" />
+    <Content Include="resource\library\tableTools\js\TableTools.min.js" />
+    <Content Include="resource\library\tableTools\js\ZeroClipboard.js" />
+    <Content Include="resource\library\tableTools\swf\copy_csv_xls.swf" />
+    <Content Include="resource\library\tableTools\swf\copy_csv_xls_pdf.swf" />
+    <Content Include="index.aspx" />
+    <Content Include="support.html" />
+    <Content Include="Support\css\alarmPage.css" />
+    <Content Include="Support\css\commonSupport.css" />
+    <Content Include="Support\css\mainPage.css" />
+    <Content Include="Support\data-constrast.aspx" />
+    <Content Include="Support\data-correlation.aspx" />
+    <Content Include="Support\DataWaringSupport.aspx" />
+    <Content Include="Support\images\a.gif" />
+    <Content Include="Support\images\bg08.jpg" />
+    <Content Include="Support\images\bg09.png" />
+    <Content Include="Support\images\bg10.png" />
+    <Content Include="Support\images\bg11.png" />
+    <Content Include="Support\images\loading.gif" />
+    <Content Include="Support\images\style.css" />
+    <Content Include="Support\images\SupportProcess.jpg" />
+    <Content Include="Support\js\aggregateConfig.js" />
+    <Content Include="Support\js\ajaxfileupload.js" />
+    <Content Include="Support\js\chartTemplate.js" />
+    <Content Include="Support\js\data-contrast.js" />
+    <Content Include="Support\js\data-correlation.js" />
+    <Content Include="Support\js\DataWaringSupport.js" />
+    <Content Include="Support\js\DTU.js" />
+    <Content Include="Support\js\dtuRemoteManage.js" />
+    <Content Include="Support\js\factorConfig.js" />
+    <Content Include="Support\js\factorUnitConfig.js" />
+    <Content Include="Support\js\highcharts-exporting.js" />
+    <Content Include="Support\js\mainPage.js" />
+    <Content Include="Support\js\Organization.js" />
+    <Content Include="Support\js\originalData.js" />
+    <Content Include="Support\js\realtimeAcquisition.js" />
+    <Content Include="Support\js\ReportConfig.js" />
+    <Content Include="Support\js\ReportSupport.js" />
+    <Content Include="Support\js\scheduleConfig.js" />
+    <Content Include="Support\js\sectionConfig.js" />
+    <Content Include="Support\js\sectionHeapMapConfig.js" />
+    <Content Include="Support\js\sectionHeapMapConfigSvg.js" />
+    <Content Include="Support\js\sensorConfig.js" />
+    <Content Include="Support\js\sensorGroup.js" />
+    <Content Include="Support\js\sensorRealtimeAcquisition.js" />
+    <Content Include="Support\js\Struct.js" />
+    <Content Include="Support\js\SuportLog.js" />
+    <Content Include="Support\js\SupportSystemLog.js" />
+    <Content Include="Support\js\UserManger.js" />
+    <Content Include="Support\js\validatorConfig.js" />
+    <Content Include="Support\js\Weights.js" />
+    <Content Include="Support\lib\ajaxfileupload.js" />
+    <Content Include="Support\MainPage.aspx" />
+    <Content Include="Support\OrganizationRegister.aspx" />
+    <Content Include="DataService\DataDownload.aspx" />
+    <Content Include="Support\OriginalDataView.aspx" />
+    <Content Include="Support\RealtimeAcquisition.aspx" />
+    <Content Include="Support\ReportConfig.aspx" />
+    <Content Include="Support\ReportSupport.aspx" />
+    <Content Include="Support\SectionConfig.aspx" />
+    <Content Include="Support\SectionHeapMapConfig.aspx" />
+    <Content Include="Support\SectionHeapMapConfigSvg.aspx" />
+    <Content Include="Support\SolutionConfig.aspx" />
+    <Content Include="Support\Struct.aspx" />
+    <Content Include="Support\js\threshold.js" />
+    <Content Include="Support\SupportLog.aspx" />
+    <Content Include="Support\SupportSystemLog.aspx" />
+    <Content Include="Support\UserManger.aspx" />
+    <Content Include="Support\Weights.aspx" />
+    <Content Include="tableEditTest.aspx" />
+    <Content Include="todo.html" />
+    <Content Include="TopoSetting.aspx" />
+    <Content Include="TopoSettingSVG.aspx" />
+    <Content Include="UserLog.aspx" />
+    <Content Include="userWarning.aspx" />
+    <Content Include="User_Log.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auth\AuthCode.cs" />
+    <Compile Include="Auth\AuthorizationAttribute.cs" />
+    <Compile Include="ExternalSensorData.ashx.cs">
+      <DependentUpon>ExternalSensorData.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\SlightShockChar.aspx.cs">
+      <DependentUpon>SlightShockChar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\SlightShockChar.aspx.designer.cs">
+      <DependentUpon>SlightShockChar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\TwoCharStressStrain.aspx.cs">
+      <DependentUpon>TwoCharStressStrain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\TwoCharStressStrain.aspx.designer.cs">
+      <DependentUpon>TwoCharStressStrain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\VibrationCharReticulatedShell.aspx.cs">
+      <DependentUpon>VibrationCharReticulatedShell.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\VibrationCharReticulatedShell.aspx.designer.cs">
+      <DependentUpon>VibrationCharReticulatedShell.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\windRoseTheme.aspx.cs">
+      <DependentUpon>windRoseTheme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\windRoseTheme.aspx.designer.cs">
+      <DependentUpon>windRoseTheme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="datable.ashx.cs">
+      <DependentUpon>datable.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="dataContact.aspx.cs">
+      <DependentUpon>dataContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dataContact.aspx.designer.cs">
+      <DependentUpon>dataContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataContact3.aspx.cs">
+      <DependentUpon>dataContact3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dataContact3.aspx.designer.cs">
+      <DependentUpon>dataContact3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataWarningTest.aspx.cs">
+      <DependentUpon>DataWarningTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataWarningTest.aspx.designer.cs">
+      <DependentUpon>DataWarningTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownLoad.ashx.cs">
+      <DependentUpon>DownLoad.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelDownload.ashx.cs">
+      <DependentUpon>ExcelDownload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ExternalLogin.ashx.cs">
+      <DependentUpon>ExternalLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="GPRS\BatchExport.aspx.cs">
+      <DependentUpon>BatchExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GPRS\BatchExport.aspx.designer.cs">
+      <DependentUpon>BatchExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GPRS\MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GPRS\MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GPRS\SiteGPRS.Master.cs">
+      <DependentUpon>SiteGPRS.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GPRS\SiteGPRS.Master.designer.cs">
+      <DependentUpon>SiteGPRS.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\DeepDispChar.aspx.cs">
+      <DependentUpon>DeepDispChar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\DeepDispChar.aspx.designer.cs">
+      <DependentUpon>DeepDispChar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\DoubleChar.aspx.cs">
+      <DependentUpon>DoubleChar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\DoubleChar.aspx.designer.cs">
+      <DependentUpon>DoubleChar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\InfiltrationLineChar.aspx.cs">
+      <DependentUpon>InfiltrationLineChar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\InfiltrationLineChar.aspx.designer.cs">
+      <DependentUpon>InfiltrationLineChar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\OneChar.aspx.cs">
+      <DependentUpon>OneChar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\OneChar.aspx.designer.cs">
+      <DependentUpon>OneChar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\SettleContrast.aspx.cs">
+      <DependentUpon>SettleContrast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\SettleContrast.aspx.designer.cs">
+      <DependentUpon>SettleContrast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\SettleGroup.aspx.cs">
+      <DependentUpon>SettleGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\SettleGroup.aspx.designer.cs">
+      <DependentUpon>SettleGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\ThreeChar.aspx.cs">
+      <DependentUpon>ThreeChar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\ThreeChar.aspx.designer.cs">
+      <DependentUpon>ThreeChar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\TwoChar.aspx.cs">
+      <DependentUpon>TwoChar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\TwoChar.aspx.designer.cs">
+      <DependentUpon>TwoChar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\VibrationChar.aspx.cs">
+      <DependentUpon>VibrationChar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\VibrationChar.aspx.designer.cs">
+      <DependentUpon>VibrationChar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\WindRowChar.aspx.cs">
+      <DependentUpon>WindRowChar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\WindRowChar.aspx.designer.cs">
+      <DependentUpon>WindRowChar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orgin.Master.cs">
+      <DependentUpon>orgin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orgin.Master.designer.cs">
+      <DependentUpon>orgin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Param_Alert.aspx.cs">
+      <DependentUpon>Param_Alert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_Alert.aspx.designer.cs">
+      <DependentUpon>Param_Alert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressConfig.aspx.cs">
+      <DependentUpon>ProgressConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgressConfig.aspx.designer.cs">
+      <DependentUpon>ProgressConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressLook.aspx.cs">
+      <DependentUpon>ProgressLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgressLook.aspx.designer.cs">
+      <DependentUpon>ProgressLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Proxy.ashx.cs">
+      <DependentUpon>Proxy.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportHandler.ashx.cs">
+      <DependentUpon>reportHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportStruct.aspx.cs">
+      <DependentUpon>ReportStruct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportStruct.aspx.designer.cs">
+      <DependentUpon>ReportStruct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="smsPush.aspx.cs">
+      <DependentUpon>smsPush.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="smsPush.aspx.designer.cs">
+      <DependentUpon>smsPush.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statement.aspx.cs">
+      <DependentUpon>Statement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statement.aspx.designer.cs">
+      <DependentUpon>Statement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="structure.aspx.cs">
+      <DependentUpon>structure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="structure.aspx.designer.cs">
+      <DependentUpon>structure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorProject\Tab.aspx.cs">
+      <DependentUpon>Tab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorProject\Tab.aspx.designer.cs">
+      <DependentUpon>Tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\AlarmSupport.ashx.cs">
+      <DependentUpon>AlarmSupport.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\data-constrast.aspx.cs">
+      <DependentUpon>data-constrast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\data-constrast.aspx.designer.cs">
+      <DependentUpon>data-constrast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\data-correlation.aspx.cs">
+      <DependentUpon>data-correlation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\data-correlation.aspx.designer.cs">
+      <DependentUpon>data-correlation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\DataWaringSupport.aspx.cs">
+      <DependentUpon>DataWaringSupport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\DataWaringSupport.aspx.designer.cs">
+      <DependentUpon>DataWaringSupport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\DownloadReport.ashx.cs">
+      <DependentUpon>DownloadReport.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\HotspotHandler.ashx.cs">
+      <DependentUpon>HotspotHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\ManageReport.ashx.cs">
+      <DependentUpon>ManageReport.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\ManualUploadHandler.ashx.cs">
+      <DependentUpon>ManualUploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\MultiDelReport.ashx.cs">
+      <DependentUpon>MultiDelReport.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\MultiDownLoadReport.ashx.cs">
+      <DependentUpon>MultiDownLoadReport.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\MultiUploadHandler.ashx.cs">
+      <DependentUpon>MultiUploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\OrganizationRegister.aspx.cs">
+      <DependentUpon>OrganizationRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\OrganizationRegister.aspx.designer.cs">
+      <DependentUpon>OrganizationRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataService\DataDownload.aspx.cs">
+      <DependentUpon>DataDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataService\DataDownload.aspx.designer.cs">
+      <DependentUpon>DataDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\OriginalDataView.aspx.cs">
+      <DependentUpon>OriginalDataView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\OriginalDataView.aspx.designer.cs">
+      <DependentUpon>OriginalDataView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\RealtimeAcquisition.aspx.cs">
+      <DependentUpon>RealtimeAcquisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\RealtimeAcquisition.aspx.designer.cs">
+      <DependentUpon>RealtimeAcquisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\ReportConfig.aspx.cs">
+      <DependentUpon>ReportConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\ReportConfig.aspx.designer.cs">
+      <DependentUpon>ReportConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\ReportSupport.aspx.cs">
+      <DependentUpon>ReportSupport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\ReportSupport.aspx.designer.cs">
+      <DependentUpon>ReportSupport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\SectionConfig.aspx.cs">
+      <DependentUpon>SectionConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\SectionConfig.aspx.designer.cs">
+      <DependentUpon>SectionConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\SectionHeapMapConfig.aspx.cs">
+      <DependentUpon>SectionHeapMapConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\SectionHeapMapConfig.aspx.designer.cs">
+      <DependentUpon>SectionHeapMapConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\SectionHeapMapConfigSvg.aspx.cs">
+      <DependentUpon>SectionHeapMapConfigSvg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\SectionHeapMapConfigSvg.aspx.designer.cs">
+      <DependentUpon>SectionHeapMapConfigSvg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\SectionHeapMapHandler.ashx.cs">
+      <DependentUpon>SectionHeapMapHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\SiteSupport.Master.cs">
+      <DependentUpon>SiteSupport.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\SiteSupport.Master.designer.cs">
+      <DependentUpon>SiteSupport.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Support\SolutionConfig.aspx.cs">
+      <DependentUpon>SolutionConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\SolutionConfig.aspx.designer.cs">
+      <DependentUpon>SolutionConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Struct.aspx.cs">
+      <DependentUpon>Struct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\Struct.aspx.designer.cs">
+      <DependentUpon>Struct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\SupportLog.aspx.cs">
+      <DependentUpon>SupportLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\SupportLog.aspx.designer.cs">
+      <DependentUpon>SupportLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\SupportSystemLog.aspx.cs">
+      <DependentUpon>SupportSystemLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\SupportSystemLog.aspx.designer.cs">
+      <DependentUpon>SupportSystemLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\UploadHandler.ashx.cs">
+      <DependentUpon>UploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\UserManger.aspx.cs">
+      <DependentUpon>UserManger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\UserManger.aspx.designer.cs">
+      <DependentUpon>UserManger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\WarnExcelDownload.ashx.cs">
+      <DependentUpon>WarnExcelDownload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Weights.aspx.cs">
+      <DependentUpon>Weights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\Weights.aspx.designer.cs">
+      <DependentUpon>Weights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="systemlog.ashx.cs">
+      <DependentUpon>systemlog.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="tableEditTest.aspx.cs">
+      <DependentUpon>tableEditTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tableEditTest.aspx.designer.cs">
+      <DependentUpon>tableEditTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TopoSetting.aspx.cs">
+      <DependentUpon>TopoSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TopoSetting.aspx.designer.cs">
+      <DependentUpon>TopoSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TopoSettingSVG.aspx.cs">
+      <DependentUpon>TopoSettingSVG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TopoSettingSVG.aspx.designer.cs">
+      <DependentUpon>TopoSettingSVG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userlog.ashx.cs">
+      <DependentUpon>userlog.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLog.aspx.cs">
+      <DependentUpon>UserLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLog.aspx.designer.cs">
+      <DependentUpon>UserLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userWarning.aspx.cs">
+      <DependentUpon>userWarning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userWarning.aspx.designer.cs">
+      <DependentUpon>userWarning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Log.aspx.cs">
+      <DependentUpon>User_Log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Log.aspx.designer.cs">
+      <DependentUpon>User_Log.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resource\library\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="resource\library\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="resource\library\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="resource\library\font-awesome\font\FontAwesome.otf" />
+    <Content Include="resource\library\font-awesome\sass\font-awesome.sass" />
+    <Content Include="resource\library\font-awesome\sass\font-awesome.scss" />
+    <Content Include="Site.Master" />
+    <Content Include="resource\library\jquery-slimscroll\README.md" />
+    <Content Include="resource\library\jquery-slimscroll\slimScroll.jquery.json" />
+    <Content Include="resource\library\tableTools\images\psd\collection.psd" />
+    <Content Include="resource\library\tableTools\images\psd\copy document.psd" />
+    <Content Include="resource\library\tableTools\images\psd\file_types.psd" />
+    <Content Include="resource\library\tableTools\images\psd\printer.psd" />
+    <Content Include="resource\library\tableTools\js\TableTools.min.js.gz" />
+    <Content Include="DownLoad.ashx" />
+    <Content Include="ExternalLogin.ashx" />
+    <Content Include="datable.ashx" />
+    <Content Include="ExcelDownload.ashx" />
+    <Content Include="GPRS\SiteGPRS.Master" />
+    <Content Include="resource\library\chosen-bootstrap\.gitignore" />
+    <Content Include="resource\library\chosen-bootstrap\Cakefile" />
+    <Content Include="resource\library\chosen-bootstrap\chosen\lib\chosen.less" />
+    <Content Include="resource\library\chosen-bootstrap\coffee\chosen.jquery.coffee" />
+    <Content Include="resource\library\chosen-bootstrap\coffee\chosen.proto.coffee" />
+    <Content Include="resource\library\chosen-bootstrap\coffee\lib\abstract-chosen.coffee" />
+    <Content Include="resource\library\chosen-bootstrap\coffee\lib\select-parser.coffee" />
+    <Content Include="resource\library\chosen-bootstrap\LICENSE.md" />
+    <Content Include="resource\library\chosen-bootstrap\package.json" />
+    <Content Include="resource\library\chosen-bootstrap\README.md" />
+    <Content Include="resource\library\chosen-bootstrap\VERSION" />
+    <Content Include="Support\SiteSupport.Master" />
+    <Content Include="Proxy.ashx" />
+    <Content Include="Support\HotspotHandler.ashx" />
+    <Content Include="resource\library\font-awesome\font\DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff" />
+    <Content Include="resource\library\font-awesome\font\cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff" />
+    <Content Include="resource\library\font-awesome\font\MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff" />
+    <Content Include="resource\library\font-awesome\font\k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff" />
+    <Content Include="userlog.ashx" />
+    <Content Include="systemlog.ashx" />
+    <Content Include="packages.config" />
+    <Content Include="orgin.Master" />
+    <Content Include="Support\DownloadReport.ashx" />
+    <Content Include="Support\MultiDelReport.ashx" />
+    <Content Include="Support\MultiDownLoadReport.ashx" />
+    <Content Include="Support\MultiUploadHandler.ashx" />
+    <Content Include="Support\UploadHandler.ashx" />
+    <Content Include="reportHandler.ashx" />
+    <Content Include="Support\SectionHeapMapHandler.ashx" />
+    <Content Include="log4net.config" />
+    <Content Include="ExternalSensorData.ashx" />
+    <None Include="Properties\PublishProfiles\SecureCloud2.1.pubxml" />
+    <Content Include="resource\library\DataTables-1.10.2\images\Sorting icons.psd" />
+    <None Include="Properties\PublishProfiles\wc2.1.pubxml" />
+    <Content Include="resource\uipackage\data\data.json" />
+    <Content Include="Support\ManualUploadHandler.ashx" />
+    <Content Include="resource\library\font-awesome-4.3.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="resource\library\font-awesome-4.3.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="resource\library\font-awesome-4.3.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="resource\library\font-awesome-4.3.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="resource\library\font-awesome-4.3.0\fonts\FontAwesome.otf" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\animated.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\bordered-pulled.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\core.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\fixed-width.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\font-awesome.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\icons.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\larger.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\list.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\mixins.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\path.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\rotated-flipped.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\stacked.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\less\variables.less" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\font-awesome.scss" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\_animated.scss" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\_bordered-pulled.scss" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\_core.scss" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\_fixed-width.scss" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\_icons.scss" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\_larger.scss" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\_list.scss" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\_mixins.scss" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\_path.scss" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\_rotated-flipped.scss" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\_stacked.scss" />
+    <Content Include="resource\library\font-awesome-4.3.0\scss\_variables.scss" />
+    <Content Include="Support\ManageReport.ashx" />
+    <Content Include="Support\WarnExcelDownload.ashx" />
+    <Content Include="Support\AlarmSupport.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3645</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3645/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

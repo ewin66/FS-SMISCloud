@@ -1,0 +1,7 @@
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataValidator.Test\consumers.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataValidator.Test\DataValidator.Test.exe.config
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataValidator.Test\DataValidator.Test.exe
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\DataValidator.Test\DataValidator.Test.pdb
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataValidator.Test\obj\Debug\DataValidator.Test.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataValidator.Test\obj\Debug\DataValidator.Test.exe
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\DataValidator.Test\obj\Debug\DataValidator.Test.pdb

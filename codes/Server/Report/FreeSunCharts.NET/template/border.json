@@ -1,0 +1,59 @@
+﻿ {
+        global: {
+			useUTC: false
+		},
+		chart: {
+            type: 'spline',
+            zoomType: 'x'
+        },
+        title: {
+            text: '$title',
+            x: -20 
+        },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: {
+                minute: '%H:%M:%S',
+                day: '%Y-%m-%d',
+                month: '%b %y'
+            },
+            labels: { rotation: -25, align: 'right', style: { font: 'normal 13px Verdana, sans-serif' } }
+        },
+        yAxis: {
+            title: { text : '$yAxis' },
+            plotLines: [{
+                value: 0,
+                width: 2,
+                dashStyle: 'Dash',
+                zIndex: 5
+            }],
+			max:'$max',
+			min:'$min'
+        },
+        credits: {
+            enabled: false
+        },
+        plotOptions: {
+            spline: {
+                lineWidth: 1.5,
+                states: {
+                    hover: {
+                        lineWidth: 1.5
+                    }
+                },
+                marker: {
+                    enabled: false
+                }
+            }
+        },
+        tooltip: {
+            formatter: {}
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: $series
+    }

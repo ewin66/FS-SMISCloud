@@ -1,0 +1,52 @@
+记录时间:2015-04-23 11:51:37,320 线程ID:[5](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (403) 已禁止。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94
+记录时间:2015-04-23 11:52:05,134 线程ID:[5](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94
+记录时间:2015-04-23 13:01:14,197 线程ID:[9](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94
+记录时间:2015-04-23 13:01:30,368 线程ID:[8](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94
+记录时间:2015-04-23 13:01:43,141 线程ID:[9](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94
+记录时间:2015-04-23 13:02:06,852 线程ID:[9](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94
+记录时间:2015-04-23 13:07:20,050 线程ID:[24](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94
+记录时间:2015-04-23 13:18:17,642 线程ID:[9](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94
+记录时间:2015-04-23 13:19:23,561 线程ID:[10](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94
+记录时间:2015-04-23 13:30:04,959 线程ID:[28](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94
+记录时间:2015-04-23 13:30:20,134 线程ID:[28](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94
+记录时间:2015-04-23 13:30:53,869 线程ID:[5](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94
+记录时间:2015-04-23 13:31:35,355 线程ID:[7](文件：e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs 行号132) 出错类：Proxy [(null)] - 错误描述 webExcpetion
+System.Net.WebException: 远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ProxyDemo.Proxy.ProcessRequest(HttpContext context) 位置 e:\FS-SMISCloud\codes\WebClient\SecureCloud\Proxy.ashx.cs:行号 94

@@ -1,0 +1,8 @@
+E:\FS-SMISCloud\codes\Server\Output\Test\WarningSenderTest\msg.txt
+E:\FS-SMISCloud\codes\Server\Output\Test\WarningSenderTest\WarningSenderTest.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\WarningSenderTest\WarningSenderTest.exe.config
+E:\FS-SMISCloud\codes\Server\Output\Test\WarningSenderTest\WarningSenderTest.exe
+E:\FS-SMISCloud\codes\Server\Output\Test\WarningSenderTest\WarningSenderTest.pdb
+E:\FS-SMISCloud\codes\Server\Alarm\WarningSenderTest\obj\Debug\WarningSenderTest.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\Alarm\WarningSenderTest\obj\Debug\WarningSenderTest.exe
+E:\FS-SMISCloud\codes\Server\Alarm\WarningSenderTest\obj\Debug\WarningSenderTest.pdb

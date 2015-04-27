@@ -1,0 +1,14 @@
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\NGET.Test\consumers.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\NGET.Test\DataAnalyzerService.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\NGET.Test\DONT README.txt
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\NGET.Test\EtService.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\NGET.Test\App.config
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\NGET.Test\log4net.config
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\NGET.Test\NGET.Test.exe.config
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\NGET.Test\NGET.Test.exe
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\NGET.Test\NGET.Test.pdb
+E:\FS-SMISCloud\codes\Server\NGET\NGET.Test\obj\Debug\NGET.Test.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\NGET\NGET.Test\obj\Debug\NGET.Test.exe
+E:\FS-SMISCloud\codes\Server\NGET\NGET.Test\obj\Debug\NGET.Test.pdb
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\NGET.Test\ThemeTables_iSecureCloud.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\NGET.Test\upload.xml

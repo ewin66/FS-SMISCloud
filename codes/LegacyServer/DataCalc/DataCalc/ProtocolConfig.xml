@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <Moudles>
+    <Moudle>
+      <Id>1500</Id>
+      <Sensor>CXSensor</Sensor>
+    </Moudle>
+
+    <Moudle>
+      <Id>1503</Id>
+      <Sensor>CXSensor</Sensor>
+    </Moudle>
+
+    <Moudle>
+      <Id>9002</Id>
+      <Sensor>PressureTransSensor</Sensor>
+    </Moudle>
+
+    <Moudle>
+      <Id>1400</Id>
+      <Sensor>ZXSensor</Sensor>
+    </Moudle>
+
+    <Moudle>
+      <Id>1401</Id>
+      <Sensor>ZXSensor</Sensor>
+    </Moudle>
+
+    <Moudle>
+      <Id>1100</Id>
+      <Sensor>WSDSensor</Sensor>
+    </Moudle>
+    <Moudle>
+      <Id>1101</Id>
+      <Sensor>WSDSensor</Sensor>
+    </Moudle>
+
+    <Moudle>
+      <Id>1600</Id>
+      <Sensor>RainfallSensor</Sensor>
+    </Moudle>
+    
+    <Moudle>
+      <Id>9101</Id>
+      <Sensor>LvdtSensor</Sensor>
+    </Moudle>
+
+    <Moudle>
+      <Id>9201</Id>
+      <Sensor>WindSensor</Sensor>
+    </Moudle>
+    
+    <Moudle>
+      <Id>9401</Id>
+      <Sensor>GPSSensor</Sensor>
+    </Moudle>
+
+    <Moudle>
+      <Id>9503</Id>
+      <Sensor>FBGSensor</Sensor>
+    </Moudle>
+
+    <Moudle>
+      <Id>9504</Id>
+      <Sensor>FBGVStressSensor</Sensor>
+    </Moudle>
+
+    <Moudle>
+      <Id>9601</Id>
+      <Sensor>RadarLevelSensor</Sensor>
+    </Moudle>
+    
+  </Moudles>
+</Config>

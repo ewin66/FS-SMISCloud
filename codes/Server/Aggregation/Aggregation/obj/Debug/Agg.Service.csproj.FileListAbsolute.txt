@@ -1,0 +1,13 @@
+E:\FS-SMISCloud\codes\Server\Output\AggService\DataPool.xml
+E:\FS-SMISCloud\codes\Server\Output\AggService\AggProcess.xml
+E:\FS-SMISCloud\codes\Server\Output\AggService\ResultConsumers.xml
+E:\FS-SMISCloud\codes\Server\Output\AggService\log4net.config
+E:\FS-SMISCloud\codes\Server\Output\AggService\AggService.exe.config
+E:\FS-SMISCloud\codes\Server\Output\AggService\AggService.exe
+E:\FS-SMISCloud\codes\Server\Output\AggService\AggService.pdb
+E:\FS-SMISCloud\codes\Server\Aggregation\Aggregation\obj\Debug\Agg.Service.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\Aggregation\Aggregation\obj\Debug\AggService.exe
+E:\FS-SMISCloud\codes\Server\Aggregation\Aggregation\obj\Debug\AggService.pdb
+E:\FS-SMISCloud\codes\Server\Output\AggService\ServiceBus.xml
+E:\FS-SMISCloud\codes\Server\Output\AggService\AggService.xml
+E:\FS-SMISCloud\codes\Server\Output\AggService\App.config

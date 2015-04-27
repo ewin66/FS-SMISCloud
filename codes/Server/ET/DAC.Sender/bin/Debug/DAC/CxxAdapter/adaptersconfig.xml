@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Adapters>
+  <Adapter protocol="9501" filename="FTM50SSmallLaserSensorAdapter" />
+  <Adapter protocol="9502" filename="GLSB40I70Laser_SensorAdapter" />
+  <Adapter protocol="1502" filename="Inclination_BOX_SensorAdapter" />
+  <Adapter protocol="1500" filename="Inclination_OLD_SensorAdapter" />
+  <Adapter protocol="1503" filename="Inclination_ROD_SensorAdapter" />
+  <Adapter protocol="9101" filename="LVDT_BL_SensorAdapter" />
+  <Adapter protocol="9102" filename="LVDT_XW_SensorAdapter" />
+  <Adapter protocol="1700" filename="MagneticFluxSensorAdapter" />
+  <Adapter protocol="9001" filename="Pressure_HS_SensorAdaper" />
+  <Adapter protocol="9002" filename="Pressure_MPM_SensorAdapter" />
+  <Adapter protocol="1600" filename="RainFallSensorAdapter" />
+  <Adapter protocol="1102" filename="TempHumidityModbusSensorAdapter" />
+  <Adapter protocol="1101" filename="TempHumiditySensorAdapter" />
+  <Adapter protocol="1400" filename="VibratingWire_OLD_SensorAdapter" />
+  <Adapter protocol="1401" filename="VibratingWireSensorAdapter" />
+  <Adapter protocol="1200" filename="VoltageSensorAdapter" />
+  <Adapter protocol="9202" filename="Wind_CFF_SensorAdapter" />
+  <Adapter protocol="9201" filename="Wind_OSL_SensorAdapter" />
+</Adapters>
+
+

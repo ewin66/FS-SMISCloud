@@ -1,0 +1,6 @@
+﻿{
+  "DependList": [
+    "DynamicScript.dll",
+	"DynamicScript.Test.exe"
+  ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>System.Data.SQLite</id>
+    <version>1.0.94.0</version>
+    <authors>liuxinyi</authors>
+    <owners>liuxinyi</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>用于.NET下AnyCPU编译的Sqlite库,直接引用会自动根据平台生成interop文件</description>
+  </metadata>
+</package>

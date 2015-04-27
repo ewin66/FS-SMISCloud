@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bus>
+  <!--
+  整个环境应该只有一个 servicebus.xml 文件, service 实现在一个环境中不应异构。
+  asm: library name;
+  impl: full class name.
+  -->
+  <servicebus asm="Service.NetMQ" impl="FS.Service.NetMQMessageBus"/>
+</bus>

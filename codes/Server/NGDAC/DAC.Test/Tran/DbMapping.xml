@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+	<databases>
+    <!--address 是数据库地址，如果是sqlserver则是ip+port，access、sqlite等则是路径-->
+    <!--types是数据库类型：MSSQL:0|Access:2|SQLite:1-->
+    <!--ODBC、OLE DB、ADO-->
+    <!--用户名、密码有就填-->
+		<database name="DW_iSecureCloud_Empty" dbType="0" connectionString="Initial Catalog=DW_iSecureCloud_Empty;Data Source=192.168.1.128;User Id=sa;Password=861004" >
+        <!--ProtocolType:协议号-->
+				<table name="T_THEMES_ENVI_WIND" protocolType="9401" filter="where lastSyncTime is null">
+					<!--需要提取的字段，默认有就填写，没有该列的不写-->
+						<colum name="ID" standardfield="ID" />
+						<colum name="SENSOR_ID" standardfield="SID" />
+            <colum name="ACQUISITION_DATETIME" standardfield="AcqTime" />
+            <colum name="WIND_SPEED_VALUE" standardfield="Value1" />
+            <colum name="WIND_DIRECTION_VALUE" standardfield="Value2" />
+            <colum name="WIND_ELEVATION_VALUE" standardfield="Value3"/>
+				</table>
+		</database>
+
+	</databases>
+</config>

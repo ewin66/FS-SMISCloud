@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<service>
+  <pp>
+    <pull address="tcp://*:9201"/>
+    <push>
+    </push>
+  </pp>
+  <!--
+  <ps>
+    <publisher address="tcp://*:9102"/>
+    <subscribe>
+      <service name="et.sim" address="tcp://127.0.0.1:9402"/>
+      <service name="cm" address="..."/>
+    </subscribe>
+  </ps> -->
+  <!--<rr>
+    <response address="tcp://*:9103"/>
+    <request>
+      <service name ="WebClient" address="tcp://127.0.0.1:9503"/>
+    </request>
+  </rr>-->
+ 
+  <settings>    
+    <setting key="key1" value="value1" />
+  </settings>
+</service>

@@ -1,0 +1,10 @@
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager.Test\bin\Debug\log4net.config
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager.Test\bin\Debug\ConsoleCtrlManager.Test.exe
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager.Test\bin\Debug\ConsoleCtrlManager.Test.pdb
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager.Test\bin\Debug\ConsoleCtrlManager.dll
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager.Test\bin\Debug\log4net.dll
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager.Test\bin\Debug\ConsoleCtrlManager.pdb
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager.Test\bin\Debug\log4net.xml
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager.Test\obj\Debug\ConsoleCtrlManager.Test.exe
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager.Test\obj\Debug\ConsoleCtrlManager.Test.pdb
+E:\FS-SMISCloud\codes\Server\ConsoleCtrlManager.Test\obj\Debug\ConsoleCtrlManager.Test.csprojResolveAssemblyReference.cache

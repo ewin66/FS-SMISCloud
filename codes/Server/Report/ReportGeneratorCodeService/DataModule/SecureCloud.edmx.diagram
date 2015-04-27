@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9b2a703ccaac4b7ca924911bb6ff9d27" Name="关系图1">
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.BATCH_JOB_EXECUTION" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.BATCH_JOB_EXECUTION_CONTEXT" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.BATCH_JOB_EXECUTION_PARAMS" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.BATCH_JOB_EXECUTION_SEQ" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.BATCH_JOB_INSTANCE" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.BATCH_JOB_SEQ" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.BATCH_STEP_EXECUTION" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.BATCH_STEP_EXECUTION_CONTEXT" Width="1.5" PointX="7.5" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.BATCH_STEP_EXECUTION_SEQ" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_AGG__DAY_SAFETY_FACTOR_SCORE" Width="1.5" PointX="3" PointY="67.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_AGG__DAY_STRUCTURE_SCORE" Width="1.5" PointX="6" PointY="46.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_AGG__HOUR_SAFETY_FACTOR_SCORE" Width="1.5" PointX="6" PointY="67.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_AGG__HOUR_STRUCTURE_SCORE" Width="1.5" PointX="9" PointY="49.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_AGG__MONTH_SAFETY_FACTOR_SCORE" Width="1.5" PointX="9" PointY="67.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_AGG__MONTH_STRUCTURE_SCORE" Width="1.5" PointX="9" PointY="41.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_AGG__WEEK_STRUCTURE_SCORE" Width="1.5" PointX="12" PointY="46.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_AGG_WEEK_SAFETY_FACTOR_SCORE" Width="1.5" PointX="3" PointY="60.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_API_LOG" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_API_RESOURCE" Width="1.5" PointX="5.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_COL_ORIGINAL_DATAVALUE" Width="1.5" PointX="14.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DATA_AGGREGATION" Width="1.5" PointX="7.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DATA_LATEST" Width="1.5" PointX="14.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DATA_ORIGINAL" Width="1.5" PointX="9.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DATA_ORIGINAL_ARCHIVE" Width="1.5" PointX="11.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DATA_RATIONAL_FILTER_CONFIG" Width="1.5" PointX="14.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DATA_STABLE_FILTER_CONFIG" Width="1.5" PointX="13.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_COMPANY" Width="1.5" PointX="3.75" PointY="99.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_CORRELATION_FACTOR" Width="1.5" PointX="15.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_DAI" Width="1.5" PointX="11.25" PointY="56.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_DAI_PRODUCT" Width="1.5" PointX="9" PointY="59" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_DATETIME" Width="1.5" PointX="0.75" PointY="48.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_DEVICETOKEN" Width="1.5" PointX="16.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_dim_Dictionary" Width="1.5" PointX="16.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_DTU_PRODUCT" Width="1.5" PointX="1.5" PointY="131.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_DTU_STATUS" Width="1.5" PointX="3.75" PointY="126.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_FORMULA_PARA" Width="1.5" PointX="9" PointY="100.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_FORMULA_PARA_NAME" Width="1.5" PointX="6.75" PointY="99.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_FORMULAID" Width="1.5" PointX="6.75" PointY="101.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_FORMULAID_SET" Width="1.5" PointX="11.25" PointY="85" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_GROUP" Width="1.5" PointX="12" PointY="91.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_GROUP_TYPE" Width="1.5" PointX="9.75" PointY="91.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_HALF_HOUR" Width="1.5" PointX="16.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_HOTSPOT" Width="1.5" PointX="6" PointY="112.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_HOTSPOT_SECTION" Width="1.5" PointX="6" PointY="116" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_HOTSPOTTest" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_HOUR" Width="1.5" PointX="3.75" PointY="57.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_OPERATION_LOG" Width="1.5" PointX="12" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_OPERATION_RESOURCE" Width="1.5" PointX="9.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_OPERATION_TYPE" Width="1.5" PointX="9.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_ORG_STUCTURE" Width="1.5" PointX="0.75" PointY="80.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_ORGANIZATION" Width="1.5" PointX="1.5" PointY="87.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_PERMISSION" Width="1.5" PointX="8" PointY="94.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_POWER_SUPPLY_TYPE" Width="1.5" PointX="6.75" PointY="60" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_PRODUCT_CATEGORY" Width="1.5" PointX="1.5" PointY="38.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_PRODUCT_TYPE" Width="1.5" PointX="1.5" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_PRODUCTCATAGORY_ORIGINALDATA" Width="1.5" PointX="0.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_PROTOCOL_TYPE" Width="1.5" PointX="1.5" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_PROTOCOLCOMMAND" Width="1.5" PointX="3.75" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_REGION" Width="1.5" PointX="1.5" PointY="96.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_REGION_TYPE" Width="1.5" PointX="1.5" PointY="101.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_REMOTE_DTU" Width="1.5" PointX="1.5" PointY="124.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_ROLE" Width="1.5" PointX="17.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_ROLE_API_RESOURCE" Width="1.5" PointX="17.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_ROLE_RESOURCE" Width="1.5" PointX="12" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_SAFETY_FACTOR_TYPE" Width="1.5" PointX="0.75" PointY="66.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_SECTION" Width="1.5" PointX="3.75" PointY="114" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_SENSOR" Width="1.5" PointX="3" PointY="74.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_SENSOR_CORRENT" Width="1.5" PointX="5.25" PointY="89" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_SENSOR_DATASTATUS" Width="1.5" PointX="5.25" PointY="91.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_SENSOR_GPS" Width="1.5" PointX="18.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_SENSOR_GROUP_CEXIE" Width="1.5" PointX="8.25" PointY="86.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_SENSOR_GROUP_CHENJIANG" Width="1.5" PointX="14.25" PointY="83.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_SENSOR_GROUP_JINRUNXIAN" Width="1.5" PointX="14.25" PointY="86.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_Sensor_Init" Width="1.5" PointX="5.25" PointY="95.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_SENSOR_PRODUCT" Width="1.5" PointX="0.75" PointY="41" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_SENSORPRODUCT_SAFETYFACTORTYPE" Width="1.5" PointX="18.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_STRUCT_DTU" Width="1.5" PointX="3.75" PointY="117.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_STRUCTUER_LINE" Width="1.5" PointX="12.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_STRUCTUER_PROGRESS" Width="1.5" PointX="15" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_STRUCTURE" Width="1.5" PointX="1.5" PointY="111.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_STRUCTURE_FACTOR" Width="1.5" PointX="6" PointY="64.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_STRUCTURE_TYPE" Width="1.5" PointX="1.5" PointY="120" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_STRUCTURE_TYPE_FACTOR" Width="1.5" PointX="18.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_USER" Width="1.5" PointX="5.75" PointY="105.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_USER_ORG" Width="1.5" PointX="10.75" PointY="95" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_USER_ROLE" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_USER_STRUCTURE" Width="1.5" PointX="2.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_WARNING_DEVICETYPE" Width="1.5" PointX="6.5" PointY="119" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_DIM_WARNING_TYPE" Width="1.5" PointX="6.5" PointY="121.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_DEFAULTGPS" Width="1.5" PointX="4.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_DEFAULTINCLINOMETER" Width="1.5" PointX="9.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_DEFAULTSENSOR_THRESHOLD" Width="1.5" PointX="11.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_GPS" Width="1.5" PointX="19.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_INCLINOMETER" Width="1.5" PointX="13.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_NORMALIZED" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_SAFETY_FACTOR_SCORE" Width="1.5" PointX="3" PointY="108.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_SAFETY_FACTOR_WEIGHTS" Width="1.5" PointX="6" PointY="74.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_SENSOR_THRESHOLD" Width="1.5" PointX="20.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_SENSOR_WEIGHTS" Width="1.5" PointX="14.25" PointY="89.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_STRUCTURE_SCORE" Width="1.5" PointX="3" PointY="104.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_SUB_SAFETY_FACTOR_WEIGHTS" Width="1.5" PointX="9" PointY="64.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_FACT_WEIGHT_SCORE" Width="1.5" PointX="3.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_IOS_VERSION" Width="1.5" PointX="20.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_REPORT_COLLECTION" Width="1.5" PointX="15.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_REPORT_CONFIG" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_REPORT_CONFIG_TEMPLATE" Width="1.5" PointX="10" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_REPORT_TEMPLATE" Width="1.5" PointX="7.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_SYSTEM_LOG" Width="1.5" PointX="6.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_TASK_INSTANT" Width="1.5" PointX="21.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_CABLE_FORCE" Width="1.5" PointX="21.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_BRIDGE_DEFLECTION" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_CRACK" Width="1.5" PointX="0.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_DEEP_DISPLACEMENT" Width="1.5" PointX="8.25" PointY="74.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_DEEP_DISPLACEMENT_DAILY" Width="1.5" PointX="14.25" PointY="61.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_SETTLEMENT" Width="1.5" PointX="5.25" PointY="78" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT" Width="1.5" PointX="11.25" PointY="72.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_DEFORMATION_SURFACE_DISPLACEMENT_DAILY" Width="1.5" PointX="22.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_ENVI_BEACH" Width="1.5" PointX="21.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_ENVI_RAINFALL" Width="1.5" PointX="11.25" PointY="67.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_ENVI_SATURATION_LINE" Width="1.5" PointX="23.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_ENVI_SEEPAGE" Width="1.5" PointX="23.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_ENVI_TEMP_HUMI" Width="1.5" PointX="11.25" PointY="78.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_ENVI_WATER_LEVEL" Width="1.5" PointX="11.25" PointY="62.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_ENVI_WIND" Width="1.5" PointX="23.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_FBG_STRESS_STRAIN" Width="1.5" PointX="17.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_FORCE_ANCHOR" Width="1.5" PointX="8.25" PointY="81.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_FORCE_AXIAL" Width="1.5" PointX="23.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_FORCE_BEAM" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_FORCE_EARTH_PRESSURE" Width="1.5" PointX="14.25" PointY="73.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_FORCE_STEELBAR" Width="1.5" PointX="14.25" PointY="68.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_STRESS_STRAIN_PORE_WATER_PRESSURE" Width="1.5" PointX="14.25" PointY="78.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_STRESS_STRAIN_RETAININGWALL" Width="1.5" PointX="5.25" PointY="83.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_VIBRATION" Width="1.5" PointX="24.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_VIBRATION_ARCHIVE" Width="1.5" PointX="24.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_VIBRATION_BATCH" Width="1.5" PointX="6.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_VIBRATION_BATCH_ARCHIVE" Width="1.5" PointX="25.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_VIBRATION_DECK_VIBRATION" Width="1.5" PointX="25.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_VIBRATION_ORIGINAL" Width="1.5" PointX="25.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_THEMES_VIBRATION_ORIGINAL_ARCHIVE" Width="1.5" PointX="19.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_WARNING_DEALDETAILS" Width="1.5" PointX="11" PointY="114.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_WARNING_LEVEL" Width="1.5" PointX="25.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_WARNING_SENSOR" Width="1.5" PointX="8.75" PointY="113.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReportGeneratorService.DataModule.T_WARNING_SMS_RECIEVER" Width="1.5" PointX="8" PointY="105.875" IsExpanded="true" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.JOB_EXEC_CTX_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.JOB_EXEC_PARAMS_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.JOB_EXEC_STEP_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.JOB_INST_EXEC_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.STEP_EXEC_CTX_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_113" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_117" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_AGG__D_REFERENCE_T_DIM_SA" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_112" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_116" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_126" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_127" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_128" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_107" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_109" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_111" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_90" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_110" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_91" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_92" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_93" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_94" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_95" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_121" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_123" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_125" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_120" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_122" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_132" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_133" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_134" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_114" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_118" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_129" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_130" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_131" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_115" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_119" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_124" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_67" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_72" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_73" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_52" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_77" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_DAI_PRODUCT_T_DIM_FORMULAID" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_SE_REFERENCE_T_DIM_PR2" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_PRODUCT_DTU_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK__T_DIM_DTU__DtuId__052FA09F" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_FORMULA_REFERENCE_T_FO" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_FORMULA_SET_REFERENCE__FO" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_FO_REFERENCE_T_DIM_FO" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.Reference_145" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK__T_DIM_SEN__GROUP__4CEB477C" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK__T_DIM_SEN__GROUP__50BBD860" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.Fk_c" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_REF_GROUP" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_HOTSPOT_SECTION_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_HOTSPOT_SECTION_SECTIONID" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_OP_REFERENCE_T_DIM_OP" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_OP_REFERENCE_T_DIM_OP_OB" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_RO_REFERENCE_T_DIM_OP" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_FactWeight_OrgStc" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_2" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_3" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_80" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_83" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_SensorWeight_OrgStc" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_PE_REFERENCE_T_DIM_OR" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_65" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_US_REFERENCE_T_DIM_OR" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_PE_REFERENCE_T_DIM_US" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_PRODUCT_TYPE_CATEGORY" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_SE_REFERENCE_T_DIM_PR" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_SE_REFERENCE_T_DIM_PR1" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_70" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_SEN_PRO" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_135" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_66" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_STRUCT_DTU_DTU" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_REF_FACTOR" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_100" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_101" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_102" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_1020" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_103" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_104" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_105" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_106" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_108" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_84" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_85" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_97" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_98" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_99" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_SE_REFERENCE_T_DIM_SA" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_THEMES_DEFORMATION_DEEP_DISPLACEMENT_DAILY_T_DIM_SAFETY_FACTOR_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_THEMES_ENVI_WATER_LEVEL_FACTOR" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_STRUCT_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK__T_DIM_SEN__SENSO__4DDF6BB5" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK__T_DIM_SEN__SENSO__51AFFC99" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_REF_SENSOR" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_50" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_51" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_53" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_530" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_54" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_55" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_56" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_57" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_58" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_59" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_60" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_61" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Reference_89" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_SENSORID" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_SE_REFERENCE_T_DIM_SE" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_SENSOR_CORRENT__T_DIM_SENSOR" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_THEMES_DEFORMATION_DEEP_DISPLACEMENT_DAILY_T_DIM_SENSOR" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_THEMES_ENVI_WATER_LEVEL_SENSOR" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_STRUCT_DTU_STRUCT" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_STRUCTUER_PROGRESS_T_DIM_STRUCTUER_LINE" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_REF_STRUCTURE" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Structure_StructureType" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Warning_StructId" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_DealDetails_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_SMS_RECIEVER_USER" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_DIM_US_REFERENCE_T_DIM_US" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Warning_DeviceType" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_Warning_WarningType" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_REPORT_CONFIG_TEMPLATE_T_REPORT_CONFIG" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_T_REPORT_CONFIG_TEMPLATE_T_REPORT_TEMPLATE" ManuallyRouted="false" />
+        <AssociationConnector Association="ReportGeneratorService.DataModule.FK_DealDetails_Warning" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

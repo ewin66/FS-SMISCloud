@@ -1,0 +1,7 @@
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\Storage.iSecureCloud.Test\consumers.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\Storage.iSecureCloud.Test\ThemeTables_iSecureCloud.xml
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\Storage.iSecureCloud.Test\Storage.iSecureCloud.Test.exe
+E:\FS-SMISCloud\codes\Server\Output\Test\NGET\Storage.iSecureCloud.Test\Storage.iSecureCloud.Test.pdb
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\Storage.iSecureCloud.Test\obj\Debug\Storage.iSecureCloud.Test.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\Storage.iSecureCloud.Test\obj\Debug\Storage.iSecureCloud.Test.exe
+E:\FS-SMISCloud\codes\Server\NGET\Consumers\Storage.iSecureCloud.Test\obj\Debug\Storage.iSecureCloud.Test.pdb

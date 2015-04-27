@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18464DB5-C09B-4B50-84D0-E287C751E5CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FSDE.BLL</RootNamespace>
+    <AssemblyName>FSDE.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\ConfigTableBll.cs" />
+    <Compile Include="Config\ProductCategoryBll.cs" />
+    <Compile Include="Config\SensorInfoBll.cs" />
+    <Compile Include="ConnectTestBll.cs" />
+    <Compile Include="Config\DataBaseNameBll.cs" />
+    <Compile Include="Config\DataFilterTypeBll.cs" />
+    <Compile Include="Config\GroupSensorsBll.cs" />
+    <Compile Include="Config\DataFilterBll.cs" />
+    <Compile Include="Config\ExtractValueNameBll.cs" />
+    <Compile Include="Config\ProjectInfoBll.cs" />
+    <Compile Include="Config\FormulaParaNameBll.cs" />
+    <Compile Include="Config\FormulaInfoBll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Config\GroupInfoBll.cs" />
+    <Compile Include="Select\ArtVibrationDataSelectBll.cs" />
+    <Compile Include="Select\CacheDataPacketBll.cs" />
+    <Compile Include="Select\ExtractionConfigBll.cs" />
+    <Compile Include="Select\ITextOrBinarySelectBll.cs" />
+    <Compile Include="Select\MoiFiberGratingDataSelectBll.cs" />
+    <Compile Include="Select\OurVibrationBll.cs" />
+    <Compile Include="Select\SelectConfigTableInfoBll.cs" />
+    <Compile Include="Select\SelectFSUSDBTablesBll.cs" />
+    <Compile Include="Select\SelectOtherTablesBll.cs" />
+    <Compile Include="Config\SFormulaidSetBll.cs" />
+    <Compile Include="Config\TableFieldInfoBll.cs" />
+    <Compile Include="Config\SensorTypeBll.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FSDE.DALFactory\FSDE.DALFactory.csproj">
+      <Project>{206E557D-EB27-4007-9EA8-B1F00BCB9BC2}</Project>
+      <Name>FSDE.DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.IDAL\FSDE.IDAL.csproj">
+      <Project>{857296F5-BA15-46D6-982D-54E1C2F7DBEE}</Project>
+      <Name>FSDE.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSDE.Model\FSDE.Model.csproj">
+      <Project>{A129935B-96D5-4E57-9D7B-18801DCE95A8}</Project>
+      <Name>FSDE.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

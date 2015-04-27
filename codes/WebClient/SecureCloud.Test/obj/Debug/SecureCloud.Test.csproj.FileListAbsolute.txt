@@ -1,0 +1,15 @@
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\bin\Debug\test\14标边坡监测4月报告-5.5-总工办-蒋丰军.docx
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\bin\Debug\SecureCloud.Test.exe.config
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\bin\Debug\SecureCloud.Test.exe
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\bin\Debug\SecureCloud.Test.pdb
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\bin\Debug\nunit.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\bin\Debug\SecureCloud.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\bin\Debug\log4net.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\bin\Debug\Newtonsoft.Json.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\bin\Debug\SecureCloud.pdb
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\bin\Debug\log4net.xml
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\bin\Debug\Newtonsoft.Json.xml
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\obj\Debug\SecureCloud.Test.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\obj\Debug\SecureCloud.Test.exe
+E:\FS-SMISCloud\codes\WebClient\SecureCloud.Test\obj\Debug\SecureCloud.Test.pdb

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <consumers>
+    <add name="DataRationalFilter" assembly="NGET.DataRationalFilter.dll" type="FS.SMIS_Cloud.NGET.DataRationalFilter.DataRationalFilter" />
+    <add name="DataValidator" assembly="NGET.DataValidator.dll" type="FS.SMIS_Cloud.NGET.DataValidator.DataValidator"/>
+    <!--<add name="DataCalc" assembly="NGET.DataCalc.dll" type="FS.SMIS_Cloud.NGET.DataCalc.DataCalc"/>-->
+    <add name="DataAnalyzer" assembly="NGET.DataAnalyzer.dll" type="FS.SMIS_Cloud.NGET.DataAnalyzer.DataAnalyzer" />
+    <add name="Storage" assembly="NGET.Storage.iSecureCloud.dll" type="FS.SMIS_Cloud.NGET.Storage.iSecureCloud.SeclureCloudStorge" />
+    <!--<add name="DataUploader" assembly="NGET.PinghanDataUpload" type="FS.SMIS_Cloud.NGET.PinghanDataUpload.DataUploader" />-->
+    <add name="DataReplaceFilter" assembly="NGET.DataReplaceFilter.dll" type="FS.SMIS_Cloud.NGET.DataReplaceFilter.DataReplaceFilter"/>
+  </consumers>
+  <queues>
+    <queue sync="true">
+      <add name="Storage" />
+      <add name="DataRationalFilter" sensorType="Entity,Data" />
+      <add name="DataValidator" sensorType="Entity,Data" />
+      <add name="DataReplaceFilter"/>
+      <!--<add name="DataCalc" />-->
+      <add name="DataRationalFilter" sensorType="Virtual" />
+      <add name="DataValidator" sensorType="Virtual" />
+      <add name="DataAnalyzer" />
+      <add name="Storage" />
+      <!--<add name="DataUploader" />-->
+    </queue>
+  </queues>
+</configuration>

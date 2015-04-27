@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A129935B-96D5-4E57-9D7B-18801DCE95A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FSDE.Model</RootNamespace>
+    <AssemblyName>FSDE.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArtAccDatum.cs" />
+    <Compile Include="Config\ConfigTable.cs" />
+    <Compile Include="Config\CompareByDeep.cs" />
+    <Compile Include="Config\DataBaseName.cs" />
+    <Compile Include="Config\DataFilter.cs" />
+    <Compile Include="Config\GroupInfo.cs" />
+    <Compile Include="Config\GroupSensors.cs" />
+    <Compile Include="Config\PacketsToSend.cs" />
+    <Compile Include="Config\ProjectInfo.cs" />
+    <Compile Include="Config\SensorInfo.cs" />
+    <Compile Include="Config\SFormulaidSet.cs" />
+    <Compile Include="Config\TableFieldInfo.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="DataBaseType.cs" />
+    <Compile Include="Config\ExtractionConfig.cs" />
+    <Compile Include="Config\DataFilterType.cs" />
+    <Compile Include="Config\ExtractValueName.cs" />
+    <Compile Include="Events\MessagesShowEventArgs.cs" />
+    <Compile Include="Fixed\ConfigTableInfo.cs" />
+    <Compile Include="Fixed\FormulaInfo.cs" />
+    <Compile Include="Fixed\SensorType.cs" />
+    <Compile Include="Config\ProductCategory.cs" />
+    <Compile Include="Fixed\FormulaParaName.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SensorCategory.cs" />
+    <Compile Include="TableBase.cs" />
+    <Compile Include="TypeIdName.cs" />
+    <Compile Include="Vibration\FileNameInfo.cs" />
+    <Compile Include="Vibration\FileParamStruct.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\sqliteorm\SqliteORM.csproj">
+      <Project>{6b177771-4444-48a9-8ecb-db27ed900969}</Project>
+      <Name>SqliteORM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

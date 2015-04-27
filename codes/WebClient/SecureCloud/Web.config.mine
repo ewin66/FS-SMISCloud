@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<!--
+  有关如何配置 ASP.NET 应用程序的详细信息，请访问
+  http://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+  <system.web>
+    <compilation debug="true"/>
+  </system.web>
+  <appSettings>
+    <add key="ApiURL" value="http://192.168.1.31:9006"/>
+    <!--<add key="ApiURL" value="http://cloudapi.free-sun.com.cn:8008" />-->
+    <add key="ConfirmedReportPath" value="E:\reports\Confirmed\" />
+    <add key="ManualReportPath" value="E:\reports\Confirmed\ManualReport\" />
+    <!--单位:kb-->
+    <add key="DownloadSpeed" value="200" />
+    <!--批量下载速度限制，单位: Mb-->
+    <add key="MultiDownloadSpeed" value="1" />
+  </appSettings>
+  <system.webServer>
+    <defaultDocument>
+      <files>
+        <clear/>
+        <add value="index.html"/>
+      </files>
+    </defaultDocument>
+  </system.webServer>
+</configuration>

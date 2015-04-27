@@ -1,0 +1,14 @@
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\bin\SecureCloud.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\bin\SecureCloud.pdb
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\bin\ICSharpCode.SharpZipLib.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\bin\log4net.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\bin\Microsoft.QualityTools.Testing.Fakes.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\bin\NetMQ.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\bin\Newtonsoft.Json.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\bin\Service.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\bin\Service.NetMQ.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\bin\log4net.xml
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\bin\Newtonsoft.Json.xml
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\obj\Debug\SecureCloud.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\obj\Debug\SecureCloud.dll
+E:\FS-SMISCloud\codes\WebClient\SecureCloud\obj\Debug\SecureCloud.pdb

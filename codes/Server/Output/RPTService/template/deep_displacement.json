@@ -1,0 +1,34 @@
+ {
+		chart: {
+            type: 'spline',
+            inverted: true,
+			width: 350,
+			height: 450
+        },
+		credits: {
+            enabled: false
+        },
+        title: {
+            text: '$title',
+			style: {
+                color: '#339900',
+                fontWeight: 'bold'
+            }
+        },
+		 yAxis: {
+            gridLineWidth: 0,
+            title: { text : '$yAxis' }
+        },
+        xAxis: {
+            reversed: false,
+            gridLineWidth: 1,
+            title: { text : '$xAxis' }
+        },
+        legend: {
+		    layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: $series
+    }

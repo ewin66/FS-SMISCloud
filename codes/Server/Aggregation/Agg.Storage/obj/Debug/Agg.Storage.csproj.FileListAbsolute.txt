@@ -1,0 +1,10 @@
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Storage\bin\Debug\Agg.Storage.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Storage\bin\Debug\Agg.Storage.pdb
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Storage\bin\Debug\Agg.Comm.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Storage\bin\Debug\FS.DbHelper.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Storage\bin\Debug\log4net.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Storage\bin\Debug\Agg.Comm.pdb
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Storage\bin\Debug\log4net.xml
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Storage\obj\Debug\Agg.Storage.csprojResolveAssemblyReference.cache
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Storage\obj\Debug\Agg.Storage.dll
+E:\FS-SMISCloud\codes\Server\Aggregation\Agg.Storage\obj\Debug\Agg.Storage.pdb
